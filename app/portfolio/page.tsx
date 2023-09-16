@@ -1,0 +1,18 @@
+import React from "react";
+import PortfolioHeroSection from "../components/PortfolioHeroSection";
+import PortfolioList from "../components/PortfolioList";
+
+export default function Portfolio() {
+  return (
+    <div className="bg-secondary-blue text-body-text-colour ">
+      <div className="container-width portfolio-sec">
+        <div>
+          <PortfolioHeroSection />
+        </div>
+        <div>
+          <PortfolioList />
+        </div>
+      </div>
+    </div>
+  );
+}
