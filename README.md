@@ -1,4 +1,5 @@
 # sbm
-Social Brand Managers. &copy
+Social Brand Managers.
+
 Written on Next Js
 Languages: Typescript, Tailwind
