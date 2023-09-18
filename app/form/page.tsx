@@ -213,9 +213,11 @@ const Page = () => {
                   id="number"
                   name="number"
                   type="tel"
-                  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                  // pattern="[0"
                   placeholder="e.g. 123-4567-8900"
                   className="w-full"
+                  maxLength={12}
+                  min={8}
                   value={form.number}
                   onChange={handleChange}
                 />
