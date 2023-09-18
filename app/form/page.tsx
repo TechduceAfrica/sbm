@@ -89,14 +89,17 @@ const Page = () => {
 
       const postData = async (data: {}) => {
         try {
-          const submit = await fetch("http://localhost:5000/form-submitted", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            body: JSON.stringify(data),
-          });
+          const submit = await fetch(
+            "https://sbm-mailserver.onrender.com/form-submitted",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+              },
+              body: JSON.stringify(data),
+            }
+          );
           const result = await submit.json();
           console.log(result.status);
         } catch (error) {
@@ -210,9 +213,11 @@ const Page = () => {
                   id="number"
                   name="number"
                   type="tel"
-                  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
-                  placeholder="e.g. 123-4567-8900"
+                  // pattern="[0"
+                  placeholder="e.g. 08012345678"
                   className="w-full"
+                  maxLength={12}
+                  min={8}
                   value={form.number}
                   onChange={handleChange}
                 />
