@@ -27,7 +27,7 @@ function JoWfHero() {
         </div>
         <motion.div variants={fadeIn("left", "spring", 0.3, 0.75)}>
           <img
-            src="https://assets.socialbrandmanagers.com/Join%20Our%20Workforce/social-brand-manager_SBM_Join%20Our%20Work%20Force.webp"
+            src="https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/social-brand-manager_SBM_Join%20Our%20Work%20Force.webp"
             alt="Join social brand manager workforce today"
           />
         </motion.div>

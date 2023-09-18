@@ -24,7 +24,7 @@ const HomeBenefits = () => {
         <div className="absolute top-0 lg:top-[-104px] left-0 xl:w-[312px] xl:h-[259px] w-[229px] h-[256px] rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
           <div className="flex flex-col justify-center">
             <img
-              src="https://assets.socialbrandmanagers.com/benefit%20assests/icon1.svg"
+              src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon1.svg"
               alt="homeIcon"
               className="homeIcon ml-[60px] xl:ml-[100px] "
             />
@@ -36,7 +36,7 @@ const HomeBenefits = () => {
         <div className="absolute xl:w-[312px] xl:h-[259px] w-[229px] h-[256px]  rounded-[20px] bg-white z-10 top-[0px] lg:top-[-104px] right-0 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
           <div className="flex flex-col">
             <img
-              src="https://assets.socialbrandmanagers.com/benefit%20assests/icon2.svg"
+              src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon2.svg"
               alt="homeIcon"
               className="homeIcon ml-[60px] xl:ml-[100px]"
             />
@@ -48,7 +48,7 @@ const HomeBenefits = () => {
         <div className="absolute xl:w-[312px] xl:h-[259px] w-[229px] h-[256px] rounded-[20px] bg-white z-10 left-0 bottom-[calc(50%_-_290px)] shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
           <div className="flex flex-col">
             <img
-              src="https://assets.socialbrandmanagers.com/benefit%20assests/icon3.svg"
+              src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon3.svg"
               alt="homeIcon"
               className="homeIcon ml-[60px] xl:ml-[100px]"
             />
@@ -60,7 +60,7 @@ const HomeBenefits = () => {
         <div className="absolute xl:w-[312px] xl:h-[259px] w-[229px] h-[256px] rounded-[20px] bg-white z-10 right-0 bottom-[calc(50%_-_290px)] shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
           <div className="flex flex-col">
             <img
-              src="https://assets.socialbrandmanagers.com/benefit%20assests/icon4.svg"
+              src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon4.svg"
               alt="homeIcon"
               className="homeIcon ml-[60px] xl:ml-[100px]"
             />

@@ -26,7 +26,7 @@ const ThreeStepsSlider: React.FC = () => {
         >
           <video autoPlay loop>
             <source
-              src="https://assets.socialbrandmanagers.com/home%20page/STEP1.gif.mp4"
+              src="https://assets-social-brand-managers.netlify.app/home%20page/STEP1.gif.mp4"
               type="video/mp4"
             />
           </video>
@@ -39,7 +39,7 @@ const ThreeStepsSlider: React.FC = () => {
         >
           <video autoPlay loop>
             <source
-              src="https://assets.socialbrandmanagers.com/home%20page/SBM-STEP2.gif"
+              src="https://assets-social-brand-managers.netlify.app/home%20page/SBM-STEP2.gif"
               type="video/mp4"
             />
           </video>
@@ -52,7 +52,7 @@ const ThreeStepsSlider: React.FC = () => {
         >
           <video autoPlay loop>
             <source
-              src="https://assets.socialbrandmanagers.com/home%20page/Social-brand-manager-STEP3.gif"
+              src="https://assets-social-brand-managers.netlify.app/home%20page/Social-brand-manager-STEP3.gif"
               type="video/mp4"
             />
           </video>

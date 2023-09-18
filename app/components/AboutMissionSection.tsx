@@ -28,7 +28,7 @@ const AboutMissionSection = () => {
           </div>
           <div>
             <img
-              src="https://assets.socialbrandmanagers.com/AboutPage%20Images/our%20mission%20images_SBM.png"
+              src="https://assets-social-brand-managers.netlify.app/AboutPage%20Images/our%20mission%20images_SBM.png"
               alt="social brand manager mission"
             />
           </div>
