@@ -52,35 +52,35 @@ export const homeServicesBottom = [
 export const sbmServices = [
   {
     image:
-      "https://socialbrandmanagers.com/assets/resized%20images/servicepagepic.png",
+      "https://assets.socialbrandmanagers.com/resized%20images/servicepagepic.png",
     title: "Social media strategy development",
     text: "Taioring strategies based on client objectives and target audience analysis.",
     url: "/",
   },
   {
     image:
-      "https://socialbrandmanagers.com/assets/resized%20images/servicepagepic2.png",
+      "https://assets.socialbrandmanagers.com/resized%20images/servicepagepic2.png",
     title: "Content creation and curation",
     text: "Crafting engaging and shareable content to captivate audience.",
     url: "/",
   },
   {
     image:
-      "https://socialbrandmanagers.com/assets/resized%20images/servicepagepic3.png",
+      "https://assets.socialbrandmanagers.com/resized%20images/servicepagepic3.png",
     title: "Community management",
     text: "Proactively engaging with followers, responding to queries and fostering positive interactions.",
     url: "/",
   },
   {
     image:
-      "https://socialbrandmanagers.com/assets/resized%20images/servicepagepic4.png",
+      "https://assets.socialbrandmanagers.com/resized%20images/servicepagepic4.png",
     title: "Social media advertising",
     text: "Creating and managing targeted Ad campaigns to increase, reach and drive conversions.",
     url: "/",
   },
   {
     image:
-      "https://socialbrandmanagers.com/assets/resized%20images/servicepagepic5.png",
+      "https://assets.socialbrandmanagers.com/resized%20images/servicepagepic5.png",
     title: "Analytics and reporting",
     text: "Measuring key performance metrics and providing insights for continuous improvement.",
     url: "/",
@@ -90,42 +90,42 @@ export const sbmServices = [
 const brandmanagers = [
   {
     profileimg:
-      "https://socialbrandmanagers.com/assets/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets.socialbrandmanagers.com/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Mide Soyemi",
     userprofilelink: "/",
     userportfoliolink: "/",
   },
   {
     profileimg:
-      "https://socialbrandmanagers.com/assets/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets.socialbrandmanagers.com/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Jude Kelechi",
     userprofilelink: "/",
     userportfoliolink: "/",
   },
   {
     profileimg:
-      "https://socialbrandmanagers.com/assets/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets.socialbrandmanagers.com/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Aminat Sambo",
     userprofilelink: "/",
     userportfoliolink: "/",
   },
   {
     profileimg:
-      "https://socialbrandmanagers.com/assets/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets.socialbrandmanagers.com/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Muyiwa Afolabi",
     userprofilelink: "/",
     userportfoliolink: "/",
   },
   {
     profileimg:
-      "https://socialbrandmanagers.com/assets/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets.socialbrandmanagers.com/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Martins Sowore",
     userprofilelink: "/",
     userportfoliolink: "/",
   },
   {
     profileimg:
-      "https://socialbrandmanagers.com/assets/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets.socialbrandmanagers.com/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Olabanjo Jacobs",
     userprofilelink: "/",
     userportfoliolink: "/",
@@ -155,135 +155,135 @@ const footer = [
 
 export const PhoneSlides = [
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {
-    src: "http://socialbrandmanagers.com/assets/home%20page/SBM%20client%20result.webp",
+    src: "http://assets.socialbrandmanagers.com/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
 ];
