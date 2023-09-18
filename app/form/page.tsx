@@ -214,7 +214,7 @@ const Page = () => {
                   name="number"
                   type="tel"
                   // pattern="[0"
-                  placeholder="e.g. 123-4567-8900"
+                  placeholder="e.g. 08012345678"
                   className="w-full"
                   maxLength={12}
                   min={8}
