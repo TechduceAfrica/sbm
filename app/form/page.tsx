@@ -89,14 +89,17 @@ const Page = () => {
 
       const postData = async (data: {}) => {
         try {
-          const submit = await fetch("http://localhost:5000/form-submitted", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            body: JSON.stringify(data),
-          });
+          const submit = await fetch(
+            "https://sbm-mailserver.onrender.com/form-submitted",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+              },
+              body: JSON.stringify(data),
+            }
+          );
           const result = await submit.json();
           console.log(result.status);
         } catch (error) {
