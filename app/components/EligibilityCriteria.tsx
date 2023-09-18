@@ -26,7 +26,7 @@ const criteriasright = [
 
 export default function EligibilityCriteria() {
   return (
-    <div className="container-width t-b-padding custom-container-max-width">
+    <div className="py-12 custom-container-max-width">
       <section className="criteria-section">
         <div>
           <h3>Eligibility Criteria.</h3>

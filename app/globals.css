@@ -680,7 +680,7 @@ code {
 
 /* CTA COMPONENT CSS */
 .full-width-sbm-cta {
-  background-image: url("https://socialbrandmanagers.com/assets/AboutPage%20Images/CTA%20Background_SBM.png");
+  background-image: url("https://assets.socialbrandmanagers.com/AboutPage%20Images/CTA%20Background_SBM.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -725,7 +725,7 @@ a:hover .btn-icon-ani {
 
 @media screen and (max-width: 768px) {
   .full-width-sbm-cta {
-    background-image: url("https://socialbrandmanagers.com/assets/CTA%20mobile%20BG.png");
+    background-image: url("https://assets.socialbrandmanagers.com/CTA%20mobile%20BG.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -981,7 +981,7 @@ a:hover .btn-icon-ani {
 }
 
 .jowfhero-wrapper {
-  background-image: url(https://socialbrandmanagers.com/assets/Join%20Our%20Workforce/join-our-work-force-background-vector.svg);
+  background-image: url(https://assets.socialbrandmanagers.com/Join%20Our%20Workforce/join-our-work-force-background-vector.svg);
   background-position: top left;
   background-repeat: no-repeat;
 }
@@ -1058,7 +1058,7 @@ a:hover .btn-icon-ani {
 }
 
 .obm-container {
-  border-top-right-radius: 500px;
+  border-top-right-radius: 400px;
 }
 
 .obm-wrapper {
@@ -1081,6 +1081,7 @@ a:hover .btn-icon-ani {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   padding: 30px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -1118,6 +1119,10 @@ a:hover .btn-icon-ani {
   gap: 15px;
 }
 
+.pri-btn, .sec-btn {
+  cursor: pointer;
+}
+
 .brandmanagerlist-container .pri-btn,
 .brandmanagerlist-container .sec-btn {
   padding: 5px 10px;
@@ -1128,8 +1133,13 @@ a:hover .btn-icon-ani {
   color: #ffffff;
 }
 
-.brandmanagerlist-container .pri-btn:hover a {
+.brandmanagerlist-container .sec-btn:hover a {
   @apply text-primary-blue;
+}
+
+.brandmanagerlist-container .pri-btn:hover a {
+  /* @apply text-primary-blue; */
+  color: #000000;
 }
 
 @media screen and (max-width: 768px) {
@@ -1198,7 +1208,7 @@ a:hover .btn-icon-ani {
 
 .features-image1 .child {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(https://socialbrandmanagers.com/assets/features%20images/features%20image1.png);
+    url(https://assets.socialbrandmanagers.com/features%20images/features%20image1.png);
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -1212,7 +1222,7 @@ a:hover .btn-icon-ani {
 
 .features-image2 .child {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(https://socialbrandmanagers.com/assets/features%20images/feature%20image2.png);
+    url(https://assets.socialbrandmanagers.com/features%20images/feature%20image2.png);
   background-position: center;
   background-size: cover;
 }
@@ -1224,7 +1234,7 @@ a:hover .btn-icon-ani {
 
 .features-image3 .child {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(https://socialbrandmanagers.com/assets/features%20images/feature%20image%203.png);
+    url(https://assets.socialbrandmanagers.com/features%20images/feature%20image%203.png);
   background-position: center;
   background-size: cover;
 }
@@ -1237,7 +1247,7 @@ a:hover .btn-icon-ani {
 
 .features-image4 .child {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(https://socialbrandmanagers.com/assets/features%20images/feature%20image%204.png);
+    url(https://assets.socialbrandmanagers.com/features%20images/feature%20image%204.png);
   background-position: center;
   background-size: cover;
   transition: all 0.5s;
@@ -1266,7 +1276,7 @@ a:hover .btn-icon-ani {
 
 /* HOME BENEFITS */
 .home-benefit-main {
-  background-image: url(https://socialbrandmanagers.com/assets/benefit%20assests/benefits%20main%20image.png);
+  background-image: url(https://assets.socialbrandmanagers.com/benefit%20assests/benefits%20main%20image.png);
   background-position: center;
   background-size: cover;
 }
@@ -1422,7 +1432,7 @@ a:hover .btn-icon-ani {
   flex-direction: column;
   align-items: center;
   padding-block: 80px;
-  background-image: url(https://socialbrandmanagers.com/assets/home%20page/Servies%20interactions%20-%20BG.webp);
+  background-image: url(https://assets.socialbrandmanagers.com/home%20page/Servies%20interactions%20-%20BG.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

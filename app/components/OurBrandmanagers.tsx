@@ -5,7 +5,7 @@ import brandmanagers from "../constants";
 export default function OurBrandmanagers() {
   return (
     <div className="bg-secondary-blue obm-container">
-      <section className="container-width custom-container-max-width t-b-padding">
+      <section className="custom-container-max-width t-b-padding">
         <div className="obm-wrapper">
           <h3>Our Brand Managers</h3>
           <p>
@@ -14,7 +14,7 @@ export default function OurBrandmanagers() {
             through social media.
           </p>
         </div>
-        <div className="brandmanagerlist-wrapper">
+        <div className="brandmanagerlist-wrapper py-8">
           {brandmanagers.map((brandmanager, index) => (
             <BrandManagerList
               key={index}

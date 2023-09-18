@@ -8,7 +8,7 @@ const PortfolioProjectsLeft = [
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
-      "https://socialbrandmanagers.com/assets/Portfolio%20Page/portfolioImg.webp",
+      "https://assets.socialbrandmanagers.com/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
   },
   {
@@ -17,7 +17,7 @@ const PortfolioProjectsLeft = [
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
-      "https://socialbrandmanagers.com/assets/Portfolio%20Page/portfolioImg.webp",
+      "https://assets.socialbrandmanagers.com/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
   },
   {
@@ -26,7 +26,7 @@ const PortfolioProjectsLeft = [
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
-      "https://socialbrandmanagers.com/assets/Portfolio%20Page/portfolioImg.webp",
+      "https://assets.socialbrandmanagers.com/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
   },
   {
@@ -35,7 +35,7 @@ const PortfolioProjectsLeft = [
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
-      "https://socialbrandmanagers.com/assets/Portfolio%20Page/portfolioImg.webp",
+      "https://assets.socialbrandmanagers.com/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
   },
 ];
@@ -47,7 +47,7 @@ const PortfolioProjectsRight = [
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
-      "https://socialbrandmanagers.com/assets/Portfolio%20Page/portfolioImg.webp",
+      "https://assets.socialbrandmanagers.com/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
   },
   {
@@ -56,7 +56,7 @@ const PortfolioProjectsRight = [
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
-      "https://socialbrandmanagers.com/assets/Portfolio%20Page/portfolioImg.webp",
+      "https://assets.socialbrandmanagers.com/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
   },
   {
@@ -65,7 +65,7 @@ const PortfolioProjectsRight = [
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
-      "https://socialbrandmanagers.com/assets/Portfolio%20Page/portfolioImg.webp",
+      "https://assets.socialbrandmanagers.com/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
   },
   {
@@ -74,7 +74,7 @@ const PortfolioProjectsRight = [
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
-      "https://socialbrandmanagers.com/assets/Portfolio%20Page/portfolioImg.webp",
+      "https://assets.socialbrandmanagers.com/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
   },
 ];

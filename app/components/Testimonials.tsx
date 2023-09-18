@@ -7,28 +7,28 @@ const Testimonials = () => {
   const testimonials = [
     {
       imageUrl:
-        "https://socialbrandmanagers.com/assets/resized%20images/client-pic1.svg",
+        "https://assets.socialbrandmanagers.com/resized%20images/client-pic1.svg",
       clientName: "Data Adie",
       testimony:
         "SBM has never failed me once, my business sales is top notch.",
     },
     {
       imageUrl:
-        "https://socialbrandmanagers.com/assets/resized%20images/client-pic2.svg",
+        "https://assets.socialbrandmanagers.com/resized%20images/client-pic2.svg",
       clientName: "Bebis Crib",
       testimony:
         "These guys are one of a kind, they gave me more than what i wanted.",
     },
     {
       imageUrl:
-        "https://socialbrandmanagers.com/assets/resized%20images/client-pic1.svg",
+        "https://assets.socialbrandmanagers.com/resized%20images/client-pic1.svg",
       clientName: "Data Adie",
       testimony:
         "SBM has never failed me once, my business sales is top notch.",
     },
     {
       imageUrl:
-        "https://socialbrandmanagers.com/assets/resized%20images/client-pic1.svg",
+        "https://assets.socialbrandmanagers.com/resized%20images/client-pic1.svg",
       clientName: "Data Adie",
       testimony:
         "SBM has never failed me once, my business sales is top notch.",
