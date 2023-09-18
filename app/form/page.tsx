@@ -90,7 +90,7 @@ const Page = () => {
       const postData = async (data: {}) => {
         try {
           const submit = await fetch(
-            "https://sbm-mailserver.onrender.com/form-submitted",
+            "https://sbm-mailsever.onrender.com/form-submitted",
             {
               method: "POST",
               headers: {
