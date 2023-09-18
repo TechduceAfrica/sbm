@@ -1,8 +1,8 @@
-import homeService1 from "@/public/home-services images/services images1.png";
+import homeService1 from "@/public/home-services images/services images 2.png";
 import homeService2 from "@/public/home-services images/services images 2.png";
-import homeService3 from "@/public/home-services images/services images 3.png";
-import homeService4 from "@/public/home-services images/services images 4.png";
-import homeService5 from "@/public/home-services images/services images 5.png";
+import homeService3 from "@/public/home-services images/services images 2.png";
+import homeService4 from "@/public/home-services images/services images 2.png";
+import homeService5 from "@/public/home-services images/services images 2.png";
 
 import Servicepic1 from "@/public/servicepagepic.png";
 import Servicepic2 from "@/public/servicepagepic2.png";
@@ -21,17 +21,17 @@ export const navLinks = [
 export const homeServicesTop = [
   {
     title: "Social Media Strategy Development",
-    image: homeService1,
+    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic.png",
     text: "Tailoring strategies based on client objectives and target audience analysis.",
   },
   {
     title: "Content Creation and Curation",
-    image: homeService2,
+    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic5.png",
     text: "Crafting engaging and shareable content to captivate audience.",
   },
   {
     title: "Content Management",
-    image: homeService3,
+    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic4.png",
     text: "Proactively engaging with followers, responding and fostering positive interactions.",
   },
 ];
@@ -39,12 +39,12 @@ export const homeServicesTop = [
 export const homeServicesBottom = [
   {
     title: "Social Media Advertising",
-    image: homeService4,
+    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic3.png",
     text: "Creating and managing targeted Ad campaigns to increase and drive conversions.",
   },
   {
     title: "Analytics And Reporting",
-    image: homeService5,
+    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
     text: "Measuring key performance metrics and providing insights for continuous improvement.",
   },
 ];
