@@ -8,7 +8,7 @@ import SectionWrapper from "../hoc/SectionWrapper";
 function JoWfHero() {
   return (
     <div className="bg-secondary-blue jowfhero-wrapper">
-      <section className="jowfhero-container container-width t-b-padding">
+      <section className="jowfhero-container container-width t-b-padding custom-container-max-width">
         <div>
           <motion.h2
             className="pt-[80px] max-w-[300px] lg:max-w-none"

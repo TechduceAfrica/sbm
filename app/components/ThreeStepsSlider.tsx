@@ -66,7 +66,9 @@ const ThreeStepsSlider: React.FC = () => {
           } ${activeSlide === 3 ? "onflow" : ""}`}
           onMouseEnter={() => handleNavigatorHover(1)}
         >
-          <div className="navigator-number num-flow">1</div>
+          <div className="navigator-number num-flow">
+            <span>1</span>
+          </div>
           <div className="navigator-text">
             <p>Click the button to get started</p>
           </div>
@@ -78,7 +80,9 @@ const ThreeStepsSlider: React.FC = () => {
           } ${activeSlide === 3 ? "onflow on" : ""}`}
           onMouseEnter={() => handleNavigatorHover(2)}
         >
-          <div className="navigator-number num-flow">2</div>
+          <div className="navigator-number num-flow">
+            <span>2</span>
+          </div>
           <div className="navigator-text">
             <p>Simply fill the basic form</p>
           </div>
@@ -88,7 +92,9 @@ const ThreeStepsSlider: React.FC = () => {
           className={`navigator ${activeSlide === 3 ? "active" : ""}`}
           onMouseEnter={() => handleNavigatorHover(3)}
         >
-          <div className="navigator-number">3</div>
+          <div className="navigator-number">
+            <span>3</span>
+          </div>
           <div className="navigator-text">
             <p>Sit and relax while we take it up</p>
           </div>

@@ -6,7 +6,7 @@ import { fadeIn } from "../utils/motion";
 const AboutMissionSection = () => {
   return (
     <div className="bg-secondary-blue t-b-padding">
-      <div className="container-width">
+      <div className="container-width custom-container-max-width">
         <section className="abt-mission-sec">
           <div>
             <div>

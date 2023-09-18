@@ -7,7 +7,7 @@ const AboutPageWorkspaceSection = () => {
   return (
     <div>
       <div>
-        <div className="container-width t-b-padding sbm-value-container pb-10">
+        <div className="container-width t-b-padding sbm-value-container pb-10 custom-container-max-width">
           <div className="sbm-value-title-container">
             <motion.h3
               className="text-center lg:text-left"

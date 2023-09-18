@@ -3,7 +3,7 @@ import React from "react";
 
 const HomeBenefits = () => {
   return (
-    <div className=" m-auto w-[80%] p-3 ">
+    <div className=" m-auto w-[80%] p-3 custom-container-max-width">
       <div className=" home-benefits-text gap-3 pt-[50px] text-center ">
         <h5 className="font-body-text-2 text-body-text-colour">Benefits</h5>
       </div>

@@ -7,7 +7,7 @@ import { fadeIn } from "../utils/motion";
 const CtaComponent = () => {
   return (
     <div className="bg-secondary-blue t-b-padding full-width-sbm-cta">
-      <div className=" sbm-cta-container">
+      <div className=" sbm-cta-container custom-container-max-width">
         <motion.h3 variants={fadeIn("", "", 0.7, 1)}>
           Not convinced yet<strong className="text-primary-blue">?</strong>
         </motion.h3>

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <div className=" m-auto w-[80%] p-3 ">
+    <div className=" m-auto w-[80%] p-3 custom-container-max-width">
       {" "}
       <div className=" home-features-text gap-3 pt-[50px] text-center">
         <h5 className="font-body-text-2 text-body-text-colour">Features</h5>

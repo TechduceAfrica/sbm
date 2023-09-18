@@ -5,8 +5,8 @@ import Carousel from "./Carousel";
 
 export default function ProofSection() {
   return (
-    <div className="home-proof-container ">
-      <div className="home-proof-title mb-20">
+    <div className="home-proof-container">
+      <div className="home-proof-title mb-20 custom-container-max-width">
         <h3>
           Nothing speaks{" "}
           <span className="pri-color typing-txt-width">

@@ -3,4 +3,4 @@ Social Brand Managers.
 
 Written on Next Js.
 
-Languages: Typescript, Tailwind.
+Languages: Typescript, Javascript, Tailwind.

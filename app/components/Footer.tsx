@@ -8,8 +8,8 @@ import { useState } from "react";
 const Footer = () => {
   const [active, setActive] = useState("");
   return (
-    <div className=" relative w-full h-full bg-footer-blue flex  text-white text-[22px] lg:text-[32px] lg:px-28 lg:py-32 px-0 py-20">
-      <div className="justify-around flex flex-col lg:flex-row">
+    <div className=" relative w-full h-full bg-footer-blue flex justify-center text-white text-[22px] lg:text-[32px] lg:px-28 lg:py-32 px-0 py-20">
+      <div className="justify-around flex flex-col lg:flex-row  custom-container-max-width">
         <div className="justify-between flex flex-col lg:flex-row ml-[40px] lg:ml-[30px] lg:text-lg gap-12 ">
           {/* Logo */}
           <div className="logo">
