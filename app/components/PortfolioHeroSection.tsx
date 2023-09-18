@@ -7,7 +7,7 @@ import { fadeIn } from "../utils/motion";
 function PortfolioHeroSection() {
   return (
     <div className="bg-secondary-blue t-b-padding portfolio-hero-sec">
-      <div className="">
+      <div className="custom-container-max-width">
         <motion.h2
           className="min-width[589px]"
           variants={fadeIn("up", "spring", 0.1, 0.75)}

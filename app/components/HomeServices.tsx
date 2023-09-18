@@ -10,7 +10,7 @@ import Link from "next/link";
 const HomeServices = () => {
   return (
     <div className="bg-secondary-blue-2">
-      <div className="mx-[40px]  services pb-[100px] ">
+      <div className="mx-[40px]  custom-container-max-width services pb-[100px] ">
         <div className="home-service-text gap-3 pt-[50px] text-center">
           <h5 className="font-body-text-2 text-body-text-colour">Services</h5>
         </div>

@@ -12,7 +12,7 @@ const Services = () => {
     <div className="bg-secondary-blue text-body-text-colour">
       <div className="container-width p-5 sbm-service-container">
         <ServiceHeader />
-        <section>
+        <section className="custom-container-max-width">
           <ServicesList />
         </section>
         <CtaComponent />

@@ -5,7 +5,7 @@ import brandmanagers from "../constants";
 export default function OurBrandmanagers() {
   return (
     <div className="bg-secondary-blue obm-container">
-      <section className="container-width t-b-padding">
+      <section className="container-width custom-container-max-width t-b-padding">
         <div className="obm-wrapper">
           <h3>Our Brand Managers</h3>
           <p>

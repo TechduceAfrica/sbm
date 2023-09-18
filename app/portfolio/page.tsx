@@ -5,7 +5,7 @@ import PortfolioList from "../components/PortfolioList";
 export default function Portfolio() {
   return (
     <div className="bg-secondary-blue text-body-text-colour ">
-      <div className="container-width portfolio-sec">
+      <div className="container-width portfolio-sec custom-container-max-width">
         <div>
           <PortfolioHeroSection />
         </div>

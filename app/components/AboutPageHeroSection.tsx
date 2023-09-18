@@ -9,7 +9,7 @@ const AboutPageHeroSection = () => {
       {" "}
       <div className="bg-ghostwhite">
         {" "}
-        <div className="container-width about-page-hero-section ">
+        <div className="container-width about-page-hero-section custom-container-max-width">
           <div className="about-first-print">
             <div>
               <motion.h3

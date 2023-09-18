@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" font-primary font-semibold nav-main-container text-body-text-colour z-20">
+    <nav className="font-primary font-semibold nav-main-container text-body-text-colour z-20">
       <div className="nav-wrapper-container">
         <div className="logo">
           <Link
@@ -54,7 +54,7 @@ const Navbar = () => {
                   active === link.text
                     ? "bg-active w-full px-[10px] py-[5px] rounded-md "
                     : "bg-white"
-                } hover:text-primary-blue mr-3`}
+                } hover:text-primary-blue`}
                 onClick={() => setActive(link.text)}
               >
                 {link.text}
