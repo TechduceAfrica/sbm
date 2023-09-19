@@ -66,7 +66,7 @@ const HomeServices = () => {
           {homeServicesBottom.map((homeServiceBottom, index) => (
             <div
               key={index}
-              className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center relative"
+              className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center relative gap-2"
             >
               <Image
                 src={homeServiceBottom.image}

@@ -36,11 +36,13 @@ const Hero = () => {
               </p>
             </div>
             <div className="max-w-[150px] lg:max-w-[200px] font-semibold">
-              <Button
-                title="Learn More"
-                bgColor="transparent"
-                textColor="text-primary-blue"
-              />
+              <a href="https://socialbrandmanagers.netlify.app/about" title="about-SBM">
+                <Button
+                  title="Learn More"
+                  bgColor="transparent"
+                  textColor="text-primary-blue"
+                />
+              </a>
             </div>
             <div className="sbm-hero-mobile-img lg:hidden md:hidden">
               <img

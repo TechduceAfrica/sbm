@@ -12,7 +12,7 @@ export default function ProofSection() {
           <span className="pri-color typing-txt-width">
             <span className="text-typing"></span>
           </span>
-          <br /> than results
+          <br /> than results <strong className="text-primary-blue">.</strong>
         </h3>
       </div>
 

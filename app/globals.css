@@ -43,7 +43,7 @@ body {
   writing-mode: vertical-rl;
 }
 h1 {
-  @apply leading-[1.59rem] lg:leading-[3.18rem] md:leading-[2.18rem];
+  @apply leading-[1.39rem] lg:leading-[2.98rem] md:leading-[1.98rem];
   font-size: 3em;
   font-weight: 700;
   margin: 0;

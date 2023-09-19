@@ -6,7 +6,7 @@ import NewFooter from "./components/NewFooter";
 
 export const metadata: Metadata = {
   title: "Social Brand Managers",
-  description: "We make it happen the SMB way.",
+  description: "Level up social media contents for your business",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-secondary-blue">
         <Navbar />
-        <main>{children}</main>
+          <main>{children}</main>
         <NewFooter />
       </body>
     </html>
