@@ -33,6 +33,20 @@ const Testimonials = () => {
       testimony:
         "SBM has never failed me once, my business sales is top notch.",
     },
+    {
+      imageUrl:
+        "https://assets-social-brand-managers.netlify.app/resized%20images/client-pic1.svg",
+      clientName: "Data Adie",
+      testimony:
+        "SBM has never failed me once, my business sales is top notch.",
+    },
+    {
+      imageUrl:
+        "https://assets-social-brand-managers.netlify.app/resized%20images/client-pic1.svg",
+      clientName: "Data Adie",
+      testimony:
+        "SBM has never failed me once, my business sales is top notch.",
+    },
   ];
   return (
     <div className="container-width text-body-text-colour">
