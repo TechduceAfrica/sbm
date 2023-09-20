@@ -12,7 +12,7 @@ const CtaComponent = () => {
           Not convinced yet<strong className="text-primary-blue">?</strong>
         </motion.h3>
         <p>See what we've done</p>
-        <a href="/">
+        <a href="/portfolio">
           <div className="btn-container-ani">
             View portfolio <span className="btn-icon-ani">→</span>
           </div>
