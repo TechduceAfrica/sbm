@@ -7,7 +7,6 @@ const ServiceHeader = () => {
     <div>
       <div className="sbm-service-title-box custom-container-max-width">
         <motion.h2
-          className="leading-8 lg:leading-[50px]"
           variants={fadeIn("right", "spring", 0.5, 0.75)}
         >
           Our <span className="text-primary-blue">strategic-driven </span>
