@@ -8,7 +8,7 @@ export default function ThreeSteps() {
       <section className="custom-container-max-width">
         <div className="home-threeslide-heading">
           <h3>
-            Let's seal the deal in just{" "}
+            Let's seal the deal in just{" "}<br/>
             <span className="text-primary-blue">3 easy steps.</span>
           </h3>
         </div>

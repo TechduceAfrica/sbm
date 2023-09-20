@@ -20,7 +20,7 @@ const HomeBenefits = () => {
       </div>
 
       <div className="relative w-[100%] h-[878px] mt-[50px] lg:mt-[120px] hidden lg:block xl:p-[8.5rem] p-[4.5rem]">
-        <div className="home-benefit-main absolute w-[80%]  h-[444px] "></div>
+        <div className="home-benefit-main absolute w-[80%] h-[444px] "></div>
         <div className="absolute top-0 lg:top-[-104px] left-0 xl:w-[312px] xl:h-[259px] w-[229px] h-[256px] rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
           <div className="flex flex-col justify-center">
             <img
@@ -33,7 +33,7 @@ const HomeBenefits = () => {
             </div>
           </div>
         </div>
-        <div className="absolute xl:w-[312px] xl:h-[259px] w-[229px] h-[256px]  rounded-[20px] bg-white z-10 top-[0px] lg:top-[-104px] right-0 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
+        <div className="absolute xl:w-[312px] xl:h-[259px] w-[229px] h-[256px] rounded-[20px] bg-white z-10 top-[0px] lg:top-[-104px] right-0 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
           <div className="flex flex-col">
             <img
               src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon2.svg"
@@ -69,12 +69,6 @@ const HomeBenefits = () => {
             </div>
           </div>
         </div>
-        {/* <Image
-          src="https://socialbrandmanagers.com/assets/benefit%20assests/benefits-image.jpg"
-          width={1136}
-          height={878}
-          alt="benefits image"
-        ></Image> */}
       </div>
 
       <div className="block lg:hidden min-w-[200px] h-[200px] home-benefit-main mt-[50px]"></div>

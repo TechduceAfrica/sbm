@@ -328,6 +328,134 @@ code {
   }
 }
 
+/* HOME PAGE FEATURE SECTION STYLING */
+
+.feature-section-container,
+.feature-section-text,
+.feature-section-img main {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.feature-section-text:has(h3,h4) {
+  text-align: center;
+}
+
+.feature-section-text h3 {
+  max-width: 710px;
+}
+
+.feature-section-img {
+  margin: 40px 0px;
+}
+
+.feature-section-img main {
+  gap: 20px;
+}
+
+.feature-hover-container-one {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  gap: 20px;
+}
+
+.feature-hover-container-two {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 20px;
+}
+
+.feature-hover {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 80px 70px;
+  cursor: pointer;  
+  border-radius: 20px;
+  max-height: 540px;
+  background-color: #00000040;
+  transition: all 500ms ease-in-out;
+  overflow: hidden;
+}
+
+.feature-hover p {
+  color: #ffffff;
+  font-size: 1.4em;
+}
+
+.feature-hover-one,
+.feature-hover-two,
+.feature-hover-three,
+.feature-hover-four {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: background-size 500ms ease-in-out;
+}
+
+.feature-hover:hover {
+  background-size: 120%;
+}
+
+.feature-hover-one {
+  background-image: url('https://assets-social-brand-managers.netlify.app/home%20page/business%20social%20media%20strategy%20lagos%20Nigeria.webp');
+}
+
+.feature-hover-two {
+  background-image: url('https://assets-social-brand-managers.netlify.app/home%20page/performance%20analytics%20and%20reports%20for%20data-driven%20decisions.webp');
+}
+
+.feature-hover-three {
+  background-image: url('https://assets-social-brand-managers.netlify.app/home%20page/industry%20trends%20for%20insights.webp');
+}
+
+.feature-hover-four {
+  background-image: url('https://assets-social-brand-managers.netlify.app/home%20page/Data%20for%20social%20media.webp');
+}
+
+.feature-section-container .bottom-svg {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 999px) {
+  .feature-hover {
+      padding: 15% 8%;
+  }
+
+  .feature-hover p {
+      font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .feature-hover-container-one,
+  .feature-hover-container-two {
+      grid-template-columns: 1fr;
+  }
+
+  .feature-section-container svg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .feature-hover-one,
+  .feature-hover-four {
+    background-size: 150%;
+  }
+
+  .feature-hover-one:hover,
+  .feature-hover-four:hover {
+    background-size: 180%;
+ }
+}
+
+
 /* ABOUT US HERO STYLYING */
 .about-page-hero-section {
   display: flex;
@@ -1433,7 +1561,7 @@ a:hover .btn-icon-ani {
   align-items: center;
   padding-block: 80px;
   background-image: url(https://assets-social-brand-managers.netlify.app/home%20page/Servies%20interactions%20-%20BG.webp);
-  background-position: center center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1602,6 +1730,7 @@ a:hover .btn-icon-ani {
 
 .testimonial-cards > div {
   min-width: 400px;
+  text-align: center;
 }
 
 .testimonial-card {
@@ -1609,6 +1738,20 @@ a:hover .btn-icon-ani {
   border-radius: 10px;
   padding: 30px 20px;
   cursor: pointer;
+  animation: auto-scroll-right 20s ease-in-out 0ms infinite normal none;
+}
+
+.testimonial-cards:hover .testimonial-card {
+  animation-play-state: paused;
+}
+
+@keyframes auto-scroll-right {
+  from, to {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(-100%);
+  }
 }
 
 .testimonial-card-img-wrapper {
@@ -1620,7 +1763,7 @@ a:hover .btn-icon-ani {
 }
 
 .testimonial-card img {
-  max-width: 75px;
+  max-width: 200px;
   width: 100%;
   transition: all 550ms ease-in-out 50ms;
 }

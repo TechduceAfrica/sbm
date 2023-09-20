@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function TestimonialCard(props: any) {
+  
   return (
     <div className="testimonial-card">
       <div className="testimonial-card-img-wrapper">

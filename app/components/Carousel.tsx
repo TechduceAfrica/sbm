@@ -32,7 +32,7 @@ function Carousel() {
 
   return (
     <div className="relative">
-      <div className="overflow-hidden w-full h-[80] md:h-[35rem]">
+      <div className="overflow-hidden w-full">
         <div className="flex" style={slideStyle}>
           {PhoneSlides.map((slide, index) => (
             <img

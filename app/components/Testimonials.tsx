@@ -44,7 +44,7 @@ const Testimonials = () => {
       <div className="text-center">
         <h2 className="font-semibold text-body-text-colour lg:text-[54px] md:text-[32px] text-[24px]">
           Our clients say a <br />
-          lot about our work
+          lot about our work<strong className="text-primary-blue">.</strong>
         </h2>
       </div>
 
