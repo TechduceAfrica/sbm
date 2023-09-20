@@ -50,12 +50,14 @@ h1 {
 }
 
 h2 {
+  @apply leading-[1.39rem] lg:leading-[2.98rem] md:leading-[1.98rem];
   font-size: clamp(3rem, 1.6827rem + 1.4103vw, 3.7rem);
   font-weight: 600;
   margin: 0;
 }
 
 h3 {
+  @apply leading-[1.39rem] lg:leading-[2.98rem] md:leading-[1.98rem];
   font-size: clamp(2rem, 1.6827rem + 1.4103vw, 3.375rem);
   font-weight: 600;
   margin: 0;
@@ -338,7 +340,7 @@ code {
   text-align: center;
 }
 
-.feature-section-text:has(h3,h4) {
+.feature-section-text:has(h3, h4) {
   text-align: center;
 }
 
@@ -372,7 +374,7 @@ code {
   display: flex;
   align-items: center;
   padding: 80px 70px;
-  cursor: pointer;  
+  cursor: pointer;
   border-radius: 20px;
   max-height: 540px;
   background-color: #00000040;
@@ -400,19 +402,19 @@ code {
 }
 
 .feature-hover-one {
-  background-image: url('https://assets-social-brand-managers.netlify.app/home%20page/business%20social%20media%20strategy%20lagos%20Nigeria.webp');
+  background-image: url("https://assets-social-brand-managers.netlify.app/home%20page/business%20social%20media%20strategy%20lagos%20Nigeria.webp");
 }
 
 .feature-hover-two {
-  background-image: url('https://assets-social-brand-managers.netlify.app/home%20page/performance%20analytics%20and%20reports%20for%20data-driven%20decisions.webp');
+  background-image: url("https://assets-social-brand-managers.netlify.app/home%20page/performance%20analytics%20and%20reports%20for%20data-driven%20decisions.webp");
 }
 
 .feature-hover-three {
-  background-image: url('https://assets-social-brand-managers.netlify.app/home%20page/industry%20trends%20for%20insights.webp');
+  background-image: url("https://assets-social-brand-managers.netlify.app/home%20page/industry%20trends%20for%20insights.webp");
 }
 
 .feature-hover-four {
-  background-image: url('https://assets-social-brand-managers.netlify.app/home%20page/Data%20for%20social%20media.webp');
+  background-image: url("https://assets-social-brand-managers.netlify.app/home%20page/Data%20for%20social%20media.webp");
 }
 
 .feature-section-container .bottom-svg {
@@ -424,18 +426,18 @@ code {
 
 @media only screen and (max-width: 999px) {
   .feature-hover {
-      padding: 15% 8%;
+    padding: 15% 8%;
   }
 
   .feature-hover p {
-      font-size: 1em;
+    font-size: 1em;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .feature-hover-container-one,
   .feature-hover-container-two {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .feature-section-container svg {
@@ -452,9 +454,8 @@ code {
   .feature-hover-one:hover,
   .feature-hover-four:hover {
     background-size: 180%;
- }
+  }
 }
-
 
 /* ABOUT US HERO STYLYING */
 .about-page-hero-section {
@@ -1037,7 +1038,7 @@ a:hover .btn-icon-ani {
   height: 0px;
   overflow: hidden;
   /* transition: all 250ms ease-in-out 50ms; */
-  transition: all 500ms ease-in-out 200ms
+  transition: all 500ms ease-in-out 200ms;
 }
 
 .portfolio-card-data a {
@@ -1055,7 +1056,7 @@ a:hover .btn-icon-ani {
   margin-top: 10px;
   /* transition: all 450ms cubic-bezier(0.99, 0.39, 0.59, 1.52) 150ms; */
   /* transition: all 450ms cubic-bezier(0.35, -0.27, 0.66, 1.29) 150ms; */
-  transition: all 800ms ease-in-out 0ms
+  transition: all 800ms ease-in-out 0ms;
 }
 
 .portfolio-card:hover {
@@ -1247,7 +1248,8 @@ a:hover .btn-icon-ani {
   gap: 15px;
 }
 
-.pri-btn, .sec-btn {
+.pri-btn,
+.sec-btn {
   cursor: pointer;
 }
 
@@ -1746,7 +1748,8 @@ a:hover .btn-icon-ani {
 }
 
 @keyframes auto-scroll-right {
-  from, to {
+  from,
+  to {
     transform: translateX(0);
   }
   90% {
@@ -1878,7 +1881,7 @@ a:hover .btn-icon-ani {
 .navigator.active .navigator-number span,
 .navigator.on .navigator-number span {
   background-color: #0048a0;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .navigator.active .navigator-text p,
@@ -1984,5 +1987,5 @@ a:hover .btn-icon-ani {
 @media only screen and (max-width: 390px) {
   .onflow .num-flow::after {
     width: 100px;
-  } 
+  }
 }
