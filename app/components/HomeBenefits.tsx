@@ -12,7 +12,7 @@ const HomeBenefits = () => {
           Get your arms crossed{" "}
           <p>
             {" "}
-            While we do the
+            while we do the
             <span className="text-primary-blue"> magic</span>
             <strong className="text-primary-blue">.</strong>
           </p>{" "}
@@ -22,50 +22,44 @@ const HomeBenefits = () => {
       <div className="home-benefit-main-wrapper">
         {/* <div className="home-benefit-main"></div> */}
         <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
-            <img
-              src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon1.svg"
-              alt="homeIcon"
-              className="homeIcon ml-[60px] xl:ml-[100px]"
-            />
-            <div className="font-primary benefit-card-text leading-5">
-              Get identified relevant influencers and develop partnerships.
-            </div>
+          <img
+            src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon1.svg"
+            alt="homeIcon"
+            className="homeIcon"
+          />
+          <p className="font-primary benefit-card-text">
+            Get identified relevant influencers and develop partnerships.
+          </p>
         </div>
         <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
-          <div className="flex flex-col">
-            <img
-              src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon2.svg"
-              alt="homeIcon"
-              className="homeIcon ml-[60px] xl:ml-[100px]"
-            />
-            <div className="font-primary benefit-card-text leading-5">
-              Develop crisis management plans to counter social media backlash.
-            </div>
-          </div>
+          <img
+            src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon2.svg"
+            alt="homeIcon"
+            className="homeIcon"
+          />
+          <p className="font-primary benefit-card-text">
+            Develop crisis management plans to counter social media backlash.
+          </p>
         </div>
         <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
-          <div className="flex flex-col">
-            <img
-              src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon3.svg"
-              alt="homeIcon"
-              className="homeIcon ml-[60px] xl:ml-[100px]"
-            />
-            <div className="font-primary benefit-card-text leading-5">
-              Analyzed social media performance, identified improvement areas.
-            </div>
-          </div>
+          <img
+            src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon3.svg"
+            alt="homeIcon"
+            className="homeIcon"
+          />
+          <p className="font-primary benefit-card-text">
+            Analyzed social media performance, identified improvement areas.
+          </p>
         </div>
         <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
-          <div className="flex flex-col">
-            <img
-              src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon4.svg"
-              alt="homeIcon"
-              className="homeIcon ml-[60px] xl:ml-[100px]"
-            />
-            <div className="font-primary benefit-card-text leading-5">
-              Frequent reports for improved social media performance.
-            </div>
-          </div>
+          <img
+            src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon4.svg"
+            alt="homeIcon"
+            className="homeIcon"
+          />
+          <p className="font-primary benefit-card-text">
+            Frequent reports for improved social media performance.
+          </p>
         </div>
       </div>
 
