@@ -21,48 +21,55 @@ export const navLinks = [
 export const homeServicesTop = [
   {
     title: "Social Media Strategy Development",
-    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic.png",
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic.png",
     text: "Tailoring strategies based on client objectives and target audience analysis.",
-    link: "https://socialbrandmanagers.com/services"
+    link: "https://socialbrandmanagers.com/services",
   },
   {
     title: "Content Creation and Curation",
-    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic5.png",
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic5.png",
     text: "Crafting engaging and shareable content to captivate audience.",
-    link: "https://socialbrandmanagers.com/services"
+    link: "https://socialbrandmanagers.com/services",
   },
   {
     title: "Content Management",
-    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic4.png",
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic4.png",
     text: "Proactively engaging with followers, responding and fostering positive interactions.",
-    link: "https://socialbrandmanagers.com/services"
+    link: "https://socialbrandmanagers.com/services",
   },
   {
     title: "Social Media Advertising",
-    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic3.png",
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic3.png",
     text: "Creating and managing targeted Ad campaigns to increase and drive conversions.",
-    link: "https://socialbrandmanagers.com/services"
+    link: "https://socialbrandmanagers.com/services",
   },
   {
     title: "Analytics And Reporting",
-    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
     text: "Measuring key performance metrics and providing insights for continuous improvement.",
-    link: "https://socialbrandmanagers.com/services"
+    link: "https://socialbrandmanagers.com/services",
   },
 ];
 
 export const homeServicesBottom = [
   {
     title: "Social Media Advertising",
-    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic3.png",
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic3.png",
     text: "Creating and managing targeted Ad campaigns to increase and drive conversions.",
-    link: "https://socialbrandmanagers.com/services"
+    link: "https://socialbrandmanagers.com/services",
   },
   {
     title: "Analytics And Reporting",
-    image: "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
     text: "Measuring key performance metrics and providing insights for continuous improvement.",
-    link: "https://socialbrandmanagers.com/services"
+    link: "https://socialbrandmanagers.com/services",
   },
 ];
 
@@ -173,98 +180,6 @@ const footer = [
 export const PhoneSlides = [
   {
     src: "https://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
     alt: "bebis cribs",
   },
   {

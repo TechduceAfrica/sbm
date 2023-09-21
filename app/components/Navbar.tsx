@@ -48,6 +48,7 @@ const Navbar = () => {
           <ul>
             {navLinks.map((link) => (
               <Link
+                onClick={() => setActive(link.text)}
                 href={link.href}
                 key={link.key}
                 className={`${
@@ -55,7 +56,6 @@ const Navbar = () => {
                     ? "bg-active w-full px-[10px] py-[5px] rounded-md "
                     : "bg-white"
                 } hover:text-primary-blue`}
-                onClick={() => setActive(link.text)}
               >
                 {link.text}
               </Link>

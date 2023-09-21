@@ -6,7 +6,7 @@ function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const autoSlideInterval = setInterval(nextSlide, 10000); // Change slide every 3 seconds
+    const autoSlideInterval = setInterval(nextSlide, 15000); // Change slide every 15 seconds
 
     return () => {
       clearInterval(autoSlideInterval);
@@ -27,7 +27,7 @@ function Carousel() {
 
   const slideStyle = {
     transform: `translateX(-${currentIndex * 100}%)`,
-    transition: "transform 10s ease-out",
+    transition: "transform 15s ease-out",
   };
 
   return (
