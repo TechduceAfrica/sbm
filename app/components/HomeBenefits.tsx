@@ -3,8 +3,15 @@ import React from "react";
 
 const HomeBenefits = () => {
   return (
-    <div className=" m-auto p-3 custom-container-max-width">
-      <div className=" home-benefits-text gap-3 pt-[50px] text-center ">
+    <div className="t-b-padding custom-container-max-width">
+      <div className="home-benefit-main-svg-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
+          <rect y="0.415039" width="44" height="44" fill="#A45A52"/>
+          <rect y="65.415" width="44" height="44" fill="#0048A0"/>
+          <rect x="66" y="0.415039" width="44" height="44" fill="#0048A0"/>
+        </svg>
+      </div>
+      <div className="home-benefits-text gap-3 pt-[50px] text-center ">
         <h5 className="font-body-text-2 text-body-text-colour">Benefits</h5>
       </div>
       <div className="text-center">
@@ -62,8 +69,14 @@ const HomeBenefits = () => {
           </p>
         </div>
       </div>
+      <div className="home-benefit-main-svg-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="103" viewBox="0 0 110 103" fill="none">
+          <rect x="66" y="58.415" width="44" height="44" fill="#1F84FF"/>
+          <rect y="58.415" width="44" height="44" fill="#A45A52"/>
+          <rect x="66" y="0.415039" width="44" height="44" fill="#E3CCC9"/>
+        </svg>
+      </div>
 
-      <div className="block lg:hidden min-w-[200px] h-[200px] home-benefit-main mt-[50px]"></div>
     </div>
   );
 };

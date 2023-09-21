@@ -461,12 +461,13 @@ code {
 
 /* HOME BENEFIT SECTION */
 .home-benefit-main-wrapper {
-  margin-top: 60px;
+  margin-block: 40px;
   display: grid;
-  grid-template-columns: 320px 320px;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
   justify-content: space-between;
   align-content: space-between;
+  padding: 0px 20px;
   gap: 10px;
   min-height: 75vh;
   background-image: url(https://assets-social-brand-managers.netlify.app/benefit%20assests/benefits%20main%20image.png);
@@ -475,13 +476,50 @@ code {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 768px) {
+
+  section.t-b-padding.feature-section-container {
+    padding-bottom: 0px;
+  }
+
+  .home-benefits-text.gap-3.text-center {
+    padding-top: 0px;
+  }
+
+  .home-benefit-main-wrapper {
+    justify-content: center;
+    grid-template-columns: auto;
+    background-image: none;
+    gap: 20px;
+  }
+
+  .home-benefit-main-svg-top, 
+  .home-benefit-main-svg-bottom {
+    display: none !important;
+  }
+}
+
 .home-benefit-main-wrapper > div {
   text-align: center;
   padding: 25px 15px;
+  max-width: 320px;
+}
+
+.home-benefit-main-wrapper > div:nth-child(even) {
+  justify-self: end;
 }
 
 .home-benefit-main-wrapper img {
-  margin-bottom: 20px;
+  margin: auto;
+}
+
+.home-benefit-main-svg-top {
+  position: absolute;
+}
+
+.home-benefit-main-svg-bottom {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ABOUT US HERO STYLYING */
@@ -1448,6 +1486,7 @@ a:hover .btn-icon-ani {
 
 .benefit-card-text {
   line-height: 1.8rem;
+  margin-top: 20px;
 }
 
 /* SEAL THE DEAL */
@@ -2009,4 +2048,40 @@ a:hover .btn-icon-ani {
   .onflow .num-flow::after {
     width: 100px;
   } 
+}
+
+footer {
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-items > div {
+  flex: 1 0 200px;
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+@media only screen and (max-width: 1100px) {
+  .footer-items > div {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  footer .logo a {
+    display: flex;
+    justify-content: center;
+  }
 }
