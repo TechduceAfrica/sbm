@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="nav-menu lg:flex hidden">
           <ul>
             {navLinks.map((link) => (
-              <p
+              <a
                 onClick={() => {
                   setActive(link.text);
                   router.push(link.href);
@@ -64,7 +64,7 @@ const Navbar = () => {
                 } hover:text-primary-blue hover:cursor-pointer`}
               >
                 {link.text}
-              </p>
+              </a>
             ))}
           </ul>
         </div>
