@@ -10,7 +10,7 @@ import menu from "../../public/menu.svg";
 import close from "../../public/close.svg";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [navDisappear, setNavDisappear] = useState(false);
   const router = useRouter();
@@ -85,7 +85,7 @@ const Navbar = () => {
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
-                <p
+                <a
                   key={link.key}
                   className={`${
                     active === link.text
@@ -99,7 +99,7 @@ const Navbar = () => {
                   }}
                 >
                   {link.text}
-                </p>
+                </a>
               ))}
 
               <Button title="Get Started" handleClick={handleClick} />
