@@ -43,6 +43,7 @@ const NewFooter = () => {
           <Link
             href="tel:+2349060006734"
             className="flex flex-row gap-2 mt-4"
+            title="call us now"
           >
             <img src="/call-icon.svg" alt="call icon" />
             <p className="">+2349060006734</p>
@@ -68,7 +69,7 @@ const NewFooter = () => {
       </div>
       <div className="lg:text-[13px] text-[10px] font-primary text-center">
         <span>
-          &copy; Copyright 2023 | A brain child of<a href="https://techduce.africa/?sbm" target="_blank" rel="noopener noreferrer"> Techduce Africa</a> | All Rights
+          &copy; Copyright 2023 | A brain child of<a href="https://techduce.africa/?sbm" target="_blank" rel="noopener noreferrer" title="visit Techduce Africa"> Techduce Africa</a> | All Rights
           Reserved.
         </span>
       </div>
