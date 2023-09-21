@@ -44,7 +44,6 @@ const NewFooter = () => {
             href="tel:+2349060006734"
             className="flex flex-row gap-2 mt-4"
             title="call us now"
-            title="call us now"
           >
             <img src="/call-icon.svg" alt="call icon" />
             <p className="">+2349060006734</p>
