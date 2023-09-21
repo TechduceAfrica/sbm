@@ -61,7 +61,7 @@ const Navbar = () => {
                   active === link.text
                     ? "bg-active w-full px-[10px] py-[5px] rounded-md "
                     : "bg-white"
-                } hover:text-primary-blue`}
+                } hover:text-primary-blue cursor-pointer`}
               >
                 {link.text}
               </p>
