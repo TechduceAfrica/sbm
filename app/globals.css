@@ -148,15 +148,8 @@ code {
 }
 
 .nav-wrapper-container {
-  @apply flex justify-between items-center;
-  margin: auto;
-  max-width: 1140px;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-wrapper-container {
-    padding-inline: 10px;
-  }
+  @apply mx-[20px]  flex justify-between items-center;
+  max-width: var(--container-width);
 }
 
 .logo {
@@ -166,7 +159,6 @@ code {
 .nav-menu {
   @apply justify-between gap-y-5;
 }
-
 .nav-menu ul {
   display: flex;
   gap: 20px;
