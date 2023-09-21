@@ -50,17 +50,16 @@ h1 {
 }
 
 h2 {
-  @apply leading-[1.39rem] lg:leading-[2.98rem] md:leading-[1.98rem];
   font-size: clamp(3rem, 1.6827rem + 1.4103vw, 3.7rem);
   font-weight: 600;
   margin: 0;
 }
 
 h3 {
-  @apply leading-[1.39rem] lg:leading-[2.98rem] md:leading-[1.98rem];
   font-size: clamp(2rem, 1.6827rem + 1.4103vw, 3.375rem);
   font-weight: 600;
   margin: 0;
+  line-height: 1.2em;
 }
 
 input,
@@ -98,6 +97,7 @@ h5 {
   font-weight: 500;
   margin: 0;
 }
+
 .box-shadow {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
@@ -1405,11 +1405,11 @@ a:hover .btn-icon-ani {
 }
 
 /* HOME BENEFITS */
-.home-benefit-main {
+/* .home-benefit-main {
   background-image: url(https://assets-social-brand-managers.netlify.app/benefit%20assests/benefits%20main%20image.png);
   background-position: center;
   background-size: cover;
-}
+} */
 
 .icon {
   margin-top: 10px;
@@ -1417,15 +1417,12 @@ a:hover .btn-icon-ani {
 
 .homeIcon {
   width: 100px;
-
   height: 100px;
-
-  margin-top: 20px;
 }
 
 .benefit-card-text {
-  margin-left: 30px;
-  margin-right: 30px;
+  line-height: 1.8rem;
+  margin-top: 20px;
 }
 
 /* SEAL THE DEAL */
@@ -1740,7 +1737,7 @@ a:hover .btn-icon-ani {
   border-radius: 10px;
   padding: 30px 20px;
   cursor: pointer;
-  animation: auto-scroll-right 20s ease-in-out 0ms infinite normal none;
+  animation: auto-scroll-right 25s ease-in-out 0ms infinite normal none;
 }
 
 .testimonial-cards:hover .testimonial-card {
@@ -1987,5 +1984,41 @@ a:hover .btn-icon-ani {
 @media only screen and (max-width: 390px) {
   .onflow .num-flow::after {
     width: 100px;
+  }
+}
+
+footer {
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-items > div {
+  flex: 1 0 200px;
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+@media only screen and (max-width: 1100px) {
+  .footer-items > div {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  footer .logo a {
+    display: flex;
+    justify-content: center;
   }
 }

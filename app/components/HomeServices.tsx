@@ -15,7 +15,7 @@ const HomeServices = () => {
           <h5 className="font-body-text-2 text-body-text-colour">Services</h5>
         </div>
         <div className="text-center">
-          <h2 className="font-semibold text-body-text-colour lg:text-[54px] md:text-[32px] text-[24px]">
+          <h3 className="font-semibold text-body-text-colour lg:text-[54px] md:text-[32px] text-[24px]">
             We've got all your{" "}
             <span className="text-primary-blue">Business</span>{" "}
             <p>
@@ -24,7 +24,7 @@ const HomeServices = () => {
             <p>
               next level<strong className="text-primary-blue">.</strong>
             </p>
-          </h2>
+          </h3>
         </div>
 
         {/* HOME SERVICE CARD */}

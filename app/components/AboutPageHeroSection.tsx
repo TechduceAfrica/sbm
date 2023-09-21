@@ -13,7 +13,7 @@ const AboutPageHeroSection = () => {
           <div className="about-first-print">
             <div>
               <motion.h3
-                className="text-center lg:text-left leading-8 lg:leading-[50px]"
+                className="text-center lg:text-left"
                 variants={fadeIn("", "", 0.7, 1)}
               >
                 Our <span className="text-primary-blue">success</span> story has

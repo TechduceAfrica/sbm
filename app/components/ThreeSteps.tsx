@@ -4,7 +4,7 @@ import ThreeStepsSlider from "./ThreeStepsSlider";
 
 export default function ThreeSteps() {
   return (
-    <div className="t-b-padding">
+    <div className="t-b-padding bg-[#f5faff]">
       <section className="custom-container-max-width">
         <div className="home-threeslide-heading">
           <h3>

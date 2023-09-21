@@ -36,7 +36,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="max-w-[150px] lg:max-w-[200px] font-semibold">
-              <a href="https://socialbrandmanagers.netlify.app/about" title="about-SBM">
+              <a href="https://socialbrandmanagers.com/about" title="about-SBM">
                 <Button
                   title="Learn More"
                   bgColor="transparent"
