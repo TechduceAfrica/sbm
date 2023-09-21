@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 
 const NewFooter = () => {
   const [active, setActive] = useState("");
@@ -33,42 +31,71 @@ const NewFooter = () => {
           </Link>
         </div>
 
-          <div className="flex flex-col max-w-[256px]">
-            <h5 className="font-primaryExtrabold">GET SUPPORT</h5>
-            <a
-              href="mailto:info@socialbrandmanagers.com"
-              className="[text-decoration:none]"
-            >
-              info@socialbrandmanagers.com
-            </a>
-            <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-            <Link
-              href="tel:+2349060006734"
-              className="flex flex-row gap-2 mt-4"
-            >
-              <img src="/call-icon.svg" alt="call icon" />
-              <p className="">+2349060006734</p>
-            </Link>
-          </div>
+        <div className="flex flex-col text-[18px]">
+          <h5 className="font-primaryExtrabold">GET SUPPORT</h5>
+          <a
+            href="mailto:info@socialbrandmanagers.com"
+            className="[text-decoration:none]"
+          >
+            info@socialbrandmanagers.com
+          </a>
+          <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+          <Link
+            href="tel:+2349060006734"
+            className="flex flex-row gap-2 mt-4"
+            title="call us now"
+          >
+            <img src="/call-icon.svg" alt="call icon" />
+            <p className="">+2349060006734</p>
+          </Link>
+        </div>
 
-          <div className="flex flex-col max-w-[256px]">
-            <h5 className="font-primaryExtrabold">FIND US</h5>
-            <p>91. Obafemi Awolowo Way, Ikeja, Lagos.</p>
-            <Link href="/" className="flex flex-row gap-2 mt-4">
-              <img src="check-map-icon.svg" alt="chech map icon" />
-              <p>Check Map</p>
-            </Link>
-          </div>
-          <div className="flex flex-col gap-2  w-[30px]  h-[30px]">
-            <img src="/facebookLogo.svg" alt="" />
-            <img src="ig-icon.svg" alt="" />
+        <div className="flex flex-col text-[18px]">
+          <h5 className="font-primaryExtrabold">FIND US</h5>
+          <p>91. Obafemi Awolowo Way, Ikeja, Lagos.</p>
+          <div className="footer-social-media">
+            <div>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/facebookLogo.svg"
+                  alt="social brand manager facebook page"
+                  title="social brand manager facebook page"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="ig-icon.svg"
+                  alt="social brand manager instagram page"
+                  title="social brand manager instagram page"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div className="lg:text-[13px] text-[10px] font-primary text-center">
         <span>
-          &copy; Copyright 2023 | A brain child of<a href="https://techduce.africa/?sbm" target="_blank" rel="noopener noreferrer"> Techduce Africa</a> | All Rights
-          Reserved.
+          &copy; Copyright 2023 | A brain child of
+          <a
+            href="https://techduce.africa/?sbm"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="visit Techduce Africa"
+          >
+            {" "}
+            Techduce Africa
+          </a>{" "}
+          | All Rights Reserved.
         </span>
       </div>
 

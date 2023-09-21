@@ -5,6 +5,7 @@ import Image from "next/image";
 import { navLinks } from "@/app/constants";
 import { useState, useEffect } from "react";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 import menu from "../../public/menu.svg";
 import close from "../../public/close.svg";
 
@@ -12,6 +13,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const [navDisappear, setNavDisappear] = useState(false);
+  const router = useRouter();
 
   // useEffect(() => {
   //   const removeNavbar = () => {
@@ -26,6 +28,8 @@ const Navbar = () => {
 
   const handleClick = () => {
     setToggle(!toggle);
+    router.push("/form");
+    console.log("button clicked");
   };
 
   return (
@@ -47,9 +51,11 @@ const Navbar = () => {
         <div className="nav-menu lg:flex hidden">
           <ul>
             {navLinks.map((link) => (
-              <Link
-                onClick={() => setActive(link.text)}
-                href={link.href}
+              <p
+                onClick={() => {
+                  setActive(link.text);
+                  router.push(link.href);
+                }}
                 key={link.key}
                 className={`${
                   active === link.text
@@ -58,7 +64,7 @@ const Navbar = () => {
                 } hover:text-primary-blue`}
               >
                 {link.text}
-              </Link>
+              </p>
             ))}
           </ul>
         </div>
@@ -79,8 +85,7 @@ const Navbar = () => {
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
-                <Link
-                  href={link.href}
+                <p
                   key={link.key}
                   className={`${
                     active === link.text
@@ -89,21 +94,21 @@ const Navbar = () => {
                   } hover:text-primary-blue mr-3`}
                   onClick={() => {
                     setActive(link.text);
+                    router.push(link.href);
                     setToggle(!toggle);
                   }}
                 >
                   {link.text}
-                </Link>
+                </p>
               ))}
-              <Link href="/form">
-                <Button title="Get Started" />
-              </Link>
+
+              <Button title="Get Started" handleClick={handleClick} />
             </ul>
           </div>
         </div>
 
         <Link href="/form" className="lg:block hidden">
-          <Button title="Get Started" onClick={handleClick} />
+          <Button title="Get Started" handleClick={handleClick} />
         </Link>
       </div>
     </nav>
