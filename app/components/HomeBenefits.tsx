@@ -25,10 +25,10 @@ const HomeBenefits = () => {
           </p>{" "}
         </h3>
       </div>
-
+ 
       <div className="home-benefit-main-wrapper">
         {/* <div className="home-benefit-main"></div> */}
-        <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
+        <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)] home-benefit-item">
           <img
             src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon1.svg"
             alt="homeIcon"
@@ -38,7 +38,7 @@ const HomeBenefits = () => {
             Get identified relevant influencers and develop partnerships.
           </p>
         </div>
-        <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
+        <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)] home-benefit-item">
           <img
             src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon2.svg"
             alt="homeIcon"
@@ -48,7 +48,7 @@ const HomeBenefits = () => {
             Develop crisis management plans to counter social media backlash.
           </p>
         </div>
-        <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
+        <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)] home-benefit-item">
           <img
             src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon3.svg"
             alt="homeIcon"
@@ -58,7 +58,7 @@ const HomeBenefits = () => {
             Analyzed social media performance, identified improvement areas.
           </p>
         </div>
-        <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]">
+        <div className="rounded-[20px] bg-white z-10 shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)] home-benefit-item">
           <img
             src="https://assets-social-brand-managers.netlify.app/benefit%20assests/icon4.svg"
             alt="homeIcon"

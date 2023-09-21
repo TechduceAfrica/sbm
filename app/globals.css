@@ -187,7 +187,7 @@ code {
 }
 
 .hero-section-wrapper h1 {
-  font-size: clamp(4rem, 400%, 6rem);
+  font-size: clamp(4rem, 400%, 5rem);
   position: absolute;
   top: 0;
   left: 0;
@@ -455,6 +455,87 @@ code {
   .feature-hover-four:hover {
     background-size: 180%;
   }
+}
+
+/* HOME BENEFIT SECTION */
+.home-benefit-main-wrapper {
+  margin-block: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 0px 20px;
+  gap: 10px;
+  min-height: 75vh;
+  background-image: url(https://assets-social-brand-managers.netlify.app/benefit%20assests/benefits%20main%20image.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  transition: all 1000ms ease-in-out;
+}
+
+.home-benefit-main-wrapper:hover {
+  background-size: 60%;
+  filter: grayscale(50%);
+}
+
+@media screen and (max-width: 768px) {
+
+  section.t-b-padding.feature-section-container {
+    padding-bottom: 0px;
+  }
+
+  .home-benefits-text.gap-3.text-center {
+    padding-top: 0px;
+  }
+
+  .home-benefit-main-wrapper {
+    justify-content: center;
+    grid-template-columns: auto;
+    background-image: none;
+    gap: 20px;
+  }
+
+  .home-benefit-main-svg-top, 
+  .home-benefit-main-svg-bottom {
+    display: none !important;
+  }
+}
+
+.home-benefit-main-wrapper > div {
+  text-align: center;
+  padding: 25px 15px;
+  max-width: 320px;
+  transition: all 800ms ease-in-out;
+  cursor: pointer;
+}
+
+.home-benefit-main-wrapper:hover .home-benefit-item {
+  transform: scale(0.9);
+  background-color: rgb(235 244 255 / var(--tw-bg-opacity));
+}
+
+.home-benefit-main-wrapper:hover .home-benefit-item:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+
+.home-benefit-main-wrapper > div:nth-child(even) {
+  justify-self: end;
+}
+
+.home-benefit-main-wrapper img {
+  margin: auto;
+}
+
+.home-benefit-main-svg-top {
+  position: absolute;
+}
+
+.home-benefit-main-svg-bottom {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ABOUT US HERO STYLYING */
@@ -1737,7 +1818,7 @@ a:hover .btn-icon-ani {
   border-radius: 10px;
   padding: 30px 20px;
   cursor: pointer;
-  animation: auto-scroll-right 25s ease-in-out 0ms infinite normal none;
+  animation: auto-scroll-right 30s ease-in-out 0ms infinite normal none;
 }
 
 .testimonial-cards:hover .testimonial-card {
@@ -1750,7 +1831,7 @@ a:hover .btn-icon-ani {
     transform: translateX(0);
   }
   90% {
-    transform: translateX(-100%);
+    transform: translateX(calc( -100vw ));
   }
 }
 
