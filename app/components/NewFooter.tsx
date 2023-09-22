@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
+import { LiaFacebookSquare, LiaInstagram } from "react-icons/lia";
 
 const NewFooter = () => {
   const [active, setActive] = useState("");
@@ -35,18 +36,19 @@ const NewFooter = () => {
           <h5 className="font-primaryExtrabold">GET SUPPORT</h5>
           <a
             href="mailto:info@socialbrandmanagers.com"
-            className="[text-decoration:none]"
+            className="underline"
+            title="send us an email"
           >
             info@socialbrandmanagers.com
           </a>
-          <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+          <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
           <Link
             href="tel:+2349060006734"
             className="flex flex-row gap-2 mt-4"
             title="call us now"
           >
             <img src="/call-icon.svg" alt="call icon" />
-            <p className="">+2349060006734</p>
+            <p className="underline">+2349060006734</p>
           </Link>
         </div>
 
@@ -59,12 +61,14 @@ const NewFooter = () => {
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="social brand manager facebook page"
               >
-                <img
+                <LiaFacebookSquare/>
+                {/* <img
                   src="/facebookLogo.svg"
                   alt="social brand manager facebook page"
                   title="social brand manager facebook page"
-                />
+                /> */}
               </a>
             </div>
             <div>
@@ -72,12 +76,14 @@ const NewFooter = () => {
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="social brand manager instagram page"
               >
-                <img
+                <LiaInstagram/>
+                {/* <img
                   src="ig-icon.svg"
                   alt="social brand manager instagram page"
                   title="social brand manager instagram page"
-                />
+                /> */}
               </a>
             </div>
           </div>

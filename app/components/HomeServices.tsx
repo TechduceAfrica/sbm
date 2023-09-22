@@ -40,6 +40,7 @@ const HomeServices = () => {
                 width={400}
                 height={254}
                 alt={homeServiceTop.title}
+                title={homeServiceTop.title}
                 className="rounded-t-lg"
               ></Image>
               <div className="service-text flex flex-col justify-between p-6 gap-2 min-h-[300px] text-body-text-colour leading-7">

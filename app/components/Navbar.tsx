@@ -43,8 +43,8 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <div className="logo relative lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]">
-              <Image src="/logo.png" fill alt="SBM Logo" />
+            <div className="logo relative lg:w-[100px] lg:h-[80px] w-[70px] h-[63.5px]">
+              <Image src="/logo.png" fill alt="SBM Logo" title="social brand managers logo" />
             </div>
           </Link>
         </div>
