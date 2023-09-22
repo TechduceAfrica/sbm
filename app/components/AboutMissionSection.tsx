@@ -14,7 +14,7 @@ const AboutMissionSection = () => {
                 className="text-center lg:text-left"
                 variants={fadeIn("", "", 0.7, 1)}
               >
-                Our Mission
+                Our Mission<strong className="text-primary-blue">.</strong>
               </motion.h3>
             </div>
             <div>
@@ -29,7 +29,8 @@ const AboutMissionSection = () => {
           <div>
             <img
               src="https://assets-social-brand-managers.netlify.app/AboutPage%20Images/our%20mission%20images_SBM.png"
-              alt="social brand manager mission"
+              alt="social brand manager mission - power of technology - digital marketing brand"
+              title="social brand manager - power of technology"
             />
           </div>
         </section>

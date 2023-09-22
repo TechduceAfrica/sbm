@@ -29,6 +29,7 @@ function JoWfHero() {
           <img
             src="https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/social-brand-manager_SBM_Join%20Our%20Work%20Force.webp"
             alt="Join social brand manager workforce today"
+            title="Join social brand manager workforce today"
           />
         </motion.div>
       </section>

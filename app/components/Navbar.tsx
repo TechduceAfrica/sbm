@@ -59,7 +59,7 @@ const Navbar = () => {
                 key={link.key}
                 className={`${
                   active === link.text
-                    ? "bg-active w-full px-[10px] py-[5px] rounded-md "
+                    ? "bg-active w-full px-[10px] py-[5px] rounded-md"
                     : "bg-white"
                 } hover:text-primary-blue hover:cursor-pointer`}
               >

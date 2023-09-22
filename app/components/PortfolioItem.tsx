@@ -10,10 +10,10 @@ export default function PortfolioItem(props: any) {
       </div>
       <div className="portfolio-card-data">
         <p className="portfolio-card-dec">{props.projectdescription}</p>
-        <a href={props.url}>See More</a>
+        <a href={props.url} title={props.sbmprojectname}>See More</a>
       </div>
       <div className="portfolio-card-img">
-        <img src={props.imageurl} alt={props.sbmprojectname} />
+        <img src={props.imageurl} alt={props.sbmprojectname} title={props.sbmprojectname} />
       </div>
     </div>
   );

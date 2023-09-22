@@ -153,6 +153,11 @@ code {
   max-width: 1140px;
 }
 
+a.menu-list:active {
+  color: red;
+  outline: green;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-wrapper-container {
     padding-inline: 10px;
@@ -661,6 +666,7 @@ code {
   flex-direction: column;
   gap: 40px;
   align-items: center;
+  padding: 80px 0px;
 }
 
 .sbm-value-title-container h3 {
@@ -679,6 +685,9 @@ code {
   padding: 40px 20px;
   border-radius: 20px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  flex: 1 0;
+  display: grid;
+  place-content: center;
 }
 
 .sbm-value-title-container h3,
@@ -967,7 +976,8 @@ a:hover .btn-icon-ani {
 }
 
 .service-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% auto;
   align-items: center;
   background-color: #ffffff;
   border-radius: 20px;
@@ -977,19 +987,25 @@ a:hover .btn-icon-ani {
 }
 
 .service-container-img {
-  @apply relative h-full lg:min-w-[400px] min-w-[344px];
+  @apply h-full lg:min-w-[400px] min-w-[344px];
   overflow: hidden;
+  width: 100%;
+  margin: -6px 0px;
 }
 
 .service-container-img img {
   object-fit: cover;
   object-position: 0px 10%;
+  transition: all 800ms ease-in-out;
+}
+
+.service-container:hover img {
+  transform: scale(1.1);
 }
 
 .service-container-text {
-  padding-inline: 50px;
+  padding: 10px 50px;
   background-color: #ffffff;
-  border-radius: 20px;
 }
 
 .service-container-text h4 {
@@ -1003,6 +1019,13 @@ a:hover .btn-icon-ani {
   padding: 15px;
   gap: 10px;
   align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .service-container-img {
+    width: fit-content;
+    width: -moz-fit-content;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1021,18 +1044,18 @@ a:hover .btn-icon-ani {
   }
 
   .service-container {
-    flex-direction: column;
+    grid-template-columns: auto;
   }
 
   .service-container-img {
     max-height: 100%;
     max-width: 100%;
-    width: calc(100vw - 20px);
+    width: 100%;
+    margin: 0px;
   }
 
   .service-container-img img {
-    width: fit-content;
-    width: -moz-fit-content;
+    width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
   }
@@ -1194,6 +1217,7 @@ a:hover .btn-icon-ani {
   background-image: url(https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/join-our-work-force-background-vector.svg);
   background-position: top left;
   background-repeat: no-repeat;
+  padding: 80px 0px;
 }
 
 .jowfhero-container {
@@ -1332,6 +1356,23 @@ a:hover .btn-icon-ani {
 .pri-btn,
 .sec-btn {
   cursor: pointer;
+  transition: all 250ms ease-in-out;
+  border-radius: 10px;
+}
+
+.brandmanagerlist-container .pri-btn,
+.brandmanagerlist-container .sec-btn:hover {
+  border: solid 1px #0048a0;
+  
+}
+
+.brandmanagerlist-container .sec-btn {
+  border: solid 1px #0048a000;
+}
+
+.brandmanagerlist-container .pri-btn:hover {
+  border: solid 1px #0048a0;
+  background-color: #ffffff;
 }
 
 .brandmanagerlist-container .pri-btn,
@@ -1342,6 +1383,7 @@ a:hover .btn-icon-ani {
 .brandmanagerlist-container .pri-btn a,
 .brandmanagerlist-container .sec-btn:hover a {
   color: #ffffff;
+  transition: all 200ms ease-in-out;
 }
 
 .brandmanagerlist-container .sec-btn:hover a {
@@ -1349,8 +1391,7 @@ a:hover .btn-icon-ani {
 }
 
 .brandmanagerlist-container .pri-btn:hover a {
-  /* @apply text-primary-blue; */
-  color: #000000;
+  @apply text-primary-blue;
 }
 
 @media screen and (max-width: 768px) {
