@@ -899,10 +899,7 @@ a.menu-list:active {
 
 /* CTA COMPONENT CSS */
 .full-width-sbm-cta {
-  background-image: url("https://assets-social-brand-managers.netlify.app/AboutPage%20Images/CTA%20Background_SBM.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
+  background-image: none;
 }
 
 .sbm-cta-container h3 {
@@ -910,7 +907,17 @@ a.menu-list:active {
 }
 
 .sbm-cta-container {
+  position: relative;
   padding-block: 40px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 40px;
+}
+
+.sbm-cta-container > div:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .sbm-cta-container :where(a, p) {
@@ -948,6 +955,10 @@ a:hover .btn-icon-ani {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+  }
+
+  .sbm-cta-container svg {
+    display: none;
   }
 }
 
