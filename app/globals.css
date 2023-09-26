@@ -291,7 +291,7 @@ a.menu-list:active {
   }
 
   .hero-section-wrapper p {
-    margin-block: 20px;
+    margin-bottom: 20px;
   }
 
   .sbm-hero-desktop-img {
@@ -308,7 +308,7 @@ a.menu-list:active {
   }
 
   .hero-section-wrapper p {
-    margin-block: 20px;
+    margin-bottom: 20px;
   }
 
   .ball-effect-container-wrapper {
@@ -486,7 +486,6 @@ a.menu-list:active {
 }
 
 @media screen and (max-width: 768px) {
-
   section.t-b-padding.feature-section-container {
     padding-bottom: 0px;
   }
@@ -502,7 +501,7 @@ a.menu-list:active {
     gap: 20px;
   }
 
-  .home-benefit-main-svg-top, 
+  .home-benefit-main-svg-top,
   .home-benefit-main-svg-bottom {
     display: none !important;
   }
@@ -1374,7 +1373,6 @@ a:hover .btn-icon-ani {
 .brandmanagerlist-container .pri-btn,
 .brandmanagerlist-container .sec-btn:hover {
   border: solid 1px #0048a0;
-  
 }
 
 .brandmanagerlist-container .sec-btn {
@@ -1883,7 +1881,7 @@ a:hover .btn-icon-ani {
     transform: translateX(0);
   }
   90% {
-    transform: translateX(calc( -100vw ));
+    transform: translateX(calc(-100vw));
   }
 }
 

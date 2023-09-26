@@ -23,7 +23,7 @@ const NewFooter = () => {
             <Image src="/footer-logo.png" width={80} height={43} alt="SBM" />
           </Link>
         </div>
-        <div className="flex flex-col text-[18px]">
+        <div className="flex flex-col text-[18px] p-5">
           <h5 className="font-primaryExtrabold">WHITE PAPER</h5>
           <p>We are a team of experienced and qualified professionals</p>
           <Link href="/" className="flex flex-row gap-2 mt-4">
@@ -52,7 +52,7 @@ const NewFooter = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col text-[18px]">
+        <div className="flex flex-col text-[18px] p-5">
           <h5 className="font-primaryExtrabold">FIND US</h5>
           <p>91. Obafemi Awolowo Way, Ikeja, Lagos.</p>
           <div className="footer-social-media">
@@ -63,7 +63,7 @@ const NewFooter = () => {
                 rel="noopener noreferrer"
                 title="social brand manager facebook page"
               >
-                <LiaFacebookSquare/>
+                <LiaFacebookSquare />
                 {/* <img
                   src="/facebookLogo.svg"
                   alt="social brand manager facebook page"
@@ -78,7 +78,7 @@ const NewFooter = () => {
                 rel="noopener noreferrer"
                 title="social brand manager instagram page"
               >
-                <LiaInstagram/>
+                <LiaInstagram />
                 {/* <img
                   src="ig-icon.svg"
                   alt="social brand manager instagram page"

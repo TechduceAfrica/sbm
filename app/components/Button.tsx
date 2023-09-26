@@ -30,7 +30,7 @@ const Button = ({
         ${textColor ? textColor : "text-white"} 
         ${
           submitting ? "bg-black/50" : bgColor ? bgColor : "bg-primary-blue"
-        } rounded-lg text-[18px] lg:text-[24px] px-[20px] py-[10px]  font-primary border-primary-blue border-[2px]`}
+        } rounded-lg text-[18px] lg:text-[24px] px-[20px] py-[10px]  font-primary border-primary-blue border-[2px] hover:bg-primary-blue hover:text-white`}
     onClick={handleClick}
   >
     {leftIcon && (

@@ -45,9 +45,9 @@ module.exports = {
       fontFamily: {
         primary: ["Averta-CY-Regular", "Sarabun"],
         "body-text-2": "Sarabun",
-        primaryBold: "Averta-CY-Bold",
-        primarySemibold: "Averta-CY-Semibold",
-        primaryExtrabold: "Averta-CY-Extrabold",
+        primaryBold: ["Averta-CY-Bold", "Sarabun"],
+        primarySemibold: ["Averta-CY-Semibold", "Sarabun"],
+        primaryExtrabold: ["Averta-CY-Extrabold", "Sarabun"],
       },
     },
   },

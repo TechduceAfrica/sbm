@@ -15,7 +15,7 @@ const HomeServices = () => {
           <h5 className="font-body-text-2 text-body-text-colour">Services</h5>
         </div>
         <div className="text-center">
-          <h3 className="font-semibold text-body-text-colour lg:text-[54px] md:text-[32px] text-[24px]">
+          <h3 className="font-semibold text-body-text-colour lg:text-[54px] md:text-[32px] text-[30px]">
             We've got all your{" "}
             <span className="text-primary-blue">Business</span>{" "}
             <p>

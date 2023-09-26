@@ -56,7 +56,7 @@ const Testimonials = () => {
         </h5>
       </div>
       <div className="text-center">
-        <h3 className="font-semibold text-body-text-colour lg:text-[54px] md:text-[32px] text-[24px]">
+        <h3 className="font-semibold text-body-text-colour lg:text-[54px] md:text-[32px] text-[30px]">
           Our clients say a <br />
           lot about our work<strong className="text-primary-blue">.</strong>
         </h3>
