@@ -11,7 +11,7 @@ function JoWfHero() {
       <section className="jowfhero-container container-width t-b-padding custom-container-max-width">
         <div>
           <motion.h2
-            className="pt-[80px] max-w-[300px] lg:max-w-none"
+            className="lg:pt-[80px] md:pt-[80px] pt-[20px] max-w-[300px] lg:max-w-none"
             variants={fadeIn("down", "spring", 0.1, 0.75)}
           >
             <span className="text-primary-blue">Join</span> us. Make a{" "}

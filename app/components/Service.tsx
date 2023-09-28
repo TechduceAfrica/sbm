@@ -21,6 +21,7 @@ interface ServiceProps {
 // Define the Service component
 const Service: React.FC<ServiceProps> = (props) => {
   const [modalOpen, setModalOpen] = useState(false);
+  const router = useRouter();
 
   const openModal = () => {
     setModalOpen(true);
@@ -29,12 +30,12 @@ const Service: React.FC<ServiceProps> = (props) => {
   return (
     <div className="service-container">
       <div className="service-container-img">
-        <img src={props.image} alt={props.title} title={props.title}/>
+        <img src={props.image} alt={props.title} title={props.title} />
       </div>
       <div className="service-container-text gap-y-3 flex flex-col">
         <h4>{props.title}</h4>
         <p>{props.text}</p>
-        <button onClick={openModal}>
+        <button onClick={() => router.push(props.url)}>
           <div className="pri-btn">
             <BsFillPlusCircleFill />
             <span className="text-[16px]">Features & Benefits</span>
@@ -130,7 +131,7 @@ const Modal: React.FC<ModalProps> = ({ title, onClose }) => {
           "Targeted Advertising",
         ],
       },
-      // Add more data as needed
+
       "Analytics and reporting": {
         title: "Analytics and reporting",
         features: [

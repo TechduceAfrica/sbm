@@ -79,35 +79,42 @@ export const sbmServices = [
       "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic.png",
     title: "Social media strategy development",
     text: "Taioring strategies based on client objectives and target audience analysis.",
-    url: "/",
+    url: "/social-media-strategy",
+  },
+  {
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic.png",
+    title: "Brand Management",
+    text: "Taioring strategies based on client objectives and target audience analysis.",
+    url: "/brand-management",
   },
   {
     image:
       "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
     title: "Content creation and curation",
     text: "Crafting engaging and shareable content to captivate audience.",
-    url: "/",
+    url: "/content-creation-curation",
   },
   {
     image:
       "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic3.png",
     title: "Community management",
     text: "Proactively engaging with followers, responding to queries and fostering positive interactions.",
-    url: "/",
+    url: "/community-management",
   },
   {
     image:
       "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic4.png",
     title: "Social media advertising",
     text: "Creating and managing targeted Ad campaigns to increase, reach and drive conversions.",
-    url: "/",
+    url: "/social-media-advertising",
   },
   {
     image:
       "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic5.png",
     title: "Analytics and reporting",
     text: "Measuring key performance metrics and providing insights for continuous improvement.",
-    url: "/",
+    url: "/analytics-and-report",
   },
 ];
 

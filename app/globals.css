@@ -961,6 +961,28 @@ a:hover .btn-icon-ani {
   }
 }
 
+/* SERVICE NEXT PAGE */
+@media screen and (max-width: 768px) {
+  .full-width-snp-cta {
+    background-image: url("https://assets-social-brand-managers.netlify.app/CTA%20mobile%20BG.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .snp-cta-container svg {
+    display: none;
+  }
+}
+
+.full-width-snp-cta {
+  background-image: none;
+}
+
+/* .analytics-container > div {
+  flex: 1 0 calc(50vw - 80px);
+} */
+
 /* SERVICE CSS */
 .sbm-service-container {
   padding-top: 80px;
