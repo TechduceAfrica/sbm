@@ -2113,7 +2113,6 @@ a:hover .btn-icon-ani {
 
 @media only screen and (max-width: 550px) {
   .slider-container {
-    height: 50vh;
     margin-top: -10px;
   }
 
@@ -2179,5 +2178,84 @@ footer {
   footer .logo a {
     display: flex;
     justify-content: center;
+  }
+}
+
+.mobile-slide {
+  display: none;
+}
+
+.desktop-slide {
+  display: block;
+}
+
+.slide-one,
+.slide-two,
+.slide-three {
+  border: solid 17px #736e6e;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.desktop-slide, .desktop-slide picture {
+  text-align: left;
+}
+
+.desktop-slide.slide-one img,
+.desktop-slide.slide-two img,
+.desktop-slide.slide-three img {
+  width: 100%;
+  transition: all 1000ms ease-in-out;
+}
+
+.desktop-slide.slide-one img {
+  animation: zoomDown 5000ms linear 10ms infinite;
+}
+
+.desktop-slide.slide-two img {
+  animation: zoomRight 5000ms linear 10ms infinite;
+}
+
+.desktop-slide.slide-three img {
+  animation: zoomBtn 5000ms linear 10ms infinite;
+}
+
+@keyframes zoomDown {
+  from, to {
+    transform: scale(1) translate(0%, 0%);
+  }
+
+  50% {
+    transform: scale(1.5) translate(-17%, 20%);
+  }
+}
+
+@keyframes zoomRight {
+  from, to {
+    transform: scale(1) translate(0%, 0%);
+  }
+
+  50% {
+    transform: scale(1.2) translate(-5%, -10%);
+  }
+}
+
+@keyframes zoomBtn {
+  from, to {
+    transform: scale(1) translate(0%, 0%);
+  }
+
+  50% {
+    transform: scale(1.9) translate(-5%, -25%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-slide {
+    display: block;
+  }
+
+  .desktop-slide {
+    display: none;
   }
 }
