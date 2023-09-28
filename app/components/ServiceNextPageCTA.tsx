@@ -1,13 +1,10 @@
-"use client";
 import React from "react";
-import SectionWrapper from "../hoc/SectionWrapper";
-import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion";
+import Button from "./Button";
 
-const CtaComponent = () => {
+const ServiceNextPageCTA = () => {
   return (
-    <div className="bg-secondary-blue t-b-padding full-width-sbm-cta">
-      <div className=" sbm-cta-container custom-container-max-width">
+    <div className="bg-secondary-blue t-b-padding full-width-snp-cta relative">
+      <div className=" snp-cta-container custom-container-max-width ">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,18 +38,20 @@ const CtaComponent = () => {
             />
           </svg>
         </div>
-        <div>
-          <motion.h3 variants={fadeIn("", "", 0.7, 1)}>
-            Not convinced yet<strong className="text-primary-blue">?</strong>
-          </motion.h3>
-          <p>See what we've done</p>
-          <a href="/portfolio" title="goto SBM portfolio page">
-            <div className="btn-container-ani">
-              View portfolio <span className="btn-icon-ani">→</span>
-            </div>
-          </a>
+
+        <div className="justify-center items-center flex flex-col gap-5 mt-5">
+          <h3 className="inline-block text-center">
+            Your Brand Story{" "}
+            <span className="text-primary-blue">Starts Here</span> With{" "}
+            <span className="text-primary-blue">SBM</span>
+          </h3>
+          <p className="text-body-text-colour inline-block text-center">
+            Let us embark on a journey of digital success together
+          </p>
+          <Button title="Get Started" />
         </div>
-        <div>
+
+        <div className="absolute bottom-0 right-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="212"
@@ -73,4 +72,4 @@ const CtaComponent = () => {
   );
 };
 
-export default SectionWrapper(CtaComponent, "");
+export default ServiceNextPageCTA;
