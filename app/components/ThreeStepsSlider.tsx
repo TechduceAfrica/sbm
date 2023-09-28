@@ -1,16 +1,19 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import DesktopSlideOne from "./DesktopSlideOne";
+import SlideTwo from "./SlideTwo";
+import SlideThree from "./SlideThree"
 
 const ThreeStepsSlider: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState<number>(1);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide((prevSlide) => (prevSlide % 3) + 1);
-    }, 7000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setActiveSlide((prevSlide) => (prevSlide % 3) + 1);
+  //   }, 7000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const handleNavigatorHover = (slideNumber: number) => {
     setActiveSlide(slideNumber);
@@ -24,12 +27,13 @@ const ThreeStepsSlider: React.FC = () => {
             activeSlide === 3 ? "next" : ""
           }`}
         >
-          <video autoPlay loop>
+          {/* <video autoPlay loop>
             <source
               src="https://assets-social-brand-managers.netlify.app/home%20page/STEP1.gif.mp4"
               type="video/mp4"
             />
-          </video>
+          </video> */}
+          <DesktopSlideOne />
         </div>
 
         <div
@@ -37,12 +41,13 @@ const ThreeStepsSlider: React.FC = () => {
             activeSlide === 1 ? "next" : ""
           }`}
         >
-          <video autoPlay loop>
+          {/* <video autoPlay loop>
             <source
               src="https://assets-social-brand-managers.netlify.app/home%20page/SBM-STEP2.gif"
               type="video/mp4"
             />
-          </video>
+          </video> */}
+          <SlideTwo/>
         </div>
 
         <div
@@ -50,12 +55,13 @@ const ThreeStepsSlider: React.FC = () => {
             activeSlide === 2 ? "next" : ""
           }`}
         >
-          <video autoPlay loop>
+          {/* <video autoPlay loop>
             <source
               src="https://assets-social-brand-managers.netlify.app/home%20page/Social-brand-manager-STEP3.gif"
               type="video/mp4"
             />
-          </video>
+          </video> */}
+          <SlideThree/>
         </div>
       </div>
 
