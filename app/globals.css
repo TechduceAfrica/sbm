@@ -2374,7 +2374,7 @@ footer {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #74747436;
+  background-color: #74747450;
   z-index: 999;
   transition: all 200ms ease-in-out;
 }
@@ -2459,4 +2459,20 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .portfolio-popup-wrapper {
+    padding: 50px 30px;
+  }
+
+  .portfolio-popup-container {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+
+  .portfolio-popup-close-btn svg {
+    transform: translate(0%, -100%);
+  }
 }
