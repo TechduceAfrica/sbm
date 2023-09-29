@@ -2343,3 +2343,45 @@ footer {
     height: 270px;
 }
 }
+
+/* PORTFOLIO POP UP */
+
+.portfolio-popup-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(-5%, -20%);
+  background-color: #ffffff;
+  padding: 50px 0px 50px 50px;
+  border-radius: 50px 50px 0px 0px;
+  width: 90vw;
+  z-index: 10;
+}
+
+.portfolio-popup-container .divider {
+  
+}
+
+.portfolio-popup-close-btn {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.portfolio-popup-close-btn svg {
+  position: absolute;
+  right: 10%;
+  top: -20%;
+}
+
+.portfolio-popup-container {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  row-gap: 20px;
+}
+
+.portfolio-popup-img {
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+}

@@ -6,76 +6,52 @@ const PortfolioProjectsLeft = [
     title: "Bebis Crib",
     clientname: "Ademola Joshua",
     titledescription:
-      "Bebis Crib sure has all the gear to give the Once upon a child experience.",
+      "Bebis Crib is a trusted baby supplies retailer committed to provide parents and other carers high-quality stuff for their little ones. ",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
+    whatwedid: "We created engaging social media posts showcasing products in stock that drives results. We increased engagement by 30%.",
+    projectyear: "2021 - 2022",
+    projecthandle: "@bebiscrib",
   },
   {
-    title: "Bebis Crib",
+    title: "Perfect Scents",
     clientname: "Ademola Joshua",
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
-  },
-  {
-    title: "Bebis Crib",
-    clientname: "Ademola Joshua",
-    titledescription:
-      "Bebis Crib sure has all the gear to give the Once upon a child experience.",
-    projectimage:
-      "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
-    projecturl: "/",
-  },
-  {
-    title: "Bebis Crib",
-    clientname: "Ademola Joshua",
-    titledescription:
-      "Bebis Crib sure has all the gear to give the Once upon a child experience.",
-    projectimage:
-      "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
-    projecturl: "/",
+    whatwedid: "",
+    projectyear: "",
+    projecthandle: "@bebiscrib",
   },
 ];
 
 const PortfolioProjectsRight = [
   {
-    title: "Bebis Crib",
+    title: "Glamour Lounge",
     clientname: "Ademola Joshua",
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
+    whatwedid: "",
+    projectyear: "",
+    projecthandle: "@bebiscrib",
   },
   {
-    title: "Bebis Crib",
+    title: "Montana",
     clientname: "Ademola Joshua",
     titledescription:
       "Bebis Crib sure has all the gear to give the Once upon a child experience.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
-  },
-  {
-    title: "Bebis Crib",
-    clientname: "Ademola Joshua",
-    titledescription:
-      "Bebis Crib sure has all the gear to give the Once upon a child experience.",
-    projectimage:
-      "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
-    projecturl: "/",
-  },
-  {
-    title: "Bebis Crib",
-    clientname: "Ademola Joshua",
-    titledescription:
-      "Bebis Crib sure has all the gear to give the Once upon a child experience.",
-    projectimage:
-      "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
-    projecturl: "/",
+    whatwedid: "",
+    projectyear: "",
+    projecthandle: "@bebiscrib",
   },
 ];
 
@@ -92,6 +68,7 @@ export default function PorfolioList() {
               projectdescription={portfolioproject.titledescription}
               imageurl={portfolioproject.projectimage}
               url={portfolioproject.projecturl}
+              projecthandle={portfolioproject.projecthandle}
             />
           ))}
         </div>
@@ -104,6 +81,7 @@ export default function PorfolioList() {
               projectdescription={portfolioproject.titledescription}
               imageurl={portfolioproject.projectimage}
               url={portfolioproject.projecturl}
+              projecthandle={portfolioproject.projecthandle}
             />
           ))}
         </div>
