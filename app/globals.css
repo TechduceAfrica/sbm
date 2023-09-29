@@ -1719,8 +1719,15 @@ a:hover .btn-icon-ani {
 }
 
 .home-proof-container .relative .w-width .flex {
-  overflow: hidden;
-  transition: all 200ms ease-in-out;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.home-proof-container img {
+  max-height: 500px;
+  width: 100%;
+  cursor: grabbing;
   animation: MockupScroll 20s linear 200ms infinite;
 }
 
@@ -1730,13 +1737,8 @@ a:hover .btn-icon-ani {
   }
 
   90% {
-    transform: translateX( calc(100vw + 500px));
+    transform: translateX(calc(-100vw - 500px));
   }
-}
-
-.home-proof-container img {
-  max-height: 500px;
-  width: 100%;
 }
 
 .home-proof-title:has(p, h3) {
