@@ -1718,6 +1718,27 @@ a:hover .btn-icon-ani {
   background-size: cover;
 }
 
+.home-proof-container .relative .w-width .flex {
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+  animation: MockupScroll 20s linear 200ms infinite;
+}
+
+@keyframes MockupScroll {
+  from, to {
+    transform: translateX(0);
+  }
+
+  90% {
+    transform: translateX( calc(100vw + 500px));
+  }
+}
+
+.home-proof-container img {
+  max-height: 500px;
+  width: 100%;
+}
+
 .home-proof-title:has(p, h3) {
   text-align: center;
 }
@@ -2051,6 +2072,7 @@ a:hover .btn-icon-ani {
   content: "";
   position: absolute;
   top: 50px;
+  bottom: auto;
   height: 0px;
   width: 15px;
   border-radius: 30px;
@@ -2061,6 +2083,8 @@ a:hover .btn-icon-ani {
 
 .onflow .num-flow::after {
   height: 170px;
+  top: auto;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 900px) {

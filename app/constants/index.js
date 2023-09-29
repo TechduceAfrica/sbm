@@ -186,45 +186,29 @@ const footer = [
 
 export const PhoneSlides = [
   {
-    src: "https://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
+    src: "https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/PerfectScentdesignerperfumes.webp",
+    alt: "Perfect Scents Designer Perfumes",
   },
   {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
+    src: "https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Bebiscrib%20social%20media%20page%20instagram.webp",
+    alt: "Bebis cribs",
   },
   {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
+    src: "https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Glamour%20Lounge%20and%20Spa%20social%20media%20page%20Instagram.webp",
+    alt: "Glamour Lounge and Spa",
   },
   {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
+    src: "https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Montana%20Residence%20Social%20media%20page%20Instagram.webp",
+    alt: "Montana Residence",
   },
   {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
+    src: "https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Ducecampaign%20Instagram%20page.webp",
+    alt: "Ducecampaign",
   },
   {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
-  {
-    src: "http://assets-social-brand-managers.netlify.app/home%20page/SBM%20client%20result.webp",
-    alt: "bebis cribs",
-  },
+    src: "https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Ducehost%20instagram%20page.webp",
+    alt: "Ducehost",
+  }
 ];
 
 export default brandmanagers;
