@@ -6,9 +6,7 @@ const ServiceHeader = () => {
   return (
     <div>
       <div className="sbm-service-title-box custom-container-max-width">
-        <motion.h2
-          variants={fadeIn("right", "spring", 0.5, 0.75)}
-        >
+        <motion.h2 variants={fadeIn("right", "spring", 0.5, 0.75)}>
           Our <span className="text-primary-blue">strategic-driven </span>
           method will help your business exceed your expectations
           <strong className="text-primary-blue">.</strong>

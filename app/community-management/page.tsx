@@ -9,55 +9,66 @@ import SectionWrapper from "../hoc/SectionWrapper";
 const page = () => {
   const analytics = [
     {
-      title: "Comprehensive Data Analysis",
-      image: "",
-      text: "We dig deep to extract insights about your audience, content & campaign performance",
+      title: "Tailored Solutions",
+      image:
+        "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201.png",
+      text: "We customize community management strategies to match your brand's goals",
     },
     {
-      title: "Customized Reporting",
-      image: "",
-      text: "Our reports are tailored to your Brand’s specific goals and vision",
+      title: "Platform Mastery",
+      image:
+        "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201-2.png",
+      text: "We excel in managing communities on various social media platforms.",
     },
     {
-      title: "Actionable Reccomendations",
-      image: "",
-      text: "We don’t stop at data analysis, we also provide insights with actionable steps.",
+      title: "Data-Driven Insights",
+      image:
+        "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-2.png",
+      text: "Our analytics experts optimize strategies for your community's impact.",
     },
     {
-      title: "Performance Tracking",
-      image: "",
-      text: "Our analytics offer real-time tracking, keeping you updated on your brand’s performance",
+      title: "24/7 Monitoring",
+      image:
+        "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201-1.png",
+      text: "We're always here, to support your community and keep the conversation.",
     },
     {
-      title: "Competitor Analysis",
-      image: "",
-      text: "Gain a competitive edge by understanding your competitors in the digital arena",
+      title: "Brand Advocacy",
+      image:
+        "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201-3.png",
+      text: "We turn your community into brand advocates, through effective campaigns.",
     },
     {
-      title: "ROI Measurement",
-      image: "",
-      text: "Track the impact of your digital efforts on your bottom line",
+      title: "Collaborative Approach",
+      image:
+        "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201-5.png",
+      text: "We're like an extension of your team, combining your vision with our expertise for results.",
     },
   ];
 
   return (
     <div className="text-body-text-colour  ">
-      <div className="relative flex flex-col lg:flex-row justify-between analytics-container m-auto t-b-padding px-[20px] lg:px-[80px]">
+      <div className="relative flex flex-col lg:flex-row justify-between analytics-container m-auto t-b-padding px-[20px] lg:px-[80px]  pt-0 lg:pt-[150px]">
         <div className="analytics-hero-text flex-col gap-5 flex">
           <h3 className="flex flex-wrap  max-w-[500px]">
-            Propel Your Brand Into the Spotlight With SBM’s{" "}
-            <span className="text-[#1F84FF]">Social Media Advertising</span>
+            Cultivate Your Brand’s Community With SBM’s{" "}
+            <span className="text-[#1F84FF]">Community Management Service</span>
           </h3>
 
           <p className="flex flex-wrap max-w-[500px]">
-            We specialize in elevating your online presence and engagement
-            through tailored social media advertising solutions.
+            Unlock your full potential of community management and watch your
+            brand fluorish
           </p>
         </div>
         <div className="anlytics-image">
-          <Image alt="Analytics and Report Image" src="" />
+          <Image
+            alt="Analytics and Report Image"
+            src="https://assets-social-brand-managers.netlify.app/community%20management%20img/Rectangle%20631.png"
+            width={450}
+            height={300}
+          />
         </div>
-        <div className="absolute top-0 right-0">
+        <div className="absolute top-3 right-[52px] hidden lg:block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="110"
@@ -75,11 +86,20 @@ const page = () => {
       {/* CARDS */}
 
       <div className="bg-white t-b-padding">
+        <div className="m-auto text-center w-[50%] pb-[80px]">
+          <h3 className=" inline-block">
+            Why Choose SBM for{" "}
+            <span className="text-[#1F84FF]">
+              Community Management Service{" "}
+              <strong className="text-primary-blue">.</strong>
+            </span>
+          </h3>
+        </div>
         <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 mt-10">
           {analytics.map((ServiceNextCard, index) => (
             <div
               key={index}
-              className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center"
+              className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center box-shadow"
             >
               <Image
                 src={ServiceNextCard.image}

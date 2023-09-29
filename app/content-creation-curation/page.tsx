@@ -9,57 +9,68 @@ import SectionWrapper from "../hoc/SectionWrapper";
 const page = () => {
   const analytics = [
     {
-      title: "Comprehensive Data Analysis",
-      image: "",
-      text: "We dig deep to extract insights about your audience, content & campaign performance",
+      title: "Creative Content Creation",
+      image:
+        "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201.png",
+      text: "From eye-catching graphics to compelling written content, we craft pieces that captivates.",
     },
     {
-      title: "Customized Reporting",
-      image: "",
-      text: "Our reports are tailored to your Brand’s specific goals and vision",
+      title: "Content Curation",
+      image:
+        "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-1.png",
+      text: "We scour the internet for the most relevant and exciting content in your niche.",
     },
     {
-      title: "Actionable Reccomendations",
-      image: "",
-      text: "We don’t stop at data analysis, we also provide insights with actionable steps.",
+      title: "Strategy and Planning",
+      image:
+        "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-2.png",
+      text: "We work closely with you to build a content calendar that aligns with your goals.",
     },
     {
-      title: "Performance Tracking",
-      image: "",
-      text: "Our analytics offer real-time tracking, keeping you updated on your brand’s performance",
+      title: "Engagement Optimization",
+      image:
+        "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-3.png",
+      text: "We foster a sense of community by engaging with your audience",
     },
     {
-      title: "Competitor Analysis",
-      image: "",
-      text: "Gain a competitive edge by understanding your competitors in the digital arena",
+      title: "Data-Driven Insights",
+      image:
+        "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-4.png",
+      text: "We don’t guess what works, we use data to make informed decisions.",
     },
     {
-      title: "ROI Measurement",
-      image: "",
-      text: "Track the impact of your digital efforts on your bottom line",
+      title: "Customized Solutions",
+      image:
+        "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-5.png",
+      text: "We work closely with you to ensure that every content aligns with your vision.",
     },
   ];
 
   return (
     <div className="text-body-text-colour  ">
-      <div className="relative flex flex-col lg:flex-row justify-between analytics-container m-auto t-b-padding px-[20px] lg:px-[80px]">
+      <div className="relative flex flex-col lg:flex-row justify-between analytics-container m-auto t-b-padding px-[20px] lg:px-[80px] pt-0 lg:pt-[150px]">
         <div className="analytics-hero-text flex-col gap-5 flex">
           <h3 className="flex flex-wrap  max-w-[500px]">
-            Empower Your Brand With Actionable Insights with SBM’s{" "}
+            Unlock Your Brand’s Potential With SBM’s{" "}
             <span className="text-[#1F84FF]">
-              Analytics and Reports Service
+              Content Creation and Curation Service
             </span>
           </h3>
 
           <p className="flex flex-wrap max-w-[500px]">
-            Don’t navigate the digital space blindly, let us illuminate your
-            path to success.
+            Let us help you tell your Story, connect with your audience and
+            drive the growth you’ve been dreaming of.
           </p>
         </div>
         <div className="anlytics-image">
-          <Image alt="Analytics and Report Image" src="" />
+          <Image
+            alt="Analytics and Report Image"
+            src="https://assets-social-brand-managers.netlify.app/content-creation/Rectangle%20631.png"
+            width={450}
+            height={300}
+          />
         </div>
-        <div className="absolute top-0 right-0">
+        <div className="absolute top-3 right-[52px] lg:block hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="110"
@@ -77,11 +88,20 @@ const page = () => {
       {/* CARDS */}
 
       <div className="bg-white t-b-padding">
+        <div className="m-auto text-center w-[50%] pb-[80px]">
+          <h3 className=" inline-block">
+            Why Choose SBM for{" "}
+            <span className="text-[#1F84FF]">
+              Content Creation and Curation
+              <strong className="text-primary-blue">.</strong>
+            </span>
+          </h3>
+        </div>
         <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 mt-10">
           {analytics.map((ServiceNextCard, index) => (
             <div
               key={index}
-              className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center"
+              className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center box-shadow"
             >
               <Image
                 src={ServiceNextCard.image}

@@ -10,39 +10,45 @@ const page = () => {
   const analytics = [
     {
       title: "Comprehensive Data Analysis",
-      image: "",
+      image:
+        "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-1.png",
       text: "We dig deep to extract insights about your audience, content & campaign performance",
     },
     {
       title: "Customized Reporting",
-      image: "",
+      image:
+        "https://assets-social-brand-managers.netlify.app/analytics-img/customized%20reporting.png",
       text: "Our reports are tailored to your Brand’s specific goals and vision",
     },
     {
       title: "Actionable Reccomendations",
-      image: "",
+      image:
+        "https://assets-social-brand-managers.netlify.app/analytics-img/actionable%20reccomendation.png",
       text: "We don’t stop at data analysis, we also provide insights with actionable steps.",
     },
     {
       title: "Performance Tracking",
-      image: "",
+      image:
+        "https://assets-social-brand-managers.netlify.app/analytics-img/performance%20tracking.png",
       text: "Our analytics offer real-time tracking, keeping you updated on your brand’s performance",
     },
     {
       title: "Competitor Analysis",
-      image: "",
+      image:
+        "https://assets-social-brand-managers.netlify.app/brand-management/competitor%20analysis.png",
       text: "Gain a competitive edge by understanding your competitors in the digital arena",
     },
     {
       title: "ROI Measurement",
-      image: "",
+      image:
+        "https://assets-social-brand-managers.netlify.app/analytics-img/roi%20measurement.png",
       text: "Track the impact of your digital efforts on your bottom line",
     },
   ];
 
   return (
     <div className="text-body-text-colour  ">
-      <div className="relative flex flex-col lg:flex-row justify-between analytics-container m-auto t-b-padding px-[20px] lg:px-[80px]">
+      <div className="relative flex flex-col lg:flex-row justify-between analytics-container m-auto t-b-padding px-[20px] lg:px-[80px]  pt-0 lg:pt-[150px] ">
         <div className="analytics-hero-text flex-col gap-5 flex">
           <h3 className="flex flex-wrap  max-w-[500px]">
             Empower Your Brand With Actionable Insights with SBM’s{" "}
@@ -57,9 +63,14 @@ const page = () => {
           </p>
         </div>
         <div className="anlytics-image">
-          <Image alt="Analytics and Report Image" src="" />
+          <Image
+            alt="Analytics and Report Image"
+            src="https://assets-social-brand-managers.netlify.app/analytics-img/analytics%20hero%20img.png"
+            width={450}
+            height={300}
+          />
         </div>
-        <div className="absolute top-0 right-0">
+        <div className="absolute top-3 right-[52px] hidden lg:block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="110"
@@ -77,11 +88,20 @@ const page = () => {
       {/* CARDS */}
 
       <div className="bg-white t-b-padding">
+        <div className="m-auto text-center w-[50%] pb-[80px]">
+          <h3 className=" inline-block">
+            Why Choose SBM for{" "}
+            <span className="text-[#1F84FF]">
+              Analytics and Reports Service{" "}
+              <strong className="text-primary-blue">.</strong>
+            </span>
+          </h3>
+        </div>
         <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 mt-10">
           {analytics.map((ServiceNextCard, index) => (
             <div
               key={index}
-              className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center"
+              className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center  box-shadow"
             >
               <Image
                 src={ServiceNextCard.image}
