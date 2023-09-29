@@ -88,7 +88,7 @@ export default function PortfolioItem(props: any) {
                 <div className="divider"></div>
                 <div className="portfolio-popup-social">
                   <h5>Handle</h5>
-                  <a href={props.url} title={props.sbmprojectname} target="_blank">
+                  <a href={props.url} title={props.projecthandle} target="_blank">
                       {props.projecthandle}
                   </a>
                 </div>

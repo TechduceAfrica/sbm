@@ -2356,11 +2356,6 @@ footer {
   display: none;
 }
 
-.closepopup.portfolio-popup-bg {
-  opacity: 0;
-  transition: all 500ms ease-in-out;
-}
-
 .showpopup.portfolio-popup-bg {
   opacity: 1;
   transition: all 500ms ease-in-out;
@@ -2376,7 +2371,8 @@ footer {
   height: 100vh;
   background-color: #74747450;
   z-index: 999;
-  transition: all 200ms ease-in-out;
+  opacity: 0;
+  transition: all 5000ms ease-in-out;
 }
 
 .portfolio-popup-wrapper {
