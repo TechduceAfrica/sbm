@@ -1,5 +1,5 @@
 "use client";
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState, useRef} from "react";
 
 export default function PortfolioItem(props: any) {
   const[showPopup, setShowPopup] = useState(false);
@@ -14,26 +14,26 @@ export default function PortfolioItem(props: any) {
     setShowPopup(false);
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        showPopup &&
-        popupRef.current &&
-        !popupRef.current.contains(event.target as Node) &&
-        event.target !== popupRef.current
-      ) {
-        closePopup();
-      }
-    };
+  // useEffect(() => {
+  //   const handleClickOutside = (event: MouseEvent) => {
+  //     if (
+  //       showPopup &&
+  //       popupRef.current &&
+  //       !popupRef.current.contains(event.target as Node) &&
+  //       event.target !== popupRef.current
+  //     ) {
+  //       closePopup();
+  //     }
+  //   };
   
     // Attach the event listener to the document
-    document.addEventListener('mousedown', handleClickOutside);
+    // document.addEventListener('mousedown', handleClickOutside);
   
     // Clean up the event listener when the component unmounts
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [showPopup]);
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside);
+  //   };
+  // }, [showPopup]);
 
   return (
     <div className="portfolio-card">
