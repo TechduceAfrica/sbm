@@ -18,12 +18,12 @@ const PortfolioProjectsLeft = [
     title: "Perfect Scents",
     clientname: "Ademola Joshua",
     titledescription:
-      "Bebis Crib sure has all the gear to give the Once upon a child experience.",
+      "Perfect Scent is a well-known perfume company known for its luxurious and delicate scents. They are an expression of uniqueness and classic beauty.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
-    whatwedid: "",
-    projectyear: "",
+    whatwedid: "We increased engagement and followership by 40%. Our main focus on user satisfaction led to higher engagement and conversions.",
+    projectyear: "2022 - Till date",
     projecthandle: "@bebiscrib",
   },
 ];
@@ -33,25 +33,25 @@ const PortfolioProjectsRight = [
     title: "Glamour Lounge",
     clientname: "Ademola Joshua",
     titledescription:
-      "Bebis Crib sure has all the gear to give the Once upon a child experience.",
+      "Glamour lounge is a Salon and Spa company dedicated to providing an unforgettable experience in an environment of unparalleled relaxation and sophistication.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
-    whatwedid: "",
-    projectyear: "",
+    whatwedid: "We increased engagement by 35%. Our focus on user satisfaction led to higher engagement and conversions.",
+    projectyear: "2020 - Till date",
     projecthandle: "@bebiscrib",
   },
   {
     title: "Montana",
     clientname: "Ademola Joshua",
     titledescription:
-      "Bebis Crib sure has all the gear to give the Once upon a child experience.",
+      "Montana Residence is a luxurious and exquisite hotel. With its stunning architecture, world-class amenities and unparalleled hospitality, Montana Residence has become a haven for travelers seeking a truly exceptional getaway.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
-    whatwedid: "",
-    projectyear: "",
-    projecthandle: "@bebiscrib",
+    whatwedid: "We increased engagement and followership by 40%. Our main focus on user satisfaction led to higher engagement and conversions.",
+    projectyear: "2023 - Till date",
+    projecthandle: "@montana",
   },
 ];
 
@@ -68,6 +68,8 @@ export default function PorfolioList() {
               projectdescription={portfolioproject.titledescription}
               imageurl={portfolioproject.projectimage}
               url={portfolioproject.projecturl}
+              whatwedid={portfolioproject.whatwedid}
+              projectyear={portfolioproject.projectyear}
               projecthandle={portfolioproject.projecthandle}
             />
           ))}
