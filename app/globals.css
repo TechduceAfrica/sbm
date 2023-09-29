@@ -2346,26 +2346,42 @@ footer {
 
 /* PORTFOLIO POP UP */
 
+.showpopup {
+  display: block;
+  transition: all 200ms ease-in-out;
+}
+
+.closepopup {
+  display: none;
+}
+
 .portfolio-popup-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: #74747436;
   z-index: 999;
+  transition: all 200ms ease-in-out;
 }
 
 .portfolio-popup-wrapper {
-  position: fixed;
+  position: absolute; 
+  top: 0;
+  left: 0; 
+  right: 0; 
   bottom: 0;
-  right: 0;
-  transform: translate(-5%, 0%);
+  margin: auto; 
+  max-width: 1000px;
+  width: 100%;
+  height: fit-content;
   background-color: #ffffff;
   padding: 50px 0px 50px 50px;
   border-radius: 50px 50px 0px 0px;
   border: solid 0.2px #3333333d;
   width: 90vw;
+  transition: all 200ms ease-in-out;
 }
 
 .portfolio-popup-container .divider {
@@ -2413,7 +2429,8 @@ footer {
 }
 
 .portfolio-popup-img {
+  width: 100%;
   overflow-x: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

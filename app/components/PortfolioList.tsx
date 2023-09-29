@@ -6,7 +6,7 @@ const PortfolioProjectsLeft = [
     title: "Bebis Crib",
     clientname: "Ademola Joshua",
     titledescription:
-      "Bebis Crib is a trusted baby supplies retailer committed to provide parents and other carers high-quality stuff for their little ones. ",
+      "Bebis Crib is a trusted baby supplies retailer committed to provide parents. ",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
@@ -18,7 +18,7 @@ const PortfolioProjectsLeft = [
     title: "Perfect Scents",
     clientname: "Ademola Joshua",
     titledescription:
-      "Perfect Scent is a well-known perfume company known for its luxurious and delicate scents. They are an expression of uniqueness and classic beauty.",
+      "Perfect Scent is well-known for its luxurious and delicate scents products.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
@@ -33,7 +33,7 @@ const PortfolioProjectsRight = [
     title: "Glamour Lounge",
     clientname: "Ademola Joshua",
     titledescription:
-      "Glamour lounge is a Salon and Spa company dedicated to providing an unforgettable experience in an environment of unparalleled relaxation and sophistication.",
+      "Glamour lounge, a Salon and Spa dedicated to providing an unforgettable experience.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
@@ -45,7 +45,7 @@ const PortfolioProjectsRight = [
     title: "Montana",
     clientname: "Ademola Joshua",
     titledescription:
-      "Montana Residence is a luxurious and exquisite hotel. With its stunning architecture, world-class amenities and unparalleled hospitality, Montana Residence has become a haven for travelers seeking a truly exceptional getaway.",
+      "Montana Residence is a luxurious and exquisite hotel.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
