@@ -51,7 +51,7 @@ const page = () => {
       <div className="relative flex flex-col lg:flex-row justify-between analytics-container m-auto t-b-padding px-[20px] lg:px-[80px] pt-0 lg:pt-[150px]">
         <div className="analytics-hero-text flex-col gap-5 flex">
           <h3 className="flex flex-wrap  max-w-[500px]">
-            Enhance Your Brand’s Online Presence With SBM’s{" "}
+            Enhance Your Brand’s Online Presence With SBM’s
             <span className="text-[#1F84FF]">Brand Management Service</span>
           </h3>
 
