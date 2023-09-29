@@ -13,6 +13,9 @@ const PortfolioProjectsLeft = [
     whatwedid: "We created engaging social media posts showcasing products in stock that drives results. We increased engagement by 30%.",
     projectyear: "2021 - 2022",
     projecthandle: "@bebiscrib",
+    projectimgslideone: "",
+    projectimgslidetwo: "",
+    projectimgslidethree: "",
   },
   {
     title: "Perfect Scents",
@@ -25,6 +28,9 @@ const PortfolioProjectsLeft = [
     whatwedid: "We increased engagement and followership by 40%. Our main focus on user satisfaction led to higher engagement and conversions.",
     projectyear: "2022 - Till date",
     projecthandle: "@bebiscrib",
+    projectimgslideone: "",
+    projectimgslidetwo: "",
+    projectimgslidethree: "",
   },
 ];
 
@@ -33,13 +39,16 @@ const PortfolioProjectsRight = [
     title: "Glamour Lounge",
     clientname: "Ademola Joshua",
     titledescription:
-      "Glamour lounge, a Salon and Spa dedicated to providing an unforgettable experience.",
+      "A Salon and Spa dedicated to providing an unforgettable experience.",
     projectimage:
       "https://assets-social-brand-managers.netlify.app/Portfolio%20Page/portfolioImg.webp",
     projecturl: "/",
     whatwedid: "We increased engagement by 35%. Our focus on user satisfaction led to higher engagement and conversions.",
     projectyear: "2020 - Till date",
     projecthandle: "@bebiscrib",
+    projectimgslideone: "",
+    projectimgslidetwo: "",
+    projectimgslidethree: "",
   },
   {
     title: "Montana",
@@ -52,6 +61,9 @@ const PortfolioProjectsRight = [
     whatwedid: "We increased engagement and followership by 40%. Our main focus on user satisfaction led to higher engagement and conversions.",
     projectyear: "2023 - Till date",
     projecthandle: "@montana",
+    projectimgslideone: "",
+    projectimgslidetwo: "",
+    projectimgslidethree: "",
   },
 ];
 
@@ -71,6 +83,9 @@ export default function PorfolioList() {
               whatwedid={portfolioproject.whatwedid}
               projectyear={portfolioproject.projectyear}
               projecthandle={portfolioproject.projecthandle}
+              projectimgslideone={portfolioproject.projectimgslideone}
+              projectimgslidetwo={portfolioproject.projectimgslidetwo}
+              projectimgslidethree={portfolioproject.projectimgslidethree}
             />
           ))}
         </div>
@@ -83,7 +98,12 @@ export default function PorfolioList() {
               projectdescription={portfolioproject.titledescription}
               imageurl={portfolioproject.projectimage}
               url={portfolioproject.projecturl}
+              whatwedid={portfolioproject.whatwedid}
+              projectyear={portfolioproject.projectyear}
               projecthandle={portfolioproject.projecthandle}
+              projectimgslideone={portfolioproject.projectimgslideone}
+              projectimgslidetwo={portfolioproject.projectimgslidetwo}
+              projectimgslidethree={portfolioproject.projectimgslidethree}
             />
           ))}
         </div>
