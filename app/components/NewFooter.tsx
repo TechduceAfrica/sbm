@@ -20,10 +20,14 @@ const NewFooter = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <Image src="/footer-logo.png" width={80} height={43} alt="SBM" />
+            <Image src="/footer-logo.png" 
+                    width={96} 
+                    height={81} 
+                    alt="Social Brand Managers Logo" 
+                    title="Social Brand Managers Logo"/>
           </Link>
         </div>
-        <div className="flex flex-col text-[18px] p-5">
+        <div className="flex flex-col text-[18px]">
           <h5 className="font-primaryExtrabold">WHITE PAPER</h5>
           <p>We are a team of experienced and qualified professionals</p>
           <Link href="/" className="flex flex-row gap-2 mt-4">
@@ -52,7 +56,7 @@ const NewFooter = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col text-[18px] p-5">
+        <div className="flex flex-col text-[18px]">
           <h5 className="font-primaryExtrabold">FIND US</h5>
           <p>91. Obafemi Awolowo Way, Ikeja, Lagos.</p>
           <div className="footer-social-media">
@@ -89,13 +93,14 @@ const NewFooter = () => {
           </div>
         </div>
       </div>
-      <div className="lg:text-[13px] text-[10px] font-primary text-center">
+      <div className="lg:text-[13px] text-[10px] font-primary text-center footer-credit">
         <span>
-          &copy; Copyright 2023 | A brain child of
+          &copy; Social Brand Managers 2023 | A brain child of
           <a
             href="https://techduce.africa/?sbm"
             target="_blank"
             rel="noopener noreferrer"
+            title="Techduce Africa"
           >
             {" "}
             Techduce Africa

@@ -2189,7 +2189,7 @@ a:hover .btn-icon-ani {
 
 footer {
   padding-top: 80px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .footer-items {
@@ -2215,6 +2215,12 @@ footer {
   height: 2em;
 }
 
+.footer-credit {
+  color: #d9e4f1;
+  background-color: #001938;
+  padding-block: 5px;
+}
+
 @media only screen and (max-width: 1100px) {
   .footer-items > div {
     align-items: center;
@@ -2223,6 +2229,14 @@ footer {
 }
 
 @media only screen and (max-width: 744px) {
+  footer {
+    padding-top: 50px;
+  }
+
+  .footer-items {
+    padding: 0px 10px;
+  }
+
   footer .logo a {
     display: flex;
     justify-content: center;
