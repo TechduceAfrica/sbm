@@ -1,43 +1,51 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap"); */
 @font-face {
   font-family: "Averta-CY-Regular";
-  src: url("/fonts/AvertaCY-Regular.woff2") format("woff2");
+  src: local("/fonts/AvertaCY-Regular.woff2"), url("/fonts/AvertaCY-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: "Averta-CY-Semibold";
-  src: url("/fonts/AvertaCY-SemiBold.woff2") format("woff2");
+  src: local("/fonts/AvertaCY-SemiBold.woff2"), url("/fonts/AvertaCY-SemiBold.woff2") format("woff2");
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: "Averta-CY-Bold";
-  src: url("/fonts/AvertaCY-Bold.woff2") format("woff2");
+  src: local("/fonts/AvertaCY-Bold.woff2"), url("/fonts/AvertaCY-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: "Averta-CY-Extrabold";
-  src: url("/fonts/AvertaCY-ExtraBold.woff2") format("woff2");
+  src: local("/fonts/AvertaCY-ExtraBold.woff2"), url("/fonts/AvertaCY-ExtraBold.woff2") format("woff2");
   font-weight: 800;
+  font-display: swap;
 }
 @font-face {
   font-family: "Sarabun";
-  src: url("/fonts/Sarabun-Regular.woff2") format("woff2");
+  src: local("/fonts/Sarabun-Regular.woff2"), url("/fonts/Sarabun-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: "Sarabun";
-  src: url("/fonts/Sarabun-Medium.woff2") format("woff2");
+  src: local("/fonts/Sarabun-Medium.woff2"), url("/fonts/Sarabun-Medium.woff2") format("woff2");
   font-weight: 500;
+  font-display: swap;
 }
 @font-face {
   font-family: "Sarabun";
-  src: url("/fonts/Sarabun-SemiBold.woff2") format("woff2");
+  src: local("/fonts/Sarabun-SemiBold.woff2"), url("/fonts/Sarabun-SemiBold.woff2") format("woff2");
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: "Sarabun";
-  src: url("/fonts/Sarabun-Bold.woff2") format("woff2");
+  src: local("/fonts/Sarabun-Bold.woff2"), url("/fonts/Sarabun-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-display: swap;
 }
 
 @tailwind base;
