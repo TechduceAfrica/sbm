@@ -9,43 +9,45 @@ const Testimonials = () => {
       imageUrl:
         "https://assets-social-brand-managers.netlify.app/resized%20images/client-pic1.svg",
       clientName: "Data Adie",
-      testimony:
-        "SBM has never failed me once, my business sales is top notch.",
+      testimony: `As a small business owner, I needed help with social media marketing. Social Brand 
+                  Managers connected me with a skilled manager who has increased my brand's visibility.`,
     },
     {
       imageUrl:
         "https://assets-social-brand-managers.netlify.app/resized%20images/client-pic2.svg",
       clientName: "Bebis Crib",
-      testimony:
-        "These guys are one of a kind, they gave me more than what i wanted.",
+      testimony: `Social Brand Managers saved me time and effort in finding the right content creators 
+            for my tech company. The results have been outstanding, and I'm grateful for their service.`,
     },
     {
       imageUrl:
         "https://assets-social-brand-managers.netlify.app/resized%20images/client-pic1.svg",
-      clientName: "Data Adie",
-      testimony:
-        "SBM has never failed me once, my business sales is top notch.",
+      clientName: "Ifeoma Okonkwo",
+      testimony: `Thanks to Social Brand Managers, I found an amazing social media manager who 
+                  increased my brand's engagement and brought in more customers. Highly recommended!`,
     },
     {
       imageUrl:
         "https://assets-social-brand-managers.netlify.app/resized%20images/client-pic1.svg",
-      clientName: "Data Adie",
-      testimony:
-        "SBM has never failed me once, my business sales is top notch.",
+      clientName: "Olumide Ogundipe",
+      testimony: `The team at Social Brand Managers made the hiring process so smooth. I found a 
+          creative content creator who has elevated my brand's online presence beyond my expectations.`,
     },
     {
       imageUrl:
         "https://assets-social-brand-managers.netlify.app/resized%20images/client-pic1.svg",
-      clientName: "Data Adie",
+      clientName: "Ngozi Eze",
       testimony:
-        "SBM has never failed me once, my business sales is top notch.",
+        `Social Brand Managers is a game-changer! I hired a social media manager who has boosted my 
+          restaurant's online following and brought in more customers. Kudos to the team!`,
     },
     {
       imageUrl:
         "https://assets-social-brand-managers.netlify.app/resized%20images/client-pic1.svg",
-      clientName: "Data Adie",
+      clientName: "Tolu Adeyemi",
       testimony:
-        "SBM has never failed me once, my business sales is top notch.",
+        `I needed a reliable social media manager for my startup, and Social Brand Managers delivered. 
+          They matched me with a professional who understands my industry and goals perfectly.`,
     },
   ];
   return (
