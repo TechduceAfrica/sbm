@@ -124,42 +124,42 @@ const brandmanagers = [
       "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Mide Soyemi",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
       "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Jude Kelechi",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
       "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Aminat Sambo",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
       "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Muyiwa Afolabi",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
       "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Martins Sowore",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
       "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
     username: "Olabanjo Jacobs",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
 ];
 
