@@ -1732,7 +1732,8 @@ a:hover .btn-icon-ani {
 }
 
 @keyframes MockupScroll {
-  from, to {
+  from,
+  to {
     transform: translateX(0);
   }
 
@@ -1966,7 +1967,7 @@ a:hover .btn-icon-ani {
   grid-template-columns: 1fr 30%;
   column-gap: 20px;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -2227,7 +2228,8 @@ footer {
   overflow: hidden;
 }
 
-.desktop-slide, .desktop-slide picture {
+.desktop-slide,
+.desktop-slide picture {
   text-align: left;
 }
 
@@ -2266,7 +2268,8 @@ footer {
 }
 
 @keyframes zoomDown {
-  from, to {
+  from,
+  to {
     transform: scale(1) translate(0%, 0%);
   }
 
@@ -2276,7 +2279,8 @@ footer {
 }
 
 @keyframes MobileZoomIn {
-  from, to {
+  from,
+  to {
     transform: scale(1) translate(0%, 0%);
   }
 
@@ -2286,7 +2290,8 @@ footer {
 }
 
 @keyframes zoomRight {
-  from, to {
+  from,
+  to {
     transform: scale(1) translate(0%, 0%);
   }
 
@@ -2296,7 +2301,8 @@ footer {
 }
 
 @keyframes MobileZoomForm {
-  from, to {
+  from,
+  to {
     transform: scale(1) translate(0%, 0%);
   }
 
@@ -2306,7 +2312,8 @@ footer {
 }
 
 @keyframes zoomBtn {
-  from, to {
+  from,
+  to {
     transform: scale(1) translate(0%, 0%);
   }
 
@@ -2316,7 +2323,8 @@ footer {
 }
 
 @keyframes MobileZoomDown {
-  from, to {
+  from,
+  to {
     transform: scale(1) translate(0%, 0%);
   }
 
@@ -2334,14 +2342,14 @@ footer {
     display: none;
   }
 
-  .slide-one, 
-  .slide-two, 
+  .slide-one,
+  .slide-two,
   .slide-three {
     border: solid 6px #736e6e;
     border-radius: 16px;
     width: 129px;
     height: 270px;
-}
+  }
 }
 
 /* PORTFOLIO POP UP */
@@ -2415,5 +2423,5 @@ footer {
 .portfolio-popup-img {
   overflow-x: scroll;
   -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none;
+  scrollbar-width: none;
 }

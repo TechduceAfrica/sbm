@@ -17,7 +17,7 @@ const Navbar = () => {
 
   // useEffect(() => {
   //   const removeNavbar = () => {
-  //     if (window.scrollY >= 900) {
+  //     if (window.scrollY >= 1300) {
   //       setNavDisappear(true);
   //     } else {
   //       setNavDisappear(false);
@@ -44,7 +44,12 @@ const Navbar = () => {
             }}
           >
             <div className="logo relative lg:w-[100px] lg:h-[80px] w-[70px] h-[63.5px]">
-              <Image src="/logo.png" fill alt="SBM Logo" title="social brand managers logo" />
+              <Image
+                src="/logo.png"
+                fill
+                alt="SBM Logo"
+                title="social brand managers logo"
+              />
             </div>
           </Link>
         </div>
