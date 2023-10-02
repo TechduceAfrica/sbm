@@ -121,45 +121,45 @@ export const sbmServices = [
 const brandmanagers = [
   {
     profileimg:
-      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/social%20brand%20manager%20-%20creator%20-%20Mide%20Soyemi_SBM.webp",
     username: "Mide Soyemi",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
-      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/social%20brand%20manager%20-%20creator%20-%20Jude%20Kelechi_SBM.webp",
     username: "Jude Kelechi",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
-      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/social%20brand%20manager%20-%20creator%20-%20Aminat%20Sambo_SBM.webp",
     username: "Aminat Sambo",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
-      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/social%20brand%20manager%20-%20creator%20-%20Muyiwa%20Afolabi_SBM.webp",
     username: "Muyiwa Afolabi",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
-      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/social%20brand%20manager%20-%20creator%20-%20Martins%20Sowore_SBM.webp",
     username: "Martins Sowore",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
   {
     profileimg:
-      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/SBM-Mide%20Soyemi-Social-brand-manager.webp",
+      "https://assets-social-brand-managers.netlify.app/Join%20Our%20Workforce/social%20brand%20manager%20-%20creator%20-%20Olabanjo%20Jacobs_SBM.webp",
     username: "Olabanjo Jacobs",
     userprofilelink: "/",
-    userportfoliolink: "/",
+    userportfoliolink: "https://socialbrandmanagers.com/portfolio",
   },
 ];
 

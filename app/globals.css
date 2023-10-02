@@ -1,23 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap"); */
 @font-face {
   font-family: "Averta-CY-Regular";
-  src: url("/AvertaCY-Regular.ttf") format("truetype");
+  src: local("/fonts/AvertaCY-Regular.woff2"),
+    url("/fonts/AvertaCY-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: "Averta-CY-Semibold";
-  src: url("/AvertaCY-SemiBold.otf") format("opentype");
+  src: local("/fonts/AvertaCY-SemiBold.woff2"),
+    url("/fonts/AvertaCY-SemiBold.woff2") format("woff2");
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: "Averta-CY-Bold";
-  src: url("/AvertaCY-Bold.otf") format("opentype");
+  src: local("/fonts/AvertaCY-Bold.woff2"),
+    url("/fonts/AvertaCY-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: "Averta-CY-Extrabold";
-  src: url("/AvertaCY-ExtraBold.otf") format("opentype");
+  src: local("/fonts/AvertaCY-ExtraBold.woff2"),
+    url("/fonts/AvertaCY-ExtraBold.woff2") format("woff2");
   font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarabun";
+  src: local("/fonts/Sarabun-Regular.woff2"),
+    url("/fonts/Sarabun-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarabun";
+  src: local("/fonts/Sarabun-Medium.woff2"),
+    url("/fonts/Sarabun-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarabun";
+  src: local("/fonts/Sarabun-SemiBold.woff2"),
+    url("/fonts/Sarabun-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarabun";
+  src: local("/fonts/Sarabun-Bold.woff2"),
+    url("/fonts/Sarabun-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
 }
 
 @tailwind base;
@@ -1125,7 +1161,7 @@ a:hover .btn-icon-ani {
 } */
 
 .project-cards-right {
-  transform: translateY(100px);
+  margin-top: 100px;
 }
 
 .portifolio-card-list > div {
@@ -1372,7 +1408,7 @@ a:hover .btn-icon-ani {
 
 .brandmanagerlist-container p {
   text-align: center;
-  font-family: Averta CY;
+  font-family: Averta-CY-Semibold;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -1910,11 +1946,19 @@ a:hover .btn-icon-ani {
 }
 
 .testimonial-card {
+  display: grid;
+  gap: 10px;
   background-color: #ffffff;
   border-radius: 10px;
   padding: 30px 20px;
   cursor: pointer;
   animation: auto-scroll-right 30s ease-in-out 0ms infinite normal none;
+}
+
+.testimonial-card h5 {
+  text-align: center;
+  font-family: Sarabun;
+  font-weight: 700;
 }
 
 .testimonial-cards:hover .testimonial-card {
@@ -1937,6 +1981,7 @@ a:hover .btn-icon-ani {
   border-radius: 100px;
   overflow: hidden;
   margin: auto;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-card img {
@@ -2170,7 +2215,7 @@ a:hover .btn-icon-ani {
 
 footer {
   padding-top: 80px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .footer-items {
@@ -2196,6 +2241,12 @@ footer {
   height: 2em;
 }
 
+.footer-credit {
+  color: #d9e4f1;
+  background-color: #001938;
+  padding-block: 5px;
+}
+
 @media only screen and (max-width: 1100px) {
   .footer-items > div {
     align-items: center;
@@ -2204,6 +2255,14 @@ footer {
 }
 
 @media only screen and (max-width: 744px) {
+  footer {
+    padding-top: 50px;
+  }
+
+  .footer-items {
+    padding: 0px 10px;
+  }
+
   footer .logo a {
     display: flex;
     justify-content: center;
@@ -2354,26 +2413,58 @@ footer {
 
 /* PORTFOLIO POP UP */
 
+.showpopup {
+  display: block;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.closepopup {
+  display: none;
+}
+
+.showpopup.portfolio-popup-bg {
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
 .portfolio-popup-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #74747436;
+  background-color: #74747450;
   z-index: 999;
+  opacity: 0;
+  transition: all 5000ms ease-in-out;
 }
 
 .portfolio-popup-wrapper {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
-  transform: translate(-5%, 0%);
+  bottom: 0;
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  height: fit-content;
   background-color: #ffffff;
   padding: 50px 0px 50px 50px;
   border-radius: 50px 50px 0px 0px;
   border: solid 0.2px #3333333d;
   width: 90vw;
+  transition: all 200ms ease-in-out;
+}
+
+.project-cards-right .portfolio-popup-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transition: all 200ms ease-in-out;
 }
 
 .portfolio-popup-container .divider {
@@ -2421,7 +2512,30 @@ footer {
 }
 
 .portfolio-popup-img {
+  width: 100%;
   overflow-x: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
+  -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.portfolio-popup-year,
+.portfolio-popup-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-popup-wrapper {
+    padding: 50px 30px;
+  }
+
+  .portfolio-popup-container {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+
+  .portfolio-popup-close-btn svg {
+    transform: translate(0%, -100%);
+  }
 }
