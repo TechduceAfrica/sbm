@@ -37,8 +37,7 @@ const Service: React.FC<ServiceProps> = (props) => {
         <p>{props.text}</p>
         <button onClick={() => router.push(props.url)}>
           <div className="pri-btn">
-            <BsFillPlusCircleFill />
-            <span className="text-[16px]">Features & Benefits</span>
+            <span className="text-[20px]">Know More</span>
           </div>
         </button>
       </div>

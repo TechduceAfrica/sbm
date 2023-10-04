@@ -54,6 +54,13 @@ export const homeServicesTop = [
     text: "Measuring key performance metrics and providing insights for continuous improvement.",
     link: "https://socialbrandmanagers.com/services",
   },
+  {
+    title: "Brand Management",
+    image:
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
+    text: "Crafting a consistent and compelling identity that resonates with your audience.",
+    link: "https://socialbrandmanagers.com/services",
+  },
 ];
 
 export const homeServicesBottom = [
@@ -208,7 +215,7 @@ export const PhoneSlides = [
   {
     src: "https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Ducehost%20instagram%20page.webp",
     alt: "Ducehost",
-  }
+  },
 ];
 
 export default brandmanagers;
