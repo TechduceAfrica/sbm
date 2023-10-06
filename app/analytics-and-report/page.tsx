@@ -9,18 +9,9 @@ const page = () => {
     <div className="text-body-text-colour  ">
       <AnalyticsHeader />
       {/* CARDS */}
-      <div className="bg-white py-[80px]">
-        <div className="m-auto text-center w-[80%] pb-[80px]">
-          <h3 className=" inline-block">
-            Why Choose SBM for &nbsp;
-            <span className="text-primary-blue">
-              Analytics and Reports Service
-              <strong className="text-primary-blue">.</strong>
-            </span>
-          </h3>
-        </div>
-        <AnalyticsCards />
-      </div>
+
+      <AnalyticsCards />
+
       <ServiceNextPageCTA />
     </div>
   );

@@ -7,14 +7,16 @@ import SectionWrapper from "../hoc/SectionWrapper";
 
 const SocialMStrategyHeader = () => {
   return (
-    <div className="relative flex flex-col lg:flex-row justify-between analytics-container m-auto t-b-padding px-[20px] lg:px-[80px]  pt-0 lg:pt-[150px] ">
+    <div className="relative flex flex-wrap justify-between items-center analytics-container t-b-padding px-[20px] lg:px-[80px]  pt-0 lg:pt-[150px] ">
       <div className="analytics-hero-text flex-col gap-5 flex">
         <motion.h3
           className="flex flex-wrap  max-w-[500px]"
           variants={fadeIn("right", "spring", 0, 0.75)}
         >
           Propel Your Brand Into the Spotlight With SBM’s&nbsp;
-          <span className="text-primary-blue">Social Media Advertising</span>
+          <span className="text-primary-blue">
+            Social Media Advertising<strong>.</strong>
+          </span>
         </motion.h3>
 
         <motion.p
@@ -31,7 +33,7 @@ const SocialMStrategyHeader = () => {
       >
         <Image
           alt="Analytics and Report Image"
-          src="https://assets-social-brand-managers.netlify.app/analytics-img/analytics%20hero%20img.png"
+          src="https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic4.png"
           width={450}
           height={300}
         />

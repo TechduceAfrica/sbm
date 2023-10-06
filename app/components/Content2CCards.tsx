@@ -71,10 +71,21 @@ const ServiceCard = ({ index, title, image, text }: any) => {
 
 const SocialMStrategyCards = () => {
   return (
-    <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
-      {analytics.map((service, index) => (
-        <ServiceCard key={service.title} index={index} {...service} />
-      ))}
+    <div className="bg-white t-b-padding">
+      <div className="m-auto text-center w-[80%] pb-[80px]">
+        <h3 className=" inline-block">
+          Why Choose SBM for{" "}
+          <span className="text-primary-blue">
+            Content Creation and Curation
+            <strong className="text-primary-blue">.</strong>
+          </span>
+        </h3>
+      </div>
+      <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
+        {analytics.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </div>
   );
 };

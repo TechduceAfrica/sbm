@@ -10,37 +10,37 @@ const analytics = [
   {
     title: "Tailored Solutions",
     image:
-      "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201.png",
+      "https://assets-social-brand-managers.netlify.app/community%20management%20new/tailored%20solutions.webp",
     text: "We customize community management strategies to match your brand's goals",
   },
   {
     title: "Platform Mastery",
     image:
-      "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201-2.png",
+      "https://assets-social-brand-managers.netlify.app/community%20management%20new/platform%20mastery.webp",
     text: "We excel in managing communities on various social media platforms.",
   },
   {
     title: "Data-Driven Insights",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-2.png",
+      "https://assets-social-brand-managers.netlify.app/community%20management%20new/data%20driven%20insights.webp",
     text: "Our analytics experts optimize strategies for your community's impact.",
   },
   {
     title: "24/7 Monitoring",
     image:
-      "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201-1.png",
+      "https://assets-social-brand-managers.netlify.app/community%20management%20new/247%20monitoring.webp",
     text: "We're always here, to support your community and keep the conversation.",
   },
   {
     title: "Brand Advocacy",
     image:
-      "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201-3.png",
+      "https://assets-social-brand-managers.netlify.app/community%20management%20new/brand%20strategy.webp",
     text: "We turn your community into brand advocates, through effective campaigns.",
   },
   {
     title: "Collaborative Approach",
     image:
-      "https://assets-social-brand-managers.netlify.app/community%20management%20img/images%20(25)%201-5.png",
+      "https://assets-social-brand-managers.netlify.app/community%20management%20new/collaborative%20approach.webp",
     text: "We're like an extension of your team, combining your vision with our expertise for results.",
   },
 ];
@@ -72,10 +72,21 @@ const ServiceCard = ({ index, title, image, text }: any) => {
 
 const SocialMStrategyCards = () => {
   return (
-    <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
-      {analytics.map((service, index) => (
-        <ServiceCard key={service.title} index={index} {...service} />
-      ))}
+    <div className="bg-white t-b-padding">
+      <div className="m-auto text-center w-[80%] pb-[80px]">
+        <h3 className=" inline-block">
+          Why Choose SBM for {""}
+          <span className="text-primary-blue">
+            Community Management Service
+            <strong className="text-primary-blue">.</strong>
+          </span>
+        </h3>
+      </div>
+      <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
+        {analytics.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </div>
   );
 };

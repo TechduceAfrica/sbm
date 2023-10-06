@@ -10,37 +10,37 @@ const analytics = [
   {
     title: "Customized Solutions",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201.png",
+      "https://assets-social-brand-managers.netlify.app/socila%20media%20strategy%20new/customized%20solutions.webp",
     text: "We create custom social media strategies based on your brand, goals.",
   },
   {
     title: "Data-Driven Approach",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-2.png",
+      "https://assets-social-brand-managers.netlify.app/socila%20media%20strategy%20new/data-driven%20approavh.webp",
     text: "Our data-driven strategies guarantee purposeful actions and tangible results.",
   },
   {
     title: "Engaging Contents",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-4.png",
+      "https://assets-social-brand-managers.netlify.app/socila%20media%20strategy%20new/engaging%20content.webp",
     text: "Content is king, We create engaging content: visuals, articles, videos.",
   },
   {
     title: "Consistent Posting",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-1.png",
+      "https://assets-social-brand-managers.netlify.app/socila%20media%20strategy%20new/consistent%20posting.webp",
     text: "Consistency is crucial. We'll help you stay on track for a loyal audience.",
   },
   {
     title: "Community Building",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-3.png",
+      "https://assets-social-brand-managers.netlify.app/socila%20media%20strategy%20new/community%20building.webp",
     text: "Building a loyal online community is key. We'll help you foster loyalty.",
   },
   {
     title: "Measurable Results",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-5.png",
+      "https://assets-social-brand-managers.netlify.app/socila%20media%20strategy%20new/measurable%20results.webp",
     text: "We deliver results, proving how your social media efforts drive real-world growth.",
   },
 ];
@@ -72,10 +72,21 @@ const ServiceCard = ({ index, title, image, text }: any) => {
 
 const SocialMStrategyCards = () => {
   return (
-    <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
-      {analytics.map((service, index) => (
-        <ServiceCard key={service.title} index={index} {...service} />
-      ))}
+    <div className="bg-white t-b-padding">
+      <div className="m-auto text-center w-[80%] pb-[80px]">
+        <h3 className=" inline-block">
+          Why Choose SBM for{" "}
+          <span className="text-primary-blue">
+            Social Media Strategy Development
+            <strong className="text-primary-blue">.</strong>
+          </span>
+        </h3>
+      </div>
+      <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
+        {analytics.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </div>
   );
 };

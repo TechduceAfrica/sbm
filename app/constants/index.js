@@ -57,7 +57,7 @@ export const homeServicesTop = [
   {
     title: "Brand Management",
     image:
-      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
+      "https://assets-social-brand-managers.netlify.app/Rectangle%20631.png",
     text: "Crafting a consistent and compelling identity that resonates with your audience.",
     link: "https://socialbrandmanagers.com/services",
   },
@@ -90,14 +90,14 @@ export const sbmServices = [
   },
   {
     image:
-      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic.png",
+      "https://assets-social-brand-managers.netlify.app/Rectangle%20631.png",
     title: "Brand Management",
     text: "Taioring strategies based on client objectives and target audience analysis.",
     url: "/brand-management",
   },
   {
     image:
-      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic5.png",
     title: "Content creation and curation",
     text: "Crafting engaging and shareable content to captivate audience.",
     url: "/content-creation-curation",
@@ -118,7 +118,7 @@ export const sbmServices = [
   },
   {
     image:
-      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic5.png",
+      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
     title: "Analytics and reporting",
     text: "Measuring key performance metrics and providing insights for continuous improvement.",
     url: "/analytics-and-report",

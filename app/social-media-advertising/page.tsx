@@ -12,18 +12,7 @@ const page = () => {
 
       {/* CARDS */}
 
-      <div className="bg-white t-b-padding">
-        <div className="m-auto text-center w-[80%] pb-[80px]">
-          <h3 className=" inline-block">
-            Why Choose SBM for{" "}
-            <span className="text-primary-blue">
-              Social Media Advertising Service
-              <strong className="text-primary-blue">.</strong>
-            </span>
-          </h3>
-        </div>
-        <SocialMAdvertCards />
-      </div>
+      <SocialMAdvertCards />
 
       <ServiceNextPageCTA />
     </div>

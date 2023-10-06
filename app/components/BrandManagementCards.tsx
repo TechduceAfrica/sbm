@@ -10,37 +10,37 @@ const analytics = [
   {
     title: "Brand strategy",
     image:
-      "https://assets-social-brand-managers.netlify.app/brand-management/brand%20strategy.png",
+      "https://assets-social-brand-managers.netlify.app/brand%20management%20strategy%20new/Brand%20strategy.webp",
     text: "We help you define your brand’s identity for a compelling online presence.",
   },
   {
     title: "Visual Identity",
     image:
-      "https://assets-social-brand-managers.netlify.app/brand-management/visual%20identity.png",
+      "https://assets-social-brand-managers.netlify.app/brand%20management%20strategy%20new/Visual%20Identity.webp",
     text: "We craft a captivating visual identity that resonates with your audience.",
   },
   {
     title: "Content Alignment",
     image:
-      "https://assets-social-brand-managers.netlify.app/brand-management/content%20alignment.png",
+      "https://assets-social-brand-managers.netlify.app/content%20creation%20new/content%20curation.webp",
     text: "We ensure that every piece of content aligns with your brand’s voice & objectives.",
   },
   {
     title: "Reputation Management",
     image:
-      "https://assets-social-brand-managers.netlify.app/brand-management/reputation%20management.png",
+      "https://assets-social-brand-managers.netlify.app/brand%20management%20strategy%20new/reputation%20management.webp",
     text: "We protect your brand’s reputation by monitoring online conversation.",
   },
   {
     title: "Crisis Management",
     image:
-      "https://assets-social-brand-managers.netlify.app/brand-management/crisis%20management.png",
+      "https://assets-social-brand-managers.netlify.app/brand%20management%20strategy%20new/crisis%20managemnet.webp",
     text: "We provide expert guidance to mitigate damage and maintain your brand’s identity.",
   },
   {
     title: "Competitor Analysis",
     image:
-      "https://assets-social-brand-managers.netlify.app/brand-management/competitor%20analysis.png",
+      "https://assets-social-brand-managers.netlify.app/brand%20management%20strategy%20new/customer%20analytics.webp",
     text: "Stay ahead by understanding your competitor’s strategies and positioning.",
   },
 ];
@@ -72,10 +72,21 @@ const ServiceCard = ({ index, title, image, text }: any) => {
 
 const SocialMStrategyCards = () => {
   return (
-    <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
-      {analytics.map((service, index) => (
-        <ServiceCard key={service.title} index={index} {...service} />
-      ))}
+    <div className="bg-white t-b-padding">
+      <div className="m-auto text-center w-[80%] pb-[80px]">
+        <h3 className=" inline-block">
+          Why Choose SBM for{" "}
+          <span className="text-primary-blue">
+            Brand Management Services{" "}
+            <strong className="text-primary-blue">.</strong>
+          </span>
+        </h3>
+      </div>
+      <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
+        {analytics.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </div>
   );
 };

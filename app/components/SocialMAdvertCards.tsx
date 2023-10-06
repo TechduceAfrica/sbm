@@ -10,37 +10,37 @@ const analytics = [
   {
     title: "Targeted Campaigns",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20advertising/images%20(25)%201.png",
+      "https://assets-social-brand-managers.netlify.app/Social%20Media%20advertising%20new/Targeted%20campaigns.webp",
     text: "We design laser-focused ad campaigns tailored to your specific audience.",
   },
   {
     title: "Multi Platform Expertise",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20advertising/images%20(25)%201-2.png",
+      "https://assets-social-brand-managers.netlify.app/Social%20Media%20advertising%20new/multi%20platform%20expertise.webp",
     text: "We excel on all major social media platforms to boost your brand's visibility.",
   },
   {
     title: "Compelling ad Creatives",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20advertising/images%20(25)%201-4.png",
+      "https://assets-social-brand-managers.netlify.app/Social%20Media%20advertising%20new/compelling%20ad%20creative.webp",
     text: "We create visually stunning and compelling copy that grab attention and inspire action.",
   },
   {
     title: "Budget Optimization",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20advertising/images%20(25)%201-1.png",
+      "https://assets-social-brand-managers.netlify.app/Social%20Media%20advertising%20new/Budget%20optimization.webp",
     text: "We maximize your advertising budget’s efficiency, ensuring you get the best ROI possible.",
   },
   {
     title: "A/B Testing",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20advertising/images%20(25)%201-3.png",
+      "https://assets-social-brand-managers.netlify.app/Social%20Media%20advertising%20new/ab%20testing.webp",
     text: "Our Continuous testing help identify the most effective Ad strategy to achieve your goal.",
   },
   {
     title: "Performance Analytics",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20advertising/images%20(25)%201-5.png",
+      "https://assets-social-brand-managers.netlify.app/Social%20Media%20advertising%20new/performance%20analytics.webp",
     text: "We provide comprehensive reports that break down campaign performance",
   },
 ];
@@ -71,10 +71,21 @@ const ServiceCard = ({ index, title, image, text }: any) => {
 
 const SocialMStrategyCards = () => {
   return (
-    <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
-      {analytics.map((service, index) => (
-        <ServiceCard key={service.title} index={index} {...service} />
-      ))}
+    <div className="bg-white t-b-padding">
+      <div className="m-auto text-center w-[80%] pb-[80px]">
+        <h3 className=" inline-block">
+          Why Choose SBM for{" "}
+          <span className="text-primary-blue">
+            Social Media Advertising Service
+            <strong className="text-primary-blue">.</strong>
+          </span>
+        </h3>
+      </div>
+      <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
+        {analytics.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </div>
   );
 };

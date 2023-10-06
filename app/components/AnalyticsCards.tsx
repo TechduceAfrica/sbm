@@ -10,37 +10,37 @@ const analytics = [
   {
     title: "Comprehensive Data Analysis",
     image:
-      "https://assets-social-brand-managers.netlify.app/social%20brand%20img/images%20(25)%201-1.png",
+      "https://assets-social-brand-managers.netlify.app/analytics%20new/Comprehensive%20dataa%20analysis.webp",
     text: "We dig deep to extract insights about your audience, content & campaign performance",
   },
   {
     title: "Customized Reporting",
     image:
-      "https://assets-social-brand-managers.netlify.app/analytics-img/customized%20reporting.png",
+      "https://assets-social-brand-managers.netlify.app/analytics%20new/Customized%20reporting.webp",
     text: "Our reports are tailored to your Brand’s specific goals and vision",
   },
   {
     title: "Actionable Reccomendations",
     image:
-      "https://assets-social-brand-managers.netlify.app/analytics-img/actionable%20reccomendation.png",
+      "https://assets-social-brand-managers.netlify.app/analytics%20new/Actionable%20recommendation.webp",
     text: "We don’t stop at data analysis, we also provide insights with actionable steps.",
   },
   {
     title: "Performance Tracking",
     image:
-      "https://assets-social-brand-managers.netlify.app/analytics-img/performance%20tracking.png",
+      "https://assets-social-brand-managers.netlify.app/analytics%20new/Performance%20tracking.webp",
     text: "Our analytics offer real-time tracking, keeping you updated on your brand’s performance",
   },
   {
     title: "Competitor Analysis",
     image:
-      "https://assets-social-brand-managers.netlify.app/brand-management/competitor%20analysis.png",
+      "https://assets-social-brand-managers.netlify.app/analytics%20new/Compertitor%20analysis.webp",
     text: "Gain a competitive edge by understanding your competitors in the digital arena",
   },
   {
     title: "ROI Measurement",
     image:
-      "https://assets-social-brand-managers.netlify.app/analytics-img/roi%20measurement.png",
+      "https://assets-social-brand-managers.netlify.app/analytics%20new/Roi%20measurement.webp",
     text: "Track the impact of your digital efforts on your bottom line",
   },
 ];
@@ -72,10 +72,21 @@ const ServiceCard = ({ index, title, image, text }: any) => {
 
 const AnalyticsCards = () => {
   return (
-    <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
-      {analytics.map((service, index) => (
-        <ServiceCard key={service.title} index={index} {...service} />
-      ))}
+    <div className="bg-white py-[80px]">
+      <div className="m-auto text-center w-[80%] pb-[80px]">
+        <h3 className=" inline-block">
+          Why Choose SBM for &nbsp;
+          <span className="text-primary-blue">
+            Analytics and Reports Service
+            <strong className="text-primary-blue">.</strong>
+          </span>
+        </h3>
+      </div>
+      <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
+        {analytics.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </div>
   );
 };
