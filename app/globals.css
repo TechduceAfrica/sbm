@@ -1755,11 +1755,11 @@ a:hover .btn-icon-ani {
 .home-proof-container img {
   max-height: 500px;
   width: 100%;
+  max-width: 200px;
   cursor: grabbing;
-  animation: MockupScroll 20s linear 200ms infinite;
 }
 
-@keyframes MockupScroll {
+/* @keyframes MockupScroll {
   from, to {
     transform: translateX(0);
   }
@@ -1767,7 +1767,7 @@ a:hover .btn-icon-ani {
   90% {
     transform: translateX(calc(-100vw - 500px));
   }
-}
+} */
 
 .home-proof-title:has(p, h3) {
   text-align: center;
@@ -1938,12 +1938,13 @@ a:hover .btn-icon-ani {
 
 .testimonial-card {
   display: grid;
+  text-align: center;
   gap: 10px;
   background-color: #ffffff;
   border-radius: 10px;
   padding: 30px 20px;
   cursor: pointer;
-  animation: auto-scroll-right 30s ease-in-out 0ms infinite normal none;
+  /* animation: auto-scroll-right 30s ease-in-out 0ms infinite normal none; */
 }
 
 .testimonial-card h5 {
@@ -1952,11 +1953,11 @@ a:hover .btn-icon-ani {
   font-weight: 700;
 }
 
-.testimonial-cards:hover .testimonial-card {
+/* .testimonial-cards:hover .testimonial-card {
   animation-play-state: paused;
-}
+} */
 
-@keyframes auto-scroll-right {
+/* @keyframes auto-scroll-right {
   from,
   to {
     transform: translateX(0);
@@ -1964,7 +1965,7 @@ a:hover .btn-icon-ani {
   90% {
     transform: translateX(calc(-100vw));
   }
-}
+} */
 
 .testimonial-card-img-wrapper {
   width: 75px;
@@ -2522,4 +2523,15 @@ footer {
   .portfolio-popup-close-btn svg {
     transform: translate(0%, -100%);
   }
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

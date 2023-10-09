@@ -2,6 +2,7 @@ import React from "react";
 import "keen-slider/keen-slider.min.css";
 import KeenSlider from "keen-slider";
 import TestimonialCard from "./TestimonialCard";
+import NewTestimonialCarousels from "./NewTestimonialCarousels";
 
 const Testimonials = () => {
   const testimonials = [
@@ -50,6 +51,7 @@ const Testimonials = () => {
           They matched me with a professional who understands my industry and goals perfectly.`,
     },
   ];
+  
   return (
     <div className="container-width text-body-text-colour">
       <div className=" home-features-text gap-3 pt-[50px] text-center">
@@ -66,14 +68,7 @@ const Testimonials = () => {
 
       <div className="testimonial-cards-wrapper">
         <div className="testimonial-cards">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              imgurl={testimonial.imageUrl}
-              clientname={testimonial.clientName}
-              testimony={testimonial.testimony}
-            />
-          ))}
+          <NewTestimonialCarousels/>
         </div>
       </div>
     </div>

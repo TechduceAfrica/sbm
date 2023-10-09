@@ -2,6 +2,7 @@ import React from "react";
 import { PhoneSlides } from "../constants";
 import Head from "next/head";
 import Carousel from "./Carousel";
+import PhoneMockupCarousel from './PhoneMockupCarousel'
 
 export default function ProofSection() {
   return (
@@ -16,7 +17,8 @@ export default function ProofSection() {
         </h3>
       </div>
 
-      <Carousel />
+      {/* <Carousel /> */}
+      <PhoneMockupCarousel/>
     </div>
   );
 }

@@ -8,6 +8,7 @@ import HomeBenefits from "./components/HomeBenefits";
 import SealDeal from "./components/SealDeal";
 import ProofSection from "./components/ProofSection";
 import ThreeSteps from "./components/ThreeSteps";
+import NewTestimonialCarousels from "./components/NewTestimonialCarousels"
 
 export default function Home() {
   return (
