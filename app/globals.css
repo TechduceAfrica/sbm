@@ -1015,9 +1015,9 @@ a:hover .btn-icon-ani {
   background-image: none;
 }
 
-/* .analytics-container > div {
-  flex: 1 0 calc(50vw - 80px);
-} */
+.analytics-container {
+  flex: 1 0 calc(50% - 80px);
+}
 
 /* SERVICE CSS */
 .sbm-service-container {
@@ -2538,4 +2538,19 @@ footer {
   .portfolio-popup-close-btn svg {
     transform: translate(0%, -100%);
   }
+}
+
+.service-next-p-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.servicecard-image {
+  width: 100%;
+  height: 231.59px;
+}
+
+.mainservicecard-image {
+  width: 100%;
+  height: 300px;
 }

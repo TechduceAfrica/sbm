@@ -29,7 +29,7 @@ const Service: React.FC<ServiceProps> = (props) => {
 
   return (
     <div className="service-container">
-      <div className="service-container-img">
+      <div className="service-container-img mainservicecard-image">
         <img src={props.image} alt={props.title} title={props.title} />
       </div>
       <div className="service-container-text gap-y-3 flex flex-col">

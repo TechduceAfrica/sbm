@@ -48,7 +48,9 @@ const ServiceNextPageCTA = () => {
           <p className="text-body-text-colour inline-block text-center">
             Let us embark on a journey of digital success together
           </p>
-          <Button title="Get Started" />
+          <a href="https://socialbrandmanagers.com/form" title="About SBM">
+            <Button title="Get Started" />
+          </a>
         </div>
 
         <div className="absolute bottom-0 right-0">
