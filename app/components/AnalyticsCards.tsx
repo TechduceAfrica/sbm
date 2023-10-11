@@ -82,7 +82,7 @@ const AnalyticsCards = () => {
           </span>
         </h3>
       </div>
-      <div className=" justify-center gap-x-6 service-next-p-cards gap-y-10 ">
+      <div className="   service-next-p-cards custom-container-max-width  ">
         {analytics.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

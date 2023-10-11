@@ -49,7 +49,7 @@ const ServiceCard = ({ index, title, image, text }: any) => {
     <motion.div
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
       key={index}
-      className="bg-white lg:w-[300px] w-[300px] min-h-[500px] rounded-[23.18px] flex-col text-center  box-shadow"
+      className="bg-white lg:w-[300px] w-[300px]  rounded-[23.18px] flex-col text-center  box-shadow"
     >
       <Image
         src={image}
@@ -58,8 +58,8 @@ const ServiceCard = ({ index, title, image, text }: any) => {
         alt={title}
         title={title}
         className="rounded-t-lg"
-      ></Image>
-      <div className="service-text flex flex-col justify-between p-6 gap-2 min-h-[300px] text-body-text-colour leading-7">
+      />
+      <div className="service-text flex flex-col justify-between p-6 gap-2  text-body-text-colour leading-7">
         <div>
           <h4 className="font-semibold text-[27.81px]">{title}</h4>
           <p className="text-[21.63px] mt-4 leading-7">{text}</p>
@@ -81,7 +81,7 @@ const SocialMStrategyCards = () => {
           </span>
         </h3>
       </div>
-      <div className="flex justify-center gap-x-6 flex-wrap gap-y-10 ">
+      <div className="   service-next-p-cards custom-container-max-width  ">
         {analytics.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

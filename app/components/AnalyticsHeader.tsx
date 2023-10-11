@@ -7,7 +7,7 @@ import SectionWrapper from "../hoc/SectionWrapper";
 
 const AnalyticsHeader = () => {
   return (
-    <div className="relative custom-container-max-width flex  gap-8 items-center  t-b-padding   pt-0 lg:pt-[150px] ">
+    <div className="relative custom-container-max-width analytics-wrapper  t-b-padding   pt-0 lg:pt-[150px] ">
       <div className="analytics-container analytics-hero-text">
         <motion.h3 className=" " variants={fadeIn("right", "spring", 0, 0.75)}>
           Empower Your Brand With Actionable Insights with SBM’s {""}

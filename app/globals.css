@@ -1019,6 +1019,21 @@ a:hover .btn-icon-ani {
   flex: 1 0 calc(50% - 80px);
 }
 
+@media only screen and (max-width: 768px) {
+  .analytics-container {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .analytics-wrapper {
+    flex-direction: column;
+  }
+}
+
+.analytics-wrapper {
+  @apply flex  gap-8 items-center;
+}
+
 /* SERVICE CSS */
 .sbm-service-container {
   padding-top: 80px;
@@ -2542,7 +2557,10 @@ footer {
 
 .service-next-p-cards {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  @apply py-2;
 }
 
 .servicecard-image {

@@ -7,12 +7,9 @@ import SectionWrapper from "../hoc/SectionWrapper";
 
 const SocialMStrategyHeader = () => {
   return (
-    <div className="relative flex flex-wrap justify-between items-center analytics-container t-b-padding px-[20px] lg:px-[80px]  pt-0 lg:pt-[150px] ">
-      <div className="analytics-hero-text flex-col gap-5 flex">
-        <motion.h3
-          className="flex flex-wrap  max-w-[500px]"
-          variants={fadeIn("right", "spring", 0, 0.75)}
-        >
+    <div className="relative custom-container-max-width analytics-wrapper  t-b-padding   pt-0 lg:pt-[150px] ">
+      <div className="analytics-container analytics-hero-text">
+        <motion.h3 className=" " variants={fadeIn("right", "spring", 0, 0.75)}>
           Propel Your Brand Into the Spotlight With SBM’s&nbsp;
           <span className="text-primary-blue">
             Social Media Advertising<strong>.</strong>
@@ -20,7 +17,7 @@ const SocialMStrategyHeader = () => {
         </motion.h3>
 
         <motion.p
-          className="flex flex-wrap max-w-[500px] mb-5"
+          className="my-5"
           variants={fadeIn("right", "spring", 0.2, 0.75)}
         >
           We specialize in elevating your online presence and engagement through
@@ -28,17 +25,16 @@ const SocialMStrategyHeader = () => {
         </motion.p>
       </div>
       <motion.div
-        className="anlytics-image border-white border-[14px] shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]"
+        className="anlytics-image rounded-[20px]  analytics-container flex justify-end"
         variants={fadeIn("left", "spring", 0.3, 0.75)}
       >
-        <Image
-          alt="Analytics and Report Image"
+        <img
+          alt="Social Advert Header Image"
           src="https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic4.png"
-          width={450}
-          height={300}
+          className="rounded-[20px] shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]"
         />
       </motion.div>
-      <div className="absolute top-3 right-[52px] hidden lg:block">
+      <div className="absolute top-3 right-0 hidden lg:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="110"
