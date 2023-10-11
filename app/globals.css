@@ -1736,38 +1736,15 @@ a:hover .btn-icon-ani {
 
 /* PROOF SECTION CSS */
 .home-proof-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: grid;
+  row-gap: 20px;
+  align-items: center; */
   padding-block: 80px;
   background-image: url(https://assets-social-brand-managers.netlify.app/home%20page/Servies%20interactions%20-%20BG.webp);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.home-proof-container .relative .w-width .flex {
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.home-proof-container img {
-  max-height: 500px;
-  width: 100%;
-  max-width: 200px;
-  cursor: grabbing;
-}
-
-/* @keyframes MockupScroll {
-  from, to {
-    transform: translateX(0);
-  }
-
-  90% {
-    transform: translateX(calc(-100vw - 500px));
-  }
-} */
 
 .home-proof-title:has(p, h3) {
   text-align: center;
@@ -2529,9 +2506,29 @@ footer {
   transition-timing-function: linear !important;
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+
+.phonemockupcarousel-phoneslide-wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.phonemockupcarousel-phoneslide-wrapper > div {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.slide-phone-card-img-wrapper {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+
+.slide-phone-card h5 {
+  text-align: center;
 }

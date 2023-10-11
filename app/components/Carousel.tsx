@@ -22,40 +22,58 @@ function Carousel() {
             modules={[Autoplay]}
           >
             <SwiperSlide>
-              <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/PerfectScentdesignerperfumes.webp" 
-                    alt="Perfect Scents Designer Perfumes" 
-                    title="Perfect Scents Designer Perfumes" 
-                    className="object-cover"/>
+              <div>
+                {/* <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/PerfectScentdesignerperfumes.webp" 
+                      alt="Perfect Scents Designer Perfumes" 
+                      title="Perfect Scents Designer Perfumes" 
+                      className="object-cover"/> */}
+                      1
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Bebiscrib%20social%20media%20page%20instagram.webp" 
-                    alt="Bebis cribs" 
-                    title="Bebis cribs" 
-                    className="object-cover"/>
+              <div>
+                {/* <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Bebiscrib%20social%20media%20page%20instagram.webp" 
+                      alt="Bebis cribs" 
+                      title="Bebis cribs" 
+                      className="object-cover"/> */}
+                      2
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Glamour%20Lounge%20and%20Spa%20social%20media%20page%20Instagram.webp" 
-                    alt="Glamour Lounge and Spa" 
-                    title="Glamour Lounge and Spa" 
-                    className="object-cover"/>
+              <div>
+                {/* <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Glamour%20Lounge%20and%20Spa%20social%20media%20page%20Instagram.webp" 
+                      alt="Glamour Lounge and Spa" 
+                      title="Glamour Lounge and Spa" 
+                      className="object-cover"/> */}
+                      3
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Montana%20Residence%20Social%20media%20page%20Instagram.webp" 
-                    alt="Montana Residence" 
-                    title="Montana Residence" 
-                    className="object-cover"/>
+              <div>
+                {/* <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Montana%20Residence%20Social%20media%20page%20Instagram.webp" 
+                      alt="Montana Residence" 
+                      title="Montana Residence" 
+                      className="object-cover"/> */}
+                      4
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Ducecampaign%20Instagram%20page.webp" 
-                    alt="Ducecampaign" 
-                    title="Ducecampaign" 
-                    className="object-cover"/>
+              <div>
+                {/* <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Ducecampaign%20Instagram%20page.webp" 
+                      alt="Ducecampaign" 
+                      title="Ducecampaign" 
+                      className="object-cover"/> */}
+                      5
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Ducehost%20instagram%20page.webp" 
-                    alt="Ducehost" 
-                    title="Ducehost" 
-                    className="object-cover"/>
+              <div>
+                {/* <img src="https://assets-social-brand-managers.netlify.app/home%20page/Client%20Social%20Media%20Page/Ducehost%20instagram%20page.webp" 
+                      alt="Ducehost" 
+                      title="Ducehost" 
+                      className="object-cover"/> */}
+                      6
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>
