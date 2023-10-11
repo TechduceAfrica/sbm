@@ -10,37 +10,37 @@ const analytics = [
   {
     title: "Creative Content Creation",
     image:
-      "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201.png",
+      "https://assets-social-brand-managers.netlify.app/content%20creation%20new/creative%20content%20creation.webp",
     text: "From eye-catching graphics to compelling written content, we craft pieces that captivates.",
   },
   {
     title: "Content Curation",
     image:
-      "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-1.png",
+      "https://assets-social-brand-managers.netlify.app/content%20creation%20new/content%20curation.webp",
     text: "We scour the internet for the most relevant and exciting content in your niche.",
   },
   {
     title: "Strategy and Planning",
     image:
-      "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-2.png",
+      "https://assets-social-brand-managers.netlify.app/content%20creation%20new/strategy%20and%20planning.webp",
     text: "We work closely with you to build a content calendar that aligns with your goals.",
   },
   {
     title: "Engagement Optimization",
     image:
-      "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-3.png",
+      "https://assets-social-brand-managers.netlify.app/content%20creation%20new/Engagement%20optimization.webp",
     text: "We foster a sense of community by engaging with your audience",
   },
   {
     title: "Data-Driven Insights",
     image:
-      "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-4.png",
+      "https://assets-social-brand-managers.netlify.app/content%20creation%20new/Data-driven%20insights.webp",
     text: "We don’t guess what works, we use data to make informed decisions.",
   },
   {
     title: "Customized Solutions",
     image:
-      "https://assets-social-brand-managers.netlify.app/content-creation/images%20(25)%201-5.png",
+      "https://assets-social-brand-managers.netlify.app/content%20creation%20new/customized%20solutions.webp",
     text: "We work closely with you to ensure that every content aligns with your vision.",
   },
 ];
