@@ -2574,7 +2574,7 @@ footer {
 }
 
 /* Lines */
-.lines {
+/* .lines {
   position: absolute;
   top: 0;
   left: 0;
@@ -2652,4 +2652,4 @@ footer {
   100% {
     top: 110%;
   }
-}
+} */
