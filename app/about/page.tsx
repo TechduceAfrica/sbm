@@ -7,7 +7,7 @@ import CtaComponent from "../components/CtaComponent";
 
 const About = () => {
   return (
-    <div className="text-body-text-colour">
+    <div className="text-body-text-colour mb-[50px]">
       <AboutPageHeroSection />
       <AboutMissionSection />
       <AboutPageWorkspaceSection />

@@ -6,7 +6,7 @@ import SocialMStrategyHeader from "../components/SocialMStrategyHeader";
 
 const page = () => {
   return (
-    <div className="text-body-text-colour  ">
+    <div className="text-body-text-colour mb-[50px] ">
       <SocialMStrategyHeader />
 
       {/* CARDS */}

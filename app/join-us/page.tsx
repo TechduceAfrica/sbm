@@ -7,7 +7,7 @@ import CtaComponent from "../components/CtaComponent";
 export default function JoinOurWorkForce() {
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-white mb-[50px]">
         <JoWfHero />
         <EligibilityCriteria />
         <OurBrandmanagers />

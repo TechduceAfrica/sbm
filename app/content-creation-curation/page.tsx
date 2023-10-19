@@ -7,7 +7,7 @@ import Content2CCards from "../components/Content2CCards";
 
 const page = () => {
   return (
-    <div className="text-body-text-colour  ">
+    <div className="text-body-text-colour mb-[50px] ">
       <Content2CHeader />
 
       {/* CARDS */}

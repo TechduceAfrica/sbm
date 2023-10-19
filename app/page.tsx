@@ -11,7 +11,7 @@ import ThreeSteps from "./components/ThreeSteps";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden mb-[50px]">
       <Hero />
       {/* <HomeInteraction1 /> */}
       <ProofSection />

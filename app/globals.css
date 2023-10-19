@@ -2574,18 +2574,18 @@ footer {
 }
 
 /* Lines */
-/* .lines {
+.lines {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 100%;
-  z-index: -1;
+  z-index: -10;
 }
 
 .line {
   position: absolute;
-  width: 1px;
+  width: 5px;
   height: 100%;
   top: 0;
   left: 50%;
@@ -2652,4 +2652,13 @@ footer {
   100% {
     top: 110%;
   }
-} */
+}
+
+.blog-content {
+  display: grid;
+  place-content: center;
+}
+
+.blog-content h1 {
+  line-height: normal;
+}

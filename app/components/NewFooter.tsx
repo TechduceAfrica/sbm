@@ -9,15 +9,15 @@ import { LiaFacebookSquare, LiaInstagram } from "react-icons/lia";
 const NewFooter = () => {
   const [active, setActive] = useState("");
   return (
-    <footer className="mt-[50px] bg-footer-blue relative z-0 ">
-      <div className="lines">
+    <footer className=" bg-footer-blue relative z-0 ">
+      {/* <div className="lines">
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
-      </div>
+      </div> */}
 
       <div className="flex flex-col justify-center gap-8 text-white text-[22px] lg:text-[32px]">
         <div className="footer-items custom-container-max-width">

@@ -8,7 +8,7 @@ import CommunityMCard from "../components/CommunityMCard";
 
 const page = () => {
   return (
-    <div className="text-body-text-colour  ">
+    <div className="text-body-text-colour mb-[50px] ">
       <CommunityMHeader />
 
       {/* CARDS */}

@@ -6,7 +6,7 @@ import AnalyticsHeader from "../components/AnalyticsHeader";
 
 const page = () => {
   return (
-    <div className="text-body-text-colour  ">
+    <div className="text-body-text-colour  mb-[50px]">
       <AnalyticsHeader />
       {/* CARDS */}
 

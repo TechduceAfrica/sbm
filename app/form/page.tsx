@@ -119,7 +119,7 @@ const Page = () => {
   };
 
   return (
-    <div className="custom-container-max-width overflow-hidden md:px-20 lg:px-20 px-3 flex flex-col lg:flex-row gap-10 text-body-text-colour my-[80px] shrink p-20">
+    <div className="custom-container-max-width overflow-hidden mb-[50px] md:px-20 lg:px-20 px-3 flex flex-col lg:flex-row gap-10 text-body-text-colour my-[80px] shrink p-20">
       {/* FORM TEXT */}
       <motion.div
         className="form-text flex flex-col w-full gap-3"
