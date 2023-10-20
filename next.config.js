@@ -7,14 +7,6 @@ const nextConfig = {
       "assets-social-brand-managers.netlify.app",
     ],
   },
-  async rewrites() {
-    return [
-      {
-        source: "/sitemap.xml",
-        destination: "/api/sitemap",
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
