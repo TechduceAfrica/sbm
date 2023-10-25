@@ -31,7 +31,7 @@ const SocialMStrategyHeader = () => {
         <img
           alt="Brand Management Image"
           src="https://assets-social-brand-managers.netlify.app/Rectangle%20631.png"
-          className="rounded-[20px] shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)]"
+          className="rounded-[20px] shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)] w-[500px] h-[386px]"
         />
       </motion.div>
       <div className="absolute top-3 right-0 hidden lg:block">

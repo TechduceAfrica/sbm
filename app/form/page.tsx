@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
@@ -7,6 +8,10 @@ import { type } from "os";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
+
+// DATABASE
+
+// DATABASE END
 
 const contacts = [
   {
@@ -34,7 +39,15 @@ const Page = () => {
   const [noEmail, setNoEmail] = useState(false);
   const [noNumber, setNoNumber] = useState(false);
   const [noMessage, setNoMessage] = useState(false);
-  const formRef = useRef();
+  const [newUser, setnewUser] = useState({
+    name: "",
+    email: "",
+    message: "",
+    number: "",
+    businessCategory: "",
+  });
+
+  // const formRef = useRef();
   let isFormValid = true;
 
   const [form, setForm] = useState({
@@ -42,6 +55,7 @@ const Page = () => {
     email: "",
     message: "",
     number: "",
+    businessCategory: "",
   });
 
   const handleChange = (e: any) => {
@@ -87,6 +101,9 @@ const Page = () => {
 
       const data = { form, timeStamp };
 
+      const uploadData = (data: {}) => {};
+      uploadData(data);
+
       const postData = async (data: {}) => {
         try {
           const submit = await fetch(
@@ -105,13 +122,16 @@ const Page = () => {
         } catch (error) {
           console.log(error);
         }
+
         setLoading(false);
         alert("Thank you. We will get back to you as soon as possible.");
+
         setForm({
           name: "",
           email: "",
           message: "",
           number: "",
+          businessCategory: "",
         });
       };
       postData(data);

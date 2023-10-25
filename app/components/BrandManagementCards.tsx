@@ -77,7 +77,7 @@ const SocialMStrategyCards = () => {
         <h3 className=" inline-block">
           Why Choose SBM for{" "}
           <span className="text-primary-blue">
-            Brand Management Services{" "}
+            Brand Management Services
             <strong className="text-primary-blue">.</strong>
           </span>
         </h3>

@@ -10,7 +10,7 @@ const SocialMStrategyHeader = () => {
     <div className="relative custom-container-max-width analytics-wrapper  t-b-padding   pt-0 lg:pt-[150px] ">
       <div className="analytics-container analytics-hero-text">
         <motion.h3 className=" " variants={fadeIn("right", "spring", 0, 0.75)}>
-          Unlock Your Brand’s Potential With SBM’s &nbsp;
+          Unlock Your Brand’s Potential With SBM’s <br />
           <span className="text-primary-blue">
             Content Creation and Curation Service<strong>.</strong>
           </span>

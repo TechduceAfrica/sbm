@@ -31,7 +31,7 @@ const Hero = () => {
               </div>
             </div>
             <div>
-              <p className="lg:text-[30px]">
+              <p className="lg:text-[30px] mt-3">
                 We make it happen the{" "}
                 <span className="text-primary-blue">SBM</span>
                 {/* <br /> */} way.
