@@ -63,22 +63,22 @@ export const homeServicesTop = [
   },
 ];
 
-export const homeServicesBottom = [
-  {
-    title: "Social Media Advertising",
-    image:
-      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic3.png",
-    text: "Creating and managing targeted Ad campaigns to increase and drive conversions.",
-    link: "https://socialbrandmanagers.com/social-media-advertising",
-  },
-  {
-    title: "Analytics And Reporting",
-    image:
-      "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
-    text: "Measuring key performance metrics and providing insights for continuous improvement.",
-    link: "https://socialbrandmanagers.com/analytics-and-report",
-  },
-];
+// export const homeServicesBottom = [
+//   {
+//     title: "Social Media Advertising",
+//     image:
+//       "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic3.png",
+//     text: "Creating and managing targeted Ad campaigns to increase and drive conversions.",
+//     link: "https://socialbrandmanagers.com/social-media-advertising",
+//   },
+//   {
+//     title: "Analytics And Reporting",
+//     image:
+//       "https://assets-social-brand-managers.netlify.app/resized%20images/servicepagepic2.png",
+//     text: "Measuring key performance metrics and providing insights for continuous improvement.",
+//     link: "https://socialbrandmanagers.com/analytics-and-report",
+//   },
+// ];
 
 export const sbmServices = [
   {

@@ -5,12 +5,35 @@ import Script from "next/script";
 
 import NewFooter from "./components/NewFooter";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import { type } from "os";
 
 const GTM_ID = "GTM-WD23JB47";
 
 export const metadata: Metadata = {
   title: "Social Brand Managers",
   description: "Level up social media contents for your business",
+  openGraph: {
+    title: "Social Brand Managers",
+    description:
+      "Elevate Your Brand's Social Presence with Our Expertise - Your Ultimate Social Media Companion for Enhanced Business Content.",
+    url: "https://socialbrandmanagers.com",
+    siteName: "SBM",
+    images: [
+      {
+        url: "https://socialbrandmanagers.com/_next/image?url=%2Flogo.png&w=1920&q=75",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://socialbrandmanagers.com/_next/image?url=https%3A%2F%2Fassets-social-brand-managers.netlify.app%2Fresized%2520images%2Fservicepagepic3.png&w=828&q=75",
+        width: 1800,
+        height: 1600,
+        alt: "SBM custom alt",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

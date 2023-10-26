@@ -175,7 +175,7 @@ const Page = () => {
       {/* FORM */}
       <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
         <form
-          className="form h-full lg:min-w-[400px] min-w-[300px] rounded-[20px] py-[20px] px-[30px] bg-white box-shadow"
+          className="form h-full lg:min-w-[400px] min-w-[300px] rounded-[20px] py-[20px] px-[30px] bg-form box-shadow"
           onSubmit={handleSubmit}
         >
           <div className="gap-[30px] flex flex-col">

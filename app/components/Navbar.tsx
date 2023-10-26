@@ -79,14 +79,16 @@ const Navbar = () => {
           <img
             src={toggle ? "/close.svg" : "/menu.svg"}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer text-black"
+            className={`w-[28px] h-[28px] object-contain cursor-pointer text-black ${
+              toggle ? "image-transition" : ""
+            }`}
             onClick={() => setToggle(!toggle)}
           />
 
           <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 bg-white absolute top-16 right-0  min-w-[140px] z-10`}
+            className={` p-6 bg-nav absolute top-[82px] right-0 min-w-[240px] h-[100vh] z-10 transition-transform transform ${
+              toggle ? "slide-in" : "slide-out"
+            }`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
@@ -95,7 +97,7 @@ const Navbar = () => {
                   className={`${
                     active === link.text
                       ? "bg-active w-full px-[10px] py-[5px] rounded-md "
-                      : "bg-white"
+                      : ""
                   } hover:text-primary-blue mr-3`}
                   onClick={() => {
                     setActive(link.text);
