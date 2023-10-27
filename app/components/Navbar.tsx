@@ -33,8 +33,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="font-primary font-semibold nav-main-container text-body-text-colour z-20">
-      <div className="nav-wrapper-container">
+    <nav
+      className={`font-primary font-semibold nav-main-container  text-body-text-colour z-20 `}
+    >
+      <div className="nav-wrapper-container relative">
         <div className="logo">
           <Link
             href="/"
@@ -65,7 +67,7 @@ const Navbar = () => {
                 className={`${
                   active === link.text
                     ? "bg-active w-full px-[10px] py-[5px] rounded-md"
-                    : "bg-white"
+                    : ""
                 } hover:text-primary-blue hover:cursor-pointer`}
               >
                 {link.text}
@@ -79,14 +81,13 @@ const Navbar = () => {
           <img
             src={toggle ? "/close.svg" : "/menu.svg"}
             alt="menu"
-            className={`w-[28px] h-[28px] object-contain cursor-pointer text-black ${
+            className={`w-[28px] h-[28px] object-contain cursor-pointer z-20 text-black ${
               toggle ? "image-transition" : ""
             }`}
             onClick={() => setToggle(!toggle)}
           />
-
           <div
-            className={` p-6 bg-nav absolute top-[82px] right-0 min-w-[240px] h-[100vh] z-10 transition-transform transform ${
+            className={` px-6 py-[5rem] bg-nav absolute top-[-10px] right-0 min-w-[240px] h-[100vh] z-10 transition-transform transform ${
               toggle ? "slide-in" : "slide-out"
             }`}
           >

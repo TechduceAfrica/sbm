@@ -179,7 +179,7 @@ code {
 /* NAVBAR CSS */
 
 .nav-main-container {
-  @apply sticky top-0 left-0 bg-white py-[10px] shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)];
+  @apply sticky top-0 left-0  py-[10px] bg-white shadow-[0px_4px_24px_rgba(0,_0,_0,_0.05)];
   position: -webkit-sticky;
 }
 
@@ -215,7 +215,7 @@ a.menu-list:active {
   align-items: center;
 }
 .image-transition {
-  transition: src 0.8s ease-in-out; /* Adjust the transition duration as needed */
+  transition: src 1.8s ease-in-out; /* Adjust the transition duration as needed */
 }
 .slide-in {
   transform: translateX(0);
@@ -229,6 +229,7 @@ a.menu-list:active {
 
 .bg-nav {
   background-color: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
 }
 

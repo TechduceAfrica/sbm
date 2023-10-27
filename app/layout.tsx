@@ -53,9 +53,11 @@ export default function RootLayout({
         `}
       </Script>
       <body className="bg-secondary-blue">
-        <Navbar />
-        <main>{children}</main>
-        <NewFooter />
+        <div className="overflow-hidden">
+          <Navbar />
+          <main className="">{children}</main>
+          <NewFooter />
+        </div>
       </body>
     </html>
   );

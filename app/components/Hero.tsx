@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className=" bg-secondary-blue relative">
+    <section className=" bg-secondary-blue relative py-10">
       <Link
         href="/join-us"
         title="Join social brand manager work force"
@@ -14,7 +14,7 @@ const Hero = () => {
         Join our Workforce
       </Link>
       <div className="container-width bg-secondary-blue custom-container-max-width py-4">
-        <div className="hero-section-wrapper">
+        <div className="hero-section-wrapper flex  m-auto">
           <div>
             <div className="ball-effect-container-wrapper">
               <div>
