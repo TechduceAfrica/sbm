@@ -8,6 +8,7 @@ import Button from "./Button";
 import { useRouter } from "next/navigation";
 import menu from "../../public/menu.svg";
 import close from "../../public/close.svg";
+import Mobilemenu from "./Mobilemenu";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -33,10 +34,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`font-primary font-semibold nav-main-container  text-body-text-colour z-20 `}
-    >
-      <div className="nav-wrapper-container relative">
+    <nav className="font-primary font-semibold nav-main-container text-body-text-colour z-20">
+      <div className="nav-wrapper-container">
         <div className="logo">
           <Link
             href="/"
@@ -67,7 +66,7 @@ const Navbar = () => {
                 className={`${
                   active === link.text
                     ? "bg-active w-full px-[10px] py-[5px] rounded-md"
-                    : ""
+                    : "bg-white"
                 } hover:text-primary-blue hover:cursor-pointer`}
               >
                 {link.text}
@@ -77,43 +76,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navbar */}
-        <div className="lg:hidden flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? "/close.svg" : "/menu.svg"}
-            alt="menu"
-            className={`w-[28px] h-[28px] object-contain cursor-pointer z-20 text-black ${
-              toggle ? "image-transition" : ""
-            }`}
-            onClick={() => setToggle(!toggle)}
-          />
-          <div
-            className={` px-6 py-[5rem] bg-nav absolute top-[-10px] right-0 min-w-[240px] h-[100vh] z-10 transition-transform transform ${
-              toggle ? "slide-in" : "slide-out"
-            }`}
-          >
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.key}
-                  className={`${
-                    active === link.text
-                      ? "bg-active w-full px-[10px] py-[5px] rounded-md "
-                      : ""
-                  } hover:text-primary-blue mr-3`}
-                  onClick={() => {
-                    setActive(link.text);
-                    router.push(link.href);
-                    setToggle(!toggle);
-                  }}
-                >
-                  {link.text}
-                </a>
-              ))}
-
-              <Button title="Get Started" handleClick={handleClick} />
-            </ul>
-          </div>
-        </div>
+        <Mobilemenu />
 
         <Link href="/form" className="lg:block hidden">
           <Button title="Get Started" handleClick={handleClick} />

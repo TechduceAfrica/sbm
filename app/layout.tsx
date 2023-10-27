@@ -53,11 +53,11 @@ export default function RootLayout({
         `}
       </Script>
       <body className="bg-secondary-blue">
-        <div className="overflow-hidden">
-          <Navbar />
-          <main className="">{children}</main>
-          <NewFooter />
-        </div>
+        <Navbar />
+
+        <main className="">{children}</main>
+
+        <NewFooter />
       </body>
     </html>
   );
