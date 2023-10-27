@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/app/utils/motion";
 import Image from "next/image";
 import { homeServicesTop } from "../constants";
-import { homeServicesBottom } from "../constants";
+
 import Link from "next/link";
 
 const HomeServices = () => {
