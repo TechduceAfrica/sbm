@@ -1,18 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+
 import React, { useState, useRef } from "react";
 import Button from "../components/Button";
-import { type } from "os";
+
 import SectionWrapper from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
-// DATABASE
-
-// DATABASE END
-
+// Define the contact details
 const contacts = [
   {
     icon: "/group-241.svg",
@@ -35,107 +34,125 @@ const Page = () => {
   // FORM STATES
   const [loading, setLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [noName, setNoName] = useState(false);
-  const [noEmail, setNoEmail] = useState(false);
-  const [noNumber, setNoNumber] = useState(false);
-  const [noMessage, setNoMessage] = useState(false);
-  const [newUser, setnewUser] = useState({
-    name: "",
-    email: "",
-    message: "",
-    number: "",
-    businessCategory: "",
+  const [formErrors, setFormErrors] = useState({
+    name: false,
+    email: false,
+    number: false,
+    message: false,
   });
-
-  // const formRef = useRef();
-  let isFormValid = true;
 
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
     number: "",
-    businessCategory: "",
   });
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
+    setFormErrors({ ...formErrors, [name]: false });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    // Handle form submission logic here
-    if (form.name === "") {
-      setNoName(true);
-      isFormValid = false;
-    }
+    const isFormValid = validateForm();
 
-    if (form.email === "") {
-      setNoEmail(true);
-      isFormValid = false;
-    }
-
-    if (form.number === "") {
-      setNoNumber(true);
-      isFormValid = false;
-    }
-
-    if (form.message === "") {
-      setNoMessage(true);
-      isFormValid = false;
-    }
-
-    // DETAILS CORRECT
     if (isFormValid) {
       setLoading(true);
-      setNoName(false);
-      setNoEmail(false);
-      setNoMessage(false);
-      setNoNumber(false);
 
-      console.log(isSubmitted);
+      try {
+        const uploadToDatabase = async (data: {
+          name: string;
+          email: string;
+          message: string;
+          number: string;
+        }) => {
+          // Add a new document in collection ""
 
-      const date = new Date();
-      const timeStamp = date;
+          await setDoc(doc(db, "users", data.email), {
+            name: data.name,
+            email: data.email,
+            message: data.message,
+            number: data.number,
+          });
+        };
+        await uploadToDatabase(form);
 
-      const data = { form, timeStamp };
+        // Send data to your API
+        const postData = async (data: {}) => {
+          try {
+            const response = await fetch(
+              "https://sbm-mailsever.onrender.com/form-submitted",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+                },
+                body: JSON.stringify(data),
+              }
+            );
 
-      const uploadData = (data: {}) => {};
-      uploadData(data);
-
-      const postData = async (data: {}) => {
-        try {
-          const submit = await fetch(
-            "https://sbm-mailsever.onrender.com/form-submitted",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-              },
-              body: JSON.stringify(data),
+            if (!response.ok) {
+              throw new Error("Failed to send data");
             }
-          );
-          const result = await submit.json();
-          console.log(result.status);
-        } catch (error) {
-          console.log(error);
-        }
+
+            const result = await response.json();
+            console.log(result.status);
+            return result;
+          } catch (error) {
+            console.error(error);
+            // You can handle the error here or throw it further if needed
+            throw error;
+          }
+        };
+
+        const response = await postData(form);
 
         setLoading(false);
-        alert("Thank you. We will get back to you as soon as possible.");
 
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-          number: "",
-          businessCategory: "",
-        });
-      };
-      postData(data);
+        if (response.status === "success") {
+          setIsSubmitted(true);
+          resetForm();
+        } else {
+          // Handle the case when the API call fails
+
+          alert("Please check that you are connected to the internet");
+          setLoading(false);
+        }
+      } catch (error: any) {
+        // Handle errors that may occur during database or API operations
+        alert("An Error occured, please try again " + error.message);
+        setLoading(false);
+        resetForm();
+
+        // Log or display an error message to the user
+        console.error(error);
+      }
     }
+  };
+
+  const validateForm = () => {
+    const errors = {
+      name: form.name === "",
+      email: form.email === "",
+      number: form.number === "",
+      message: form.message === "",
+    };
+
+    setFormErrors(errors);
+
+    return Object.values(errors).every((error) => !error);
+  };
+
+  const resetForm = () => {
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+      number: "",
+    });
   };
 
   return (
@@ -179,14 +196,15 @@ const Page = () => {
           onSubmit={handleSubmit}
         >
           <div className="gap-[30px] flex flex-col">
+            {/* NAME */}
             <div>
               <label htmlFor="name" className="text-semibold text-[16px]">
                 Name
               </label>
               <div
                 className={`w-[100%] border-2 ${
-                  noName ? "border-red-600" : "border-primary-blue"
-                }  rounded-[5px] flex flex-row justify-between`}
+                  formErrors.name ? "border-red-600" : "border-primary-blue"
+                } rounded-[5px] flex flex-row justify-between`}
               >
                 <input
                   id="name"
@@ -194,70 +212,98 @@ const Page = () => {
                   className="w-full"
                   type="text"
                   value={form.name}
-                  minLength={2}
                   placeholder="What's your name?"
                   onChange={handleChange}
                 />
               </div>
+              {formErrors.name && (
+                <div className="text-red-600 text-[14px] ">
+                  Name is required
+                </div>
+              )}
             </div>
+
+            {/* Email */}
             <div>
               <label htmlFor="email" className="text-semibold text-[16px]">
                 Email
               </label>
               <div
                 className={`w-[100%] border-2 ${
-                  noEmail ? "border-red-600" : "border-primary-blue"
-                }  rounded-[5px] flex flex-row justify-between`}
+                  formErrors.email ? "border-red-600" : "border-primary-blue"
+                } rounded-[5px] flex flex-row justify-between`}
               >
                 <input
                   id="email"
                   name="email"
-                  type="email"
-                  placeholder="E-mail Address"
                   className="w-full"
+                  type="email"
                   value={form.email}
+                  placeholder="Your E-mail Address?"
                   onChange={handleChange}
                 />
               </div>
+              {formErrors.email && (
+                <div className="text-red-600 text-[14px] ">
+                  Email is required
+                </div>
+              )}
             </div>
+
+            {/* Phone Number */}
             <div>
               <label htmlFor="number" className="text-semibold text-[16px]">
                 Phone Number
               </label>
               <div
                 className={`w-[100%] border-2 ${
-                  noNumber ? "border-red-600" : "border-primary-blue"
-                }  rounded-[5px] flex flex-row justify-between`}
+                  formErrors.number ? "border-red-600" : "border-primary-blue"
+                } rounded-[5px] flex flex-row justify-between`}
               >
                 <input
-                  id="number"
+                  id="phoneNumber"
                   name="number"
-                  type="tel"
-                  // pattern="[0"
-                  placeholder="e.g. 08012345678"
                   className="w-full"
+                  type="tel"
+                  placeholder="e.g. 08012345678"
                   maxLength={12}
                   min={8}
                   value={form.number}
                   onChange={handleChange}
                 />
               </div>
+              {formErrors.number && (
+                <div className="text-red-600 text-[14px] ">
+                  Phone Number is required
+                </div>
+              )}
             </div>
+
+            {/* MESSAGES */}
             <div>
               <label htmlFor="message" className="text-semibold text-[16px]">
                 Message
               </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={3}
+              <div
                 className={`w-[100%] border-2 ${
-                  noMessage ? "border-red-600" : "border-primary-blue"
-                }  rounded-[5px] flex flex-row justify-between`}
-                placeholder="Tell us Something..."
-                value={form.message}
-                onChange={handleChange}
-              ></textarea>
+                  formErrors.message ? "border-red-600" : "border-primary-blue"
+                } rounded-[5px] flex flex-row justify-between`}
+              >
+                <textarea
+                  id="message"
+                  name="message"
+                  className="w-full"
+                  rows={3}
+                  value={form.message}
+                  placeholder="How can we help you?"
+                  onChange={handleChange}
+                />
+              </div>
+              {formErrors.message && (
+                <div className="text-red-600 text-[14px] ">
+                  Message is required
+                </div>
+              )}
             </div>
             <div className="font-semibold">
               <Button
