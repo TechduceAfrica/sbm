@@ -114,6 +114,7 @@ const Page = () => {
         };
 
         const response = await postData(data);
+        console.log(response.status);
 
         setLoading(false);
 
@@ -129,9 +130,9 @@ const Page = () => {
         }
       } catch (error: any) {
         // Handle errors that may occur during database or API operations
-        alert("An Error occured, please try again " + error.message);
-        setLoading(false);
-        resetForm();
+        // alert("An Error occured, please try again " + error.message);
+        // setLoading(false);
+        // resetForm();
 
         // Log or display an error message to the user
         console.error(error);

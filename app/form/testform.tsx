@@ -97,43 +97,32 @@
 //       const timeStamp = date;
 
 //       const data = { form, timeStamp };
-//       const databaseData = { form };
-
-//       // UPLOAD TO DATABASE
-
-//       const uploadData = async (data: {
-//         form: { name: string; email: string; message: string; number: string };
-//       }) => {
-//         // Add a new document in collection ""
-
-//         await setDoc(doc(db, "users"), {
-//           name: data.form.name,
-//           email: data.form.email,
-//           message: data.form.message,
-//           number: data.form.number,
-//         });
-//       };
-//       uploadData(databaseData);
-
-//       // DATABASE END
 
 //       const postData = async (data: {}) => {
 //         try {
-//           const submit = await fetch(
-//             "https://sbm-mailsever.onrender.com/form-submitted",
-//             {
-//               method: "POST",
-//               headers: {
-//                 "Content-Type": "application/json",
-//                 Accept: "application/json",
-//               },
-//               body: JSON.stringify(data),
+//           const submit = await fetch("http://localhost:5000/form-submitted", {
+//             method: "POST",
+//             headers: {
+//               "Content-Type": "application/json",
+//               Accept: "application/json",
+//             },
+//             body: JSON.stringify(data),
+//           });
+
+//           if (submit.ok) {
+//             try {
+//               const result = await submit.json();
+//               console.log(result.status);
+//             } catch (error) {
+//               console.error("Failed to parse JSON response:", error);
 //             }
-//           );
-//           const result = await submit.json();
-//           console.log(result.status);
+//           } else {
+//             console.error(
+//               `HTTP Error: ${submit.status} - ${submit.statusText}`
+//             );
+//           }
 //         } catch (error) {
-//           console.log(error);
+//           console.error("Network error:", error);
 //         }
 
 //         setLoading(false);
