@@ -60,6 +60,10 @@ const Page = () => {
 
     if (isFormValid) {
       setLoading(true);
+      const date = new Date();
+      const timeStamp = date;
+
+      const data = { form, timeStamp };
 
       try {
         const uploadToDatabase = async (data: {
@@ -94,11 +98,12 @@ const Page = () => {
               }
             );
 
+            const result = await response.json();
+
             if (!response.ok) {
               throw new Error("Failed to send data");
             }
 
-            const result = await response.json();
             console.log(result.status);
             return result;
           } catch (error) {
@@ -108,7 +113,7 @@ const Page = () => {
           }
         };
 
-        const response = await postData(form);
+        const response = await postData(data);
 
         setLoading(false);
 
