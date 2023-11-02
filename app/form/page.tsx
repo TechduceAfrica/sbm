@@ -119,6 +119,7 @@ const Page = () => {
 
         if (response.status === "success") {
           setIsSubmitted(true);
+          alert("Thank you. We will get back to you as soon as possible.");
           resetForm();
         } else {
           // Handle the case when the API call fails
