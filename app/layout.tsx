@@ -12,6 +12,10 @@ const GTM_ID = "GTM-WD23JB47";
 export const metadata: Metadata = {
   title: "Social Brand Managers",
   description: "Level up social media contents for your business",
+  robots:
+    "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  twitter: {},
+  authors: [{ name: "TechDuce Africa", url: "https://www.techduce.africa" }],
   openGraph: {
     title: "Social Brand Managers",
     description:
@@ -21,17 +25,11 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://socialbrandmanagers.com/_next/image?url=%2Flogo.png&w=1920&q=75",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://socialbrandmanagers.com/_next/image?url=https%3A%2F%2Fassets-social-brand-managers.netlify.app%2Fresized%2520images%2Fservicepagepic3.png&w=828&q=75",
-        width: 1800,
-        height: 1600,
-        alt: "SBM custom alt",
+        width: 636,
+        height: 574,
       },
     ],
-    locale: "en_GB",
+    locale: "en_NG",
     type: "website",
   },
 };
