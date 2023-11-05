@@ -23,13 +23,13 @@ export const metadata: Metadata = {
       "Elevate Your Brand's Social Presence with Our Expertise - Your Ultimate Social Media Companion for Enhanced Business Content.",
     url: "https://socialbrandmanagers.com",
     siteName: "SBM",
-    images: [
-      {
-        url: "/_next/image?url=%2Flogo.png&w=1920&q=75",
-        width: 636,
-        height: 574,
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "/_next/image?url=%2Flogo.png&w=1920&q=75",
+    //     width: 636,
+    //     height: 574,
+    //   },
+    // ],
     locale: "en_NG",
     type: "website",
   },
@@ -42,6 +42,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          property="og:image"
+          content="https://socialbrandmanagers.com/_next/image?url=%2Flogo.png&w=1920&q=75"
+        />
+        <meta property="og:image:width" content="636" />
+        <meta property="og:image:height" content="574" />
+        <meta property="og:image:type" content="image/webp" />
+      </head>
       <Script id="google-tag-manager" strategy="afterInteractive">
         {`
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
