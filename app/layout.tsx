@@ -63,7 +63,10 @@ export default function RootLayout({
           property="og:url"
           content="https://www.socialbrandmanagers.com/"
         />
-        <meta property="og:image" content="opengraph-image.jpg" />
+        <meta
+          property="og:image"
+          content="https://socialbrandmanagers.com/opengraph-image.jpg"
+        />
         <meta property="og:image:width" content="636" />
         <meta property="og:image:height" content="574" />
         <meta property="og:image:type" content="image/webp" />
