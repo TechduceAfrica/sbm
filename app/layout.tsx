@@ -65,7 +65,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://www.socialbrandmanagers.com/_next/image?url=%2Flogo.png&w=1920&q=75"
+          content="https://assets-social-brand-managers.netlify.app/og%20image/og-image.webp"
         />
         <meta property="og:image:width" content="636" />
         <meta property="og:image:height" content="574" />
