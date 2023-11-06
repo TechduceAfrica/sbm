@@ -63,10 +63,7 @@ export default function RootLayout({
           property="og:url"
           content="https://www.socialbrandmanagers.com/"
         />
-        <meta
-          property="og:image"
-          content="https://socialbrandmanagers.com/homepage.jpg"
-        />
+        <meta property="og:image" content="opengraph-image.jpg" />
         <meta property="og:image:width" content="636" />
         <meta property="og:image:height" content="574" />
         <meta property="og:image:type" content="image/webp" />
@@ -82,10 +79,7 @@ export default function RootLayout({
           property="og:description"
           content="Elevate Your Brand's Social Presence with Our Expertise - Your Ultimate Social Media Companion for Enhanced Business Content."
         />
-        <meta
-          property="og:image"
-          content="https://socialbrandmanagers.com/homepage.jpg"
-        />
+        <meta property="og:image" content="/opengraph-image.jpg" />
         {/* <!-- GOOGLE INDEX TAG --> */}
         <meta
           name="robots"
