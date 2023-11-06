@@ -10,29 +10,29 @@ import Head from "next/head";
 const GTM_ID = "GTM-WD23JB47";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://socialbrandmanagers.com"),
-  title: "Social Brand Managers",
-  description: "Level up social media contents for your business",
-  robots:
-    "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-  twitter: {},
-  authors: [{ name: "TechDuce Africa", url: "https://www.techduce.africa" }],
-  openGraph: {
-    title: "Social Brand Managers",
-    description:
-      "Elevate Your Brand's Social Presence with Our Expertise - Your Ultimate Social Media Companion for Enhanced Business Content.",
-    url: "https://socialbrandmanagers.com",
-    siteName: "SBM",
-    // images: [
-    //   {
-    //     url: "/_next/image?url=%2Flogo.png&w=1920&q=75",
-    //     width: 636,
-    //     height: 574,
-    //   },
-    // ],
-    locale: "en_NG",
-    type: "website",
-  },
+  // metadataBase: new URL("https://socialbrandmanagers.com"),
+  // title: "Social Brand Managers",
+  // description: "Level up social media contents for your business",
+  // robots:
+  //   "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  // twitter: {},
+  // authors: [{ name: "TechDuce Africa", url: "https://www.techduce.africa" }],
+  // openGraph: {
+  //   title: "Social Brand Managers",
+  //   description:
+  //     "Elevate Your Brand's Social Presence with Our Expertise - Your Ultimate Social Media Companion for Enhanced Business Content.",
+  //   url: "https://socialbrandmanagers.com",
+  //   siteName: "SBM",
+  // images: [
+  //   {
+  //     url: "/_next/image?url=%2Flogo.png&w=1920&q=75",
+  //     width: 636,
+  //     height: 574,
+  //   },
+  // ],
+  //   locale: "en_NG",
+  //   type: "website",
+  // },
 };
 
 export default function RootLayout({
@@ -43,14 +43,57 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Social Brand Managers</title>
+        <meta
+          name="description"
+          content="Level up social media contents for your business"
+        />
+        <meta name="theme-color" content="#0048a0" />
+        {/* <!-- FACEBOOK META TAGS --> */}
+        <meta property="og:title" content="Social Brand Managers" />
+        <meta
+          property="og:description"
+          content="Elevate Your Brand's Social Presence with Our Expertise - Your Ultimate Social Media Companion for Enhanced Business Content."
+        />
+        <meta property="og:site_name" content="SBM by Techduce Africa" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.socialbrandmanagers.com/"
+        />
         <meta
           property="og:image"
-          content="https://socialbrandmanagers.com/_next/image?url=%2Flogo.png&w=1920&q=75"
+          content="https://www.socialbrandmanagers.com/_next/image?url=%2Flogo.png&w=1920&q=75"
         />
         <meta property="og:image:width" content="636" />
         <meta property="og:image:height" content="574" />
         <meta property="og:image:type" content="image/webp" />
+        <meta property="og:locale" content="en_NG" />
+        {/* <!-- TWITTER META TAGS --> */}
+        <meta name="author" content="Techduce Africa" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@TechduceA" />
+        <meta name="twitter:creator" content="@TechduceA" />
+        <meta property="og:url" content="https://socialbrandmanagers.com" />
+        <meta property="og:title" content="Social Brand Managers" />
+        <meta
+          property="og:description"
+          content="Elevate Your Brand's Social Presence with Our Expertise - Your Ultimate Social Media Companion for Enhanced Business Content."
+        />
+        <meta
+          property="og:image"
+          content="https://www.socialbrandmanagers.com/_next/image?url=%2Flogo.png&w=1920&q=75"
+        />
+        {/* <!-- GOOGLE INDEX TAG --> */}
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://socialbrandmanagers.com" />
       </head>
+
       <Script id="google-tag-manager" strategy="afterInteractive">
         {`
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
