@@ -65,7 +65,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://techduceafrica.github.io/DuceCRM-Landing-Page/images/DuceCRM-Join%20Our%20Waitlist.webp"
+          content="https://socialbrandmanagers.com/homepage.jpg"
         />
         <meta property="og:image:width" content="636" />
         <meta property="og:image:height" content="574" />
@@ -84,7 +84,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://www.socialbrandmanagers.com/_next/image?url=%2Flogo.png&w=1920&q=75"
+          content="https://socialbrandmanagers.com/homepage.jpg"
         />
         {/* <!-- GOOGLE INDEX TAG --> */}
         <meta
