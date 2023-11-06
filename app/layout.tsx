@@ -65,7 +65,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://assets-social-brand-managers.netlify.app/og%20image/og-image.webp"
+          content="https://techduceafrica.github.io/DuceCRM-Landing-Page/images/DuceCRM-Join%20Our%20Waitlist.webp"
         />
         <meta property="og:image:width" content="636" />
         <meta property="og:image:height" content="574" />
