@@ -63,31 +63,46 @@ const Page = () => {
       const date = new Date();
       const timeStamp = date;
 
-      const data = { form, timeStamp };
+      // const data = { form, timeStamp };
+
+      const data = {
+        formData: {
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          number: form.number,
+        },
+        timeStamp,
+      };
+  
 
       try {
         const uploadToDatabase = async (data: {
-          name: string;
-          email: string;
-          message: string;
-          number: string;
+          formData: {
+            name: string;
+            email: string;
+            message: string;
+            number: string;
+          };
+          timeStamp: Date;
         }) => {
           // Add a new document in collection ""
 
-          await setDoc(doc(db, "users", data.email), {
-            name: data.name,
-            email: data.email,
-            message: data.message,
-            number: data.number,
+          await setDoc(doc(db, "users", data.formData.email), {
+            name: data.formData.name,
+            email: data.formData.email,
+            message: data.formData.message,
+            number: data.formData.number,
+            timeStamp: data.timeStamp, 
           });
         };
-        await uploadToDatabase(form);
+        await uploadToDatabase(data);
 
         // Send data to your API
         const postData = async (data: {}) => {
           try {
             const response = await fetch(
-              "https://sbm-mailsever.onrender.com/form-submitted",
+              "/api/send",
               {
                 method: "POST",
                 headers: {
