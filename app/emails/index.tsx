@@ -42,7 +42,7 @@ const buttonStyle = {
   margin: "20px 0",
 };
 
-export const EmailTemplate: React.FC<EmailTemplateProps> = ({
+export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   firstName,
   email,
   message,
