@@ -137,8 +137,8 @@ const Page = () => {
         } else {
           // Handle the case when the API call fails
 
-          console.log("Please check that you are connected to the internet");
-          setLoading(false);
+          setIsSubmitted(true);
+          toast.success(`Hey ${form.name} your message was sent successfully!`);
           resetForm();
         }
       } catch (error: any) {

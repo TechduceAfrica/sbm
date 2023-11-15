@@ -14,8 +14,6 @@
 // import { Button } from "@react-email/button";
 // import { Tailwind } from "@react-email/tailwind";
 
-import Button from "../components/Button";
-
 interface EmailTemplateProps {
   firstName: string;
   email: string;
@@ -84,6 +82,14 @@ interface EmailTemplateProps {
 //   margin: "0 0 32px 0",
 // };
 
+const buttonStyle = {
+  backgroundColor: "#3498db", // Blue color
+  color: "#ffffff", // White text
+  width: "100px",
+  height: "50px",
+  borderRadius: "5px", // Add rounded corners if desired
+};
+
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   firstName,
   email,
@@ -111,7 +117,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     </h4>
     <br />
     <a href="https://socialbrandmanagers.com/blog">
-      <Button title="Visit Blog"></Button>
+      <button style={buttonStyle}>Visit Blog</button>
     </a>
   </div>
 );
