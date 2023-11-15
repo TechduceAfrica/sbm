@@ -14,6 +14,8 @@
 // import { Button } from "@react-email/button";
 // import { Tailwind } from "@react-email/tailwind";
 
+import Button from "../components/Button";
+
 interface EmailTemplateProps {
   firstName: string;
   email: string;
@@ -108,8 +110,8 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
       to upscale your brand.
     </h4>
     <br />
-    <a href="https://socialbrandmanagers/blog">
-      <button>Visit Blog</button>
+    <a href="https://socialbrandmanagers.com/blog">
+      <Button title="Visit Blog"></Button>
     </a>
   </div>
 );
