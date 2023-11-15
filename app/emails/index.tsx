@@ -1,3 +1,4 @@
+"use client";
 import { Body } from "@react-email/body";
 import { Column } from "@react-email/column";
 import { Container } from "@react-email/container";
@@ -132,6 +133,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
             <Text style={footerText}>
               You're receiving this email because your Stack Overflow activity
               triggered this tip or reminder.
+              {formattedDate}
             </Text>
 
             <Link href="/" style={footerLink}>
