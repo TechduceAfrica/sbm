@@ -98,7 +98,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
       height={300}
     />
     <h1>
-      Hi <strong>{firstName}</strong> welcome to Social Brand Managers where we
+      Hi <strong>{firstName}</strong>, welcome to Social Brand Managers where we
       help you level up your business.
     </h1>
     <h4>
