@@ -28,6 +28,7 @@ const textStyle = {
   fontSize: "18px",
   lineHeight: "1.5",
   color: "#333",
+  maxWidth: "600px",
 };
 
 const buttonStyle = {
