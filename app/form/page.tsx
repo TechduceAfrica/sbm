@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import React, { useState, useRef } from "react";
 import Button from "../components/Button";
+import toast from "react-hot-toast";
 
 import SectionWrapper from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
@@ -74,7 +75,6 @@ const Page = () => {
         },
         timeStamp,
       };
-  
 
       try {
         const uploadToDatabase = async (data: {
@@ -93,7 +93,7 @@ const Page = () => {
             email: data.formData.email,
             message: data.formData.message,
             number: data.formData.number,
-            timeStamp: data.timeStamp, 
+            timeStamp: data.timeStamp,
           });
         };
         await uploadToDatabase(data);
@@ -101,17 +101,14 @@ const Page = () => {
         // Send data to your API
         const postData = async (data: {}) => {
           try {
-            const response = await fetch(
-              "/api/send",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                  Accept: "application/json",
-                },
-                body: JSON.stringify(data),
-              }
-            );
+            const response = await fetch("/api/send", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+              },
+              body: JSON.stringify(data),
+            });
 
             const result = await response.json();
 
@@ -133,15 +130,16 @@ const Page = () => {
 
         setLoading(false);
 
-        if (response.status === "success") {
+        if (response.status === "undefined") {
           setIsSubmitted(true);
-          alert("Thank you. We will get back to you as soon as possible.");
+          toast.success(`Hey ${form.name} your message was sent successfully!`);
           resetForm();
         } else {
           // Handle the case when the API call fails
 
-          alert("Please check that you are connected to the internet");
+          console.log("Please check that you are connected to the internet");
           setLoading(false);
+          resetForm();
         }
       } catch (error: any) {
         // Handle errors that may occur during database or API operations

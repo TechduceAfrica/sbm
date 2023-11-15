@@ -6,6 +6,7 @@ import Script from "next/script";
 import NewFooter from "./components/NewFooter";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import Head from "next/head";
+import { Toaster } from "react-hot-toast";
 
 const GTM_ID = "GTM-WD23JB47";
 
@@ -101,6 +102,7 @@ export default function RootLayout({
         `}
       </Script>
       <body className="bg-secondary-blue">
+        <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
         <Navbar />
 
         <main className="">{children}</main>
