@@ -5,6 +5,7 @@ interface EmailTemplateProps {
   email: string;
   message: string;
   timeStamp: string;
+  phoneNumber: string;
 }
 
 const containerStyle = {
