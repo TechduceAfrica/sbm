@@ -9,7 +9,7 @@ const Hero = () => {
       <Link
         href="/join-us"
         title="Join social brand manager work force"
-        className="absolute cursor-pointer right-0 top-[100px] lg:max-h-[240px] max-h-[250px] px-1 py-2 lg:max-w-[100px] bg-primary-blue vertical-rl text-white text-[18px] lg:text-[24px] z-20"
+        className="absolute cursor-pointer right-0 top-[100px] lg:max-h-[240px] max-h-[250px] px-1 py-2 lg:max-w-[90px] bg-primary-blue vertical-rl text-white text-[18px] lg:text-[24px] z-10"
       >
         Join our Workforce
       </Link>
