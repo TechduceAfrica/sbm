@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ThreeStepsSlider from "./ThreeStepsSlider";
+import Button from "./Button";
 
 export default function ThreeSteps() {
   return (
@@ -8,12 +9,15 @@ export default function ThreeSteps() {
       <section className="custom-container-max-width">
         <div className="home-threeslide-heading">
           <h3>
-            Let's seal the deal in just{" "}<br/>
+            Let's seal the deal in just <br />
             <span className="text-primary-blue">3 easy steps.</span>
           </h3>
         </div>
         <div>
           <ThreeStepsSlider />
+        </div>
+        <div className="flex justify-center">
+          <Button title="Get Started" />
         </div>
       </section>
     </div>
