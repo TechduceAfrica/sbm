@@ -17,7 +17,9 @@ export default function ThreeSteps() {
           <ThreeStepsSlider />
         </div>
         <div className="flex justify-center">
-          <Button title="Get Started" />
+          <a href="/form">
+            <Button title="Get Started" />
+          </a>
         </div>
       </section>
     </div>
