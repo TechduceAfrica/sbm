@@ -56,7 +56,7 @@ const HomeServices = () => {
                   href={homeServiceTop.link}
                   className="underline text-primary-blue"
                 >
-                  Start here
+                  Know More
                 </Link>
               </div>
             </div>
