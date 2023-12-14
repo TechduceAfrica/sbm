@@ -18,7 +18,7 @@ const AboutMissionSection = () => {
               </motion.h3>
             </div>
             <div>
-              <p className="text-center lg:text-left">
+              <p className="text-center lg:text-left max-w-md">
                 Our mission is to harness the power of technology to transform
                 the way business operate. We ultimately aim to build a legacy of
                 wealth and impact through our passion for technology and a
