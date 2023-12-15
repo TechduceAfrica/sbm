@@ -25,6 +25,12 @@
       "@splidejs/*": ["node_modules/@splidejs/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/AboutPageWorkspaceSection.jsx"
+  ],
   "exclude": ["node_modules"]
 }
